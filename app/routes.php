@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::any('/{path?}', 'PageController@index')->where('path', '.+');

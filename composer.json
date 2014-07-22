@@ -5,15 +5,20 @@
 	"license": "MIT",
   "repositories": [
 		{
-				"type": "vcs",
-					"url": "https://github.com/formandsystem/api.git"
-			}
+			"type": "vcs",
+			"url": "https://github.com/formandsystem/api.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/formandsystem/utilities.git"
+		}
 	],
 	"require": {
 		"laravel/framework": "4.2.*",
 		"laravelbook/ardent": "dev-master",
 		"guzzlehttp/guzzle": "~4.0",
-		"formandsystem/api": "*@dev"
+		"formandsystem/api": "*@dev",
+		"formandsystem/utilities": "*@dev"
 	},
 	"autoload": {
 		"classmap": [
