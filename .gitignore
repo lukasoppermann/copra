@@ -17,9 +17,10 @@ media/
 movies/
 files/
 
-# Grunt #
+# Grunt & bower #
 ############
 node_modules/
+bower_components/
 
 # db files #
 ############
