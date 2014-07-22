@@ -1,0 +1,9 @@
+/* ----------------------
+		Main Width
+
+		@Note: Use in elements to keep inside main width
+*/
+.main-width{
+	max-width: 1200px;
+	margin: 0 auto;
+}

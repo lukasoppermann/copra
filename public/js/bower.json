@@ -19,6 +19,7 @@
   "dependencies": {
     "requirejs": "*",
     "require-css": "*",
-    "minified": "~2014.0.0-beta6.0"
+    "jquery": "1.*",
+    "requirejs-domready": "~2.0.1"
   }
 }

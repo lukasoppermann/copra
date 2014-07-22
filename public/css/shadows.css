@@ -1,0 +1,17 @@
+/* ----------------------
+		Inside bend shadow on bottom 
+		
+		@Note:	box-shadow support IE9+
+						.shadow-inside-bend need to be positioned
+*/
+.shadow-inside-bend:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+		border-radius: 50%;
+		box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
