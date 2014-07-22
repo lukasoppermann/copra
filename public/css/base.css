@@ -1,3 +1,31 @@
+/* ----------------------
+		Body reset
+*/
 body{
-	background-color:red;
+	font-family: "Helvetica Neue", Helvetica, Sans-serif;
+	font-size: 0.625em;
+	line-height: 130%;
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,0);
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+}
+/* ----------------------
+		Reset elements to have border-box
+*/
+html { -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after { -moz-box-sizing: inherit; box-sizing: inherit; }
+img { -moz-box-sizing: content-box; box-sizing: content-box; }
+/* ----------------------
+		Resets to undo default stylings
+*/
+div{ 
+	position: relative; 
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

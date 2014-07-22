@@ -1,2 +1,14 @@
 /* Resets & basic settings */
 @import url("base.css");
+
+/* Shadows */
+@import url("shadows.css");
+
+/* Typography */
+@import url("typography.css");
+
+/* Typography */
+@import url("layout.css");
+
+/* Navigation */
+@import url("navigation.css");
