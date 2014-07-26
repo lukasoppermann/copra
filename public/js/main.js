@@ -24,4 +24,33 @@ require.config({
 
 require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 
+	// ---------------------------
+	// Navigation Highlight
+	//
+		var children = $(".main-navigation-list > li");
+		
+		for( var i = 0, c = children.length; i < c; i++  )
+		{
+			children[i].className += " has-red-line";
+			if($(children[i]).hasClass('is-active'))
+			{
+				break;
+			}
+		}
+
+		// ---------------------------
+		// Scroll state
+		//
+		$(window).on('scroll', function(f){
+			clearTimeout(f);
+			f = setTimeout(function(){
+				if((document && document.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
+					$(".main-navigation").addClass('is-scrolled');
+				}else{
+					$(".main-navigation").removeClass('is-scrolled');
+				}
+			},10);
+		});
+		
+		
 })

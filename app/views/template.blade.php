@@ -17,9 +17,15 @@
 	
 	@include('pages.navigation')
 	
+	<div class="banner">
+		
+	</div>
+	
 	<div id="content">
 		@yield('content','')
 	</div>
+	
+	
 	<script data-main="{{asset('/js/main')}}" src="{{asset('/js/bower_components/requirejs/require.js')}}"></script>
 
 </body>
