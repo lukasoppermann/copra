@@ -7,8 +7,7 @@ class PageController extends BaseController {
 	public function index($path)
 	{
 
-		$this->layout->path = $path;
-		
+		return View::make($this->layout)->with('path', $path);
 	}
 
 }

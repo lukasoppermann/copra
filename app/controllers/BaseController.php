@@ -13,17 +13,4 @@ class BaseController extends Controller {
 		Api::config(['url' => 'http://api.formandsystem.com/v1/stream', 'auth' => ['lukas@vea.re', 'lukas'] ]);
 	}
 
-	/**
-	 * Setup the layout used by the controller.
-	 *
-	 * @return void
-	 */
-	protected function setupLayout()
-	{
-		if ( ! is_null($this->layout))
-		{
-			$this->layout = View::make($this->layout);
-		}
-	}
-
 }
