@@ -10,7 +10,7 @@ class BaseController extends Controller {
 	function __construct()
 	{
 		// needs to be set
-		Api::config(['url' => 'http://www/formandsystem/public/api/v1/stream', 'auth' => ['lukas@vea.re', 'lukas'] ]);
+		Api::config(['url' => 'http://api.formandsystem.com/v1/stream', 'auth' => ['lukas@vea.re', 'lukas'] ]);
 	}
 
 	/**

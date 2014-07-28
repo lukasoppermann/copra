@@ -6,7 +6,9 @@ class PageController extends BaseController {
 
 	public function index($path)
 	{
+
 		$this->layout->path = $path;
+		
 	}
 
 }

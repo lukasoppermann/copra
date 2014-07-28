@@ -27,12 +27,12 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 	// ---------------------------
 	// Navigation Highlight
 	//
-		var children = $(".main-navigation-list > li");
+		var children = $(".main-navigation-list > ul > li");
 		
 		for( var i = 0, c = children.length; i < c; i++  )
 		{
 			children[i].className += " has-red-line";
-			if($(children[i]).hasClass('is-active'))
+			if($(children[i]).hasClass('js-is-active'))
 			{
 				break;
 			}

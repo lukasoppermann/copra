@@ -7,3 +7,12 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+/* ----------------------
+		Main Content Module
+
+		@Note: Margin-Top is fixed nav offset
+*/
+.main-content{
+	margin-top: 6.12em;
+}

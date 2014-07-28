@@ -17,11 +17,8 @@
 	
 	@include('pages.navigation')
 	
-	<div class="banner">
-		
-	</div>
-	
-	<div id="content">
+
+	<div class="main-content">
 		@yield('content','')
 	</div>
 	

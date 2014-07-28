@@ -1,24 +1,38 @@
 <?php
-function loop( $nav, $lang)
+function loop( $nav, $lang, $parent = "" )
 {
+	echo "<ul>";
 	foreach ($nav as $item)
 	{
-		// $content = checkLanguage($item, Config::get('content.locale'));
 		if( isset($item['content']) && array_key_exists(Config::get('app.locale'), $item['content']) )
 		{
+			
+			// get item and url
 			$itemContent = $item['content'][Config::get('app.locale')];
-
-			echo '<li class="'.('content/'.trim($itemContent['link'], '/') == Request::path() ? ' is-active' : '').'">
-				<a rel="dns-prefetch" data-id="'.$itemContent['id'].'" href="'.url('/content/'.trim($itemContent['link'], '/')).'">
+			
+			
+			echo '<li class="'.
+				( trim($itemContent['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
+				( strpos(Request::path(), trim($itemContent['link'], '/')) !== false ? ' is-active js-is-active' : '').
+				'">
+				
+				<a rel="dns-prefetch" data-id="'.$itemContent['id'].'" href="'.url($itemContent['link']).'">
 						'.$itemContent['menu_label'].'
 				</a>';
+				
+				// loop through children if they exist
 				if ( isset($item['children']) && is_array($item['children']) ){
-					loop($item['children'], $lang);
+					loop($item['children'], $lang, $itemContent);
 				}
+				
+				
 			echo '</li>';
+			
+			// reset item
 			$itemContent = null;
 		}
 	}
+	echo "</ul>";
 }
 ?>
 {{--------------------------
@@ -42,9 +56,9 @@ function loop( $nav, $lang)
 			
 			<div class="logo-shadow"></div>
 		</div>
-		<ul class="main-navigation-list">
+		<div class="main-navigation-list">
 			<?=loop(Api::get('navigation.json'), 'en'); ?>
-		</ul>
+		</div>
 			
 	</div>
 			

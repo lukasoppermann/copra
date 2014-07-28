@@ -18,7 +18,8 @@
 		"laravelbook/ardent": "dev-master",
 		"guzzlehttp/guzzle": "~4.0",
 		"formandsystem/api": "*@dev",
-		"formandsystem/utilities": "*@dev"
+		"formandsystem/utilities": "*@dev",
+		"michelf/php-markdown": "1.4.*"
 	},
 	"autoload": {
 		"classmap": [
