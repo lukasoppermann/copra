@@ -27,7 +27,7 @@ class ContentTableSeeder extends Seeder {
 				'data' => json_encode(array(
 					array(
 						"class" => "section-01",
-						"children" => array(
+						"content" => array(
               array(
 								"type" => "image",
 								"column" => 3,

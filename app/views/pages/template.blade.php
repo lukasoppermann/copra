@@ -4,14 +4,11 @@
 
 	<?
 	use \Michelf\Markdown;
-	
-	foreach(Api::get('.json?path='.$path)['data'] as $section){
-		
+	foreach($data as $section){
 		echo "<div class='section ".App::make('Utilities')->variable($section['class'],"")."'>";
-		
-		if( isset($section['children']) )
+		if( isset($section['content']) )
 		{	
-			foreach($section['children'] as $child){
+			foreach($section['content'] as $child){
 				echo '<div class="column-'.App::make('Utilities')->variable($child['column'],12).
 							' '.App::make('Utilities')->variable($child['class']).'">';
 			

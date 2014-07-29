@@ -6,8 +6,7 @@ class PageController extends BaseController {
 
 	public function index($path)
 	{
-
-		return View::make($this->layout)->with('path', $path);
+		return View::make($this->layout)->with('data', Api::get('.json?path='.$path.'&lang='.Config::get('app.locale'))['data']);
 	}
 
 }

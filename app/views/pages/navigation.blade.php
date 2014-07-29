@@ -1,7 +1,6 @@
 <?php
-function loop( $nav, $lang, $parent = "" )
+function loop( $nav, $lang, $parent = "", $result = "" )
 {
-	echo "<ul>";
 	foreach ($nav as $item)
 	{
 		if( isset($item['content']) && array_key_exists(Config::get('app.locale'), $item['content']) )
@@ -11,7 +10,7 @@ function loop( $nav, $lang, $parent = "" )
 			$itemContent = $item['content'][Config::get('app.locale')];
 			
 			
-			echo '<li class="'.
+			$result .= '<li class="'.
 				( trim($itemContent['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
 				( strpos(Request::path(), trim($itemContent['link'], '/')) !== false ? ' is-active js-is-active' : '').
 				'">
@@ -22,17 +21,19 @@ function loop( $nav, $lang, $parent = "" )
 				
 				// loop through children if they exist
 				if ( isset($item['children']) && is_array($item['children']) ){
-					loop($item['children'], $lang, $itemContent);
+					$result .= loop($item['children'], $lang, $itemContent);
 				}
 				
 				
-			echo '</li>';
+			$result .= '</li>';
 			
 			// reset item
 			$itemContent = null;
 		}
 	}
-	echo "</ul>";
+	if($result != ""){
+		return "<ul>".$result."</ul>";
+	}
 }
 ?>
 {{--------------------------
