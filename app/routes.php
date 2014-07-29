@@ -17,6 +17,6 @@ Cache::flush();
 Route::group(array('before' => array('cache.fetch'), 'after' => array('cache.put')), function()
 {
 
-	Route::any('/{path?}', "pageController@index")->where('path', '.+');
+	Route::any('/{path?}', "PageController@index")->where('path', '.+');
 	
 });
