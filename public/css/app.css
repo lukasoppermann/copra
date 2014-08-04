@@ -1,6 +1,9 @@
 /* Resets & basic settings */
 @import url("base.css");
 
+/* Grid */
+@import url("gridified.css");
+
 /* Shadows */
 @import url("shadows.css");
 

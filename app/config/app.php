@@ -1,7 +1,17 @@
 <?php
 
 return array(
-
+	/*
+	|--------------------------------------------------------------------------
+	| Application Config
+	|--------------------------------------------------------------------------
+	|
+	| Special config
+	|
+	*/
+	
+	'media' => 'media',
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -122,7 +132,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Formandsystem\Api\ApiServiceProvider',
-		'Formandsystem\Utilities\UtilitiesServiceProvider'
+		'Formandsystem\Utilities\UtilitiesServiceProvider',
+		'Orangehill\Iseed\IseedServiceProvider' // delete when publishing
 	),
 
 	/*

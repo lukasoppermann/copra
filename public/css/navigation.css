@@ -1,5 +1,5 @@
 /* ----------------------
-		Main Navigation 
+		Main Navigation
 */
 .main-navigation{
 	width: 100%;
@@ -28,7 +28,7 @@
 .logo{
 	position: absolute;
 	float: left;
-	margin-left: 2em;
+	margin-left: 20px;
 	width: 140px;
 	height: 110px;
 	overflow: visible;
@@ -41,12 +41,12 @@
 	z-index: 1;
 	position: absolute;
 	top: 0px;
-	left: -10px;
+	left: 0px;
 	display: block;
-	width: 160px;
-	height: 120px;
+	width: 170px;
+	height: 130px;
 	background-image:url("../layout/logo-shadow.png");
-	background-size: 160px 120px;	
+	background-size: 170px 130px;
 }
 /* ----------------------
 		Main Navigation List
@@ -57,7 +57,7 @@
 }
 .main-navigation-list:after{
 	z-index: 1;
-	height: .4em;
+	height: 4px;
 	width: 100%;
 	background: rgb(225,225,225);
 	content: "";
@@ -80,12 +80,12 @@
 	content: "";
 	display: block;
 	position: absolute;
-	top: -2em;
+	top: -20px;
 	left: 50%;
-	margin-left: -1em;
+	margin-left: -10px;
 	width: 0;
 	height: 0;
-	border: 1em solid transparent;
+	border: 10px solid transparent;
 	border-color: transparent transparent rgb(225,70,75) transparent;
 }
 .main-navigation-list li > ul > li{
@@ -100,7 +100,7 @@
 	color: rgb(255,255,255);
 }
 .main-navigation-list li > ul ul{
-	width: auto;	
+	width: auto;
 }
 .main-navigation-list > ul > li:hover > ul{
 	display: block;
@@ -108,8 +108,8 @@
 .main-navigation-list a{
 	display: block;
 	text-decoration: none;
-	padding: 1.2em 1em;
-	font-size: 1.8em;
+	padding: 20px 15px;
+	font-size: 18px;
 	line-height: 100%;
 	text-transform: UPPERCASE;
 	color: rgb(100,100,100);
@@ -119,9 +119,9 @@
 }
 .main-navigation-list .has-red-line:before{
 	z-index: 2;
-	height: .4em;
+	height: 4px;
 	width: 100%;
-	background: rgba(225,70,75,0.6);
+	background: rgba(225,70,75,0.8);
 	content: "";
 	position: absolute;
 	left: 0;

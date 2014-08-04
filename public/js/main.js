@@ -4,7 +4,7 @@ var support = {
 	svg: function(){
 		return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
 	}
-} 
+}
 
 require.config({
 	baseUrl: "/copra/public/js/bower_components",
@@ -28,7 +28,7 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 	// Navigation Highlight
 	//
 		var children = $(".main-navigation-list > ul > li");
-		
+
 		for( var i = 0, c = children.length; i < c; i++  )
 		{
 			children[i].className += " has-red-line";
@@ -37,6 +37,45 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 				break;
 			}
 		}
+
+
+		// ---------------------------
+		// Section menu position
+		//
+		var positionSectionMenu = function(){
+			var winWidth = parseInt($("body").css('width'));
+			var substract = ((winWidth - 1200)/4);
+			if( winWidth > 1150 && substract > 0){
+				$('.js-section-menu').css('right',substract);
+			}
+			else
+			{
+				$('.js-section-menu').css('right',"");
+			}
+		};
+		positionSectionMenu();
+
+		var f;
+		$(window).on('resize', function(){
+			window.clearTimeout(f);
+			f = window.setTimeout(function(){
+				positionSectionMenu();
+			},100);
+		});
+
+
+		// ---------------------------
+		// Section smooth scrolling
+		//
+		$('a', '.js-section-menu-link').click(function(e){
+			e.preventDefault();
+
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+
+
+		});
 
 		// ---------------------------
 		// Scroll state
@@ -51,6 +90,6 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 				}
 			},10);
 		});
-		
-		
+
+
 })

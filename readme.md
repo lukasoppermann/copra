@@ -2,6 +2,10 @@
 
 Redesign of Copra website
 
+## Colors
+- red: rgb(225,70,75)
+
+- dark red: rgb(165,30,40)
 
 ## Browser
 
