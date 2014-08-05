@@ -5,28 +5,28 @@ function loop( $nav, $lang, $parent = "", $result = "" )
 	{
 		if( isset($item['content']) && array_key_exists(Config::get('app.locale'), $item['content']) )
 		{
-			
+
 			// get item and url
 			$itemContent = $item['content'][Config::get('app.locale')];
-			
-			
+
+
 			$result .= '<li class="'.
 				( trim($itemContent['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
 				( strpos(Request::path(), trim($itemContent['link'], '/')) !== false ? ' is-active js-is-active' : '').
 				'">
-				
+
 				<a rel="dns-prefetch" data-id="'.$itemContent['id'].'" href="'.url($itemContent['link']).'">
 						'.$itemContent['menu_label'].'
 				</a>';
-				
+
 				// loop through children if they exist
 				if ( isset($item['children']) && is_array($item['children']) ){
 					$result .= loop($item['children'], $lang, $itemContent);
 				}
-				
-				
+
+
 			$result .= '</li>';
-			
+
 			// reset item
 			$itemContent = null;
 		}
@@ -43,10 +43,10 @@ function loop( $nav, $lang, $parent = "", $result = "" )
 	--------------------------}}
 
 <div class="main-navigation shadow-inside-bend">
-	
+
 	<div class="main-width">
-	
-		<div class="svg logo">
+
+		<a class="svg logo" href="{{url()}}">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 width="170px" height="130px" viewBox="0 1.5 170 130" enable-background="new 0 1.5 170 130" xml:space="preserve">
 				<g>
@@ -93,13 +93,14 @@ function loop( $nav, $lang, $parent = "", $result = "" )
 				</g>
 			</svg>
 
-			
+
 			<div class="logo-shadow"></div>
-		</div>
+		</a>
+
 		<div class="main-navigation-list">
 			<?=loop(Api::get('navigation.json'), 'en'); ?>
 		</div>
-			
+
 	</div>
-			
+
 </div>

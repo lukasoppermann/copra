@@ -44,7 +44,7 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 		//
 		var positionSectionMenu = function(){
 			var winWidth = parseInt($("body").css('width'));
-			var substract = ((winWidth - 1200)/4);
+			var substract = ((winWidth - 1200)/6);
 			if( winWidth > 1150 && substract > 0){
 				$('.js-section-menu').css('right',substract);
 			}
@@ -71,7 +71,7 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 			e.preventDefault();
 
 		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		        scrollTop: $( $.attr(this, 'href') ).offset().top-100
 		    }, 500);
 
 
@@ -91,5 +91,16 @@ require(['requirejs-domready/domReady!', "jquery"], function(doc, $){
 			},10);
 		});
 
-
+		// ---------------------------
+		// Scroll state
+		//
+		$(window).on('scroll', function(f){
+			if($('.js-banner') != undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+				clearTimeout(f);
+				f = setTimeout(function(){
+					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+					$('.js-banner .content-for-image').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+				},10);
+			}
+		});
 })

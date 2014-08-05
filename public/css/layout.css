@@ -28,12 +28,22 @@
 		@Note: Margin-Top is fixed nav offset
 */
 .banner{
-	padding-top: 20px;
+	padding-top: 80px;
+	text-align: left;
+}
+.banner .image{
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+.banner .image img{
+	display: block;
+	position: absolute;
+	top: 0;
 }
 .banner .content-for-image{
 	background: rgb(225,70,75);
 	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 20px;
 	color: rgb(255,255,255);
@@ -69,7 +79,6 @@
 }
 
 
-
 /* ----------------------
 		Section navigation
 
@@ -81,7 +90,9 @@
 	z-index: 990;
 	right: 20px;
 	top: 100px;
-	transition: right .5s ease;
+	-webkit-transition: right .5s ease;
+	        transition: right .5s ease;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 .section-menu-link a{
 	display: block;
@@ -90,6 +101,7 @@
 	color: rgb(255,255,255);
 	padding: 10px 20px;
 }
+
 
 
 /* ----------------------
@@ -132,4 +144,50 @@
 }
 .centered-content.column-4{
 	padding: 0 20px;
+}
+
+/* ----------------------
+		red section
+
+		@Note:
+*/
+.red-section{
+	margin: 50px 0;
+	padding: 50px 15px;
+	background: rgb(225,70,75);
+}
+.red-section .user-features h2{
+	font-weight: 400;
+	color: rgb(255,255,255);
+	margin: 10px 0 20px;
+}
+.red-section .user-features ul{
+	display: inline-block;
+	text-align: left;
+	width: auto;
+	color: rgb(255,255,255);
+	margin-bottom: 20px;
+}
+.red-section .user-features li{
+	display: inline-block;
+	width: 100%;
+	padding: 0 30px;
+	margin: 0 0 10px;
+}
+.red-section .user-features a{
+	background: rgba(165,30,40,.75);
+	border-radius: 3px;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	padding: 5px 10px 5px 10px;
+	-webkit-transition: background .5s ease, box-shadow .5s ease;
+					transition: background .5s ease, box-shadow .5s ease;
+}
+.red-section .user-features a:hover{
+	background: rgba(165,30,40,1);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.red-section .user-features a:after{
+	content: "➞";
+	padding-left: 10px;
 }

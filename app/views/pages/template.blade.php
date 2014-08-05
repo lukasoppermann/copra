@@ -13,7 +13,7 @@
 	{
 		if( isset($section['link']) )
 		{
-			$section_link = urlencode($section['link']);
+			$section_link = strtolower(preg_replace("/[^a-zA-Z0-9]+/", "", $section['link']));
 			$output_sections_menu .= "<li class='js-section-menu-link section-menu-link'><a href='#$section_link'>".$section['link']."</a></li>";
 			$section_link_data = "id='$section_link' name='$section_link' ";
 		}
@@ -36,8 +36,8 @@
 
 				elseif( $child['type'] == 'image' )
 				{
-					$output_sections .= "<img src='".asset(Config::get('app.media').'/'.$child['src'])."' alt='".
-						App::make('Utilities')->variable($child['description'],$child['src'])."' />";
+					$output_sections .= "<div class='image'><img src='".asset(Config::get('app.media').'/'.$child['src'])."' alt='".
+						App::make('Utilities')->variable($child['description'],$child['src'])."' /></div>";
 
 					if(isset($child['content']) && trim($child['content']) != null)
 					{
