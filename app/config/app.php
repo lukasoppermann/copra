@@ -9,9 +9,9 @@ return array(
 	| Special config
 	|
 	*/
-	
+
 	'media' => 'media',
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -133,7 +133,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Formandsystem\Api\ApiServiceProvider',
 		'Formandsystem\Utilities\UtilitiesServiceProvider',
-		'Orangehill\Iseed\IseedServiceProvider' // delete when publishing
+		//'Orangehill\Iseed\IseedServiceProvider' // delete when publishing
 	),
 
 	/*
