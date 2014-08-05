@@ -28,10 +28,10 @@ class FsContentTableSeeder extends Seeder {
 				          {
 				              "type": "image",
 				              "column": 12,
-				              "src": "banner.png",
+				              "src": "banner.jpg",
 				              "description": "Some optional text",
 				              "content": "# Kliniken in ganz Deutschland.\\nDurch das Copra PMS wird die Arbeite in vielen Kliniken erleichtert.",
-				              "class": "banner"
+				              "class": "banner js-banner"
 				          }
 				      ]
 				  },
@@ -43,12 +43,22 @@ class FsContentTableSeeder extends Seeder {
 				              "type": "text",
 				              "column": 12,
 				              "content": "#Unsere Vision\\n>Ein einheitliches System für die gesamte Arbeit auf der Station",
-				              "class": "optional-classes"
+				              "class": "space-bottom-wide"
 				          },
 									{
 											"type": "image",
-											"column": 12,
-											"src": "feature-teaser.jpg"
+											"column": 4,
+											"src": "icon.png"
+									},
+									{
+											"type": "image",
+											"column": 4,
+											"src": "icon.png"
+									},
+									{
+											"type": "image",
+											"column": 4,
+											"src": "icon.png"
 									},
 									{
 											"type": "text",
@@ -71,17 +81,73 @@ class FsContentTableSeeder extends Seeder {
 				      ]
 				  },
 				  {
-				      "class": "section-03",
+				      "class": "red-section",
 				      "link": "Anwendungsgebiete",
 				      "content": [
 				          {
-				              "type": "text",
-				              "column": 12,
-				              "content": "#Anwendungsgebiete\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				              "class": "optional-classes"
-				          }
+				              "type": "image",
+				              "column": 3,
+											"src": "doctor.png",
+				              "content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				              "class": "user-features"
+				          },
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									},
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									},
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									}
 				      ]
-				  }
+				  },
+					{
+							"class": "section-04",
+							"link": "Neuigkeiten",
+							"content": [
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									},
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									},
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									},
+									{
+											"type": "image",
+											"column": 3,
+											"src": "doctor.png",
+											"content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+											"class": "user-features"
+									}
+							]
+					}
 				]',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
