@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'mysql5.lukas-oppermann.de',
 			'database'  => 'db373917_1',
 			'username'  => 'db373917_1',
 			'password'  => 'Copra&db1',
