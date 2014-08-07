@@ -11,7 +11,7 @@ log-
 0*_*/
 *cache*/*.php
 sessions/
-storage/
+**/storage/*
 images/
 media/
 movies/
