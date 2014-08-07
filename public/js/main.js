@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
+require(["bower_components/requirejs-domready/domReady!", "jquery"], function(doc, $){
 
 	// ---------------------------
 	// Navigation Highlight
