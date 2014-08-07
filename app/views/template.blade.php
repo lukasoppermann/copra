@@ -14,16 +14,16 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
 <body>
-	
+
 	@include('pages.navigation')
-	
+
 
 	<div class="main-content">
 		@yield('content','')
 	</div>
-	
-	
-	<script data-main="{{asset('/js/main')}}" src="{{asset('/js/bower_components/requirejs/require.js')}}"></script>
+
+
+	<script data-main="{{asset('/js/application')}}" src="{{asset('/js/bower_components/requirejs/require.js')}}"></script>
 
 </body>
 </html>
