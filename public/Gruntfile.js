@@ -69,9 +69,10 @@ module.exports = function(grunt) {
 			js: {
 				options: {
 					baseUrl: "<%= config.js %>/<%=bower_path%>",
-					out: "<%=config.js%>/application"+calculateMD5String("<%=config.js%>/<%= config.mainjs %>")+'.min.js',
+					// out: "<%=config.js%>/application"+calculateMD5String("<%=config.js%>/<%= config.mainjs %>")+'.min.js',
+					out: "<%=config.js%>/application.js",
 					name: 'main',
-					optimize: 'none',
+					optimize: 'uglify',
 					mainConfigFile: '<%= config.js %>/<%= config.mainjs %>',
 					useStrict: true,
 					wrap: true
