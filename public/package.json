@@ -3,24 +3,47 @@
   "description": "My grunt setup to use for my projects",
   "repository": "repo",
   "readme": "readme.md",
+  "dirs": {
+    "tasks": "./grunt-tasks/",
+    "task-options": "./grunt-tasks/options/",
+    "devlayout": "layout/_dev/",
+    "layout": "layout/",
+    "devmedia": "media/_dev/",
+    "media": "media/",
+    "css": "css/",
+    "js": "js/",
+    "bower": "bower_components"
+  },
+  "files": {
+    "require-js-main": "../app",
+    "require-js-out": "app.min.js",
+    "require-css-main": "app.css",
+    "require-css-out": "app.min.css"
+  },
+  "require-paths":{
+      "jquery": "jquery/dist/jquery"
+  },
+  "load-tasks-pattern": [
+    "grunt-*",
+    "rjs.js"
+  ],
   "engines": {
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "MD5": "^1.2.1",
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.7.3",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-imagemin": "~0.7.0",
-    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-jshint": "*",
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "*",
     "grunt-replace": ">=0.7.8",
     "grunt-shell": "^0.7.0",
     "grunt-svgstore": ">0.2.6",
+    "load-grunt-config": "^0.13.0",
+    "load-grunt-tasks": "^0.6.0",
     "rjs": "*"
   }
 }

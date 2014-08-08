@@ -17,12 +17,12 @@ require.config({
       // is using jQuery 1.9.0 located at
       // js/lib/jquery-1.9.0.js, relative to
       // the HTML page.
-      jquery: 'bower_components/jquery/dist/jquery'
+      "jquery": "jquery/dist/jquery"
   }
 });
 
 
-require(["bower_components/requirejs-domready/domReady!", "jquery"], function(doc, $){
+require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 
 	// ---------------------------
 	// Navigation Highlight

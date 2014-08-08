@@ -2,14 +2,15 @@
 // requirejs
 //
 module.exports = function(grunt, config) {
-  return {
+    return {
 		js: {
-			options: {+config.package.dirs.devmedia
+			options: {
 				baseUrl: config.cwd+config.package.dirs.js+config.package.dirs.bower,
-				out: config.cwd+config.package.dirs.js+config.package["require-js-out"],
-				name: 'main',
+        paths: config.package["require-paths"],
+				out: config.cwd+config.package.dirs.js+config.package.files["require-js-out"],
+				name: config.package.files["require-js-main"],
 				optimize: 'uglify',
-				mainConfigFile: config.cwd+config.package.dirs.js+config.package["require-js-main"],
+				// mainConfigFile: config.cwd+config.package.dirs.js+config.package.files["require-opt-config"],
 				useStrict: true,
 				wrap: true
 			}
@@ -17,8 +18,8 @@ module.exports = function(grunt, config) {
 		css: {
 			options: {
 				optimizeCss: 'standard',
-				cssIn: config.cwd+config.package.dirs.js+config.package["require-css-main"],
-				out: config.cwd+config.package.dirs.js+config.package["require-css-out"]
+				cssIn: config.cwd+config.package.dirs.css+config.package.files["require-css-main"],
+				out: config.cwd+config.package.dirs.css+config.package.files["require-css-out"]
 			}
 		}
   }
