@@ -16,6 +16,7 @@ images/
 media/
 movies/
 files/
+secret*
 
 # Grunt & bower #
 ############
@@ -29,9 +30,9 @@ database.php
 # laravel #
 ############
 vendor/
-artisan
 composer.lock
 CONTRIBUTING.md
+bootstrap/compiled.php
 
 # Packages #
 ############

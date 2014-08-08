@@ -13,6 +13,7 @@ return array(
 	'media' => 'media',
 	'appjs' => 'app.min.js',
 	'appcss' => 'app.min.css',
+	'apiurl' => 'http://api.formandsystem.com/v1/stream',
 
 	/*
 	|--------------------------------------------------------------------------
