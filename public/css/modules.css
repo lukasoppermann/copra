@@ -1,6 +1,37 @@
-.image{
+/* ----------------------
+    Default module
+
+    @Note:
+*/
+.block-content-copy h1{
+  text-align: center;
+  font-weight: 300;
+  color: rgb(100,100,100);
+  display: table;
+  padding: 10px 10px;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid rgb(225,70,75);
+}
+.block-content-copy h2{
+  text-align: center;
+  font-weight: 300;
+  color: rgb(100,100,100);
+  padding: 10px 10px;
+}
+
+.block-content-copy blockquote{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  width: 60%;
+  margin: 0 auto 10px;
+}
+.block-content-copy blockquote p{
+  font-size: inherit;
+}
+.block-content-image{
   text-align: center;
 }
-.image img{
+.block-content-image img{
   display: inline-block;
 }

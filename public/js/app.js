@@ -99,7 +99,7 @@ require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 				clearTimeout(f);
 				f = setTimeout(function(){
 					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
-					$('.js-banner .content-for-image').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
 				},10);
 			}
 		});

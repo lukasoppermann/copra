@@ -31,26 +31,25 @@
 	padding-top: 80px;
 	text-align: left;
 }
-.banner .image{
+.banner .block-content-image{
 	height: 500px;
 	width: 100%;
 	overflow: hidden;
 }
-.banner .image img{
+.banner .block-content-image img{
 	display: block;
 	position: absolute;
 	top: 0;
 }
-.banner .content-for-image{
+.banner .block-content-copy{
 	background: rgb(225,70,75);
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 20px;
-	color: rgb(255,255,255);
 	display: inline-block;
 	margin: -120px 0 50px 20px;
 }
-.banner .content-for-image:after{
+.banner .block-content-copy:after{
 	content:"";
 	background: rgba(165,30,40,0.8);
 	display: block;
@@ -60,7 +59,7 @@
 	bottom: -7px;
 	left: 0;
 }
-.banner .content-for-image:before{
+.banner .block-content-copy:before{
 	content:"";
 	background: rgb(165,30,40);
 	display: block;
@@ -70,12 +69,17 @@
 	bottom: -7px;
 	left: 0;
 }
-.banner .content-for-image h1{
+.banner .block-content-copy h1{
 	font-size: 64px;
 	font-weight: 200;
+	padding: 0;
+	color: rgb(255,255,255);
+	margin-bottom: 10px;
 }
-.banner .content-for-image p{
+.banner .block-content-copy p{
 	font-weight: 200;
+	font-size: 20px;
+	color: rgb(255,255,255);
 }
 
 
@@ -103,34 +107,6 @@
 }
 
 
-
-/* ----------------------
-		Text default module
-
-		@Note:
-*/
-.text h1{
-	text-align: center;
-	font-weight: 300;
-	color: rgb(100,100,100);
-	display: table;
-	padding: 10px 10px;
-	margin: 0 auto 30px;
-	border-bottom: 1px solid rgb(225,70,75);
-}
-
-.text blockquote{
-	text-align: center;
-	font-size: 30px;
-	font-weight: 300;
-	width: 60%;
-	margin: 0 auto 10px;
-}
-.text blockquote p{
-	font-size: inherit;
-}
-
-
 /* ----------------------
 		Centered content module
 
@@ -155,6 +131,7 @@
 	margin: 50px 0;
 	padding: 50px 15px;
 	background: rgb(225,70,75);
+	text-align: center;
 }
 .red-section .user-features h2{
 	font-weight: 400;
@@ -174,7 +151,11 @@
 	padding: 0 30px;
 	margin: 0 0 10px;
 }
+.red-section .user-features p{
+	text-align: center;
+}
 .red-section .user-features a{
+	display: inline-block;
 	background: rgba(165,30,40,.75);
 	border-radius: 3px;
 	text-decoration: none;

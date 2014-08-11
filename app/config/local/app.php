@@ -10,10 +10,14 @@ return array(
 	|
 	*/
 
-	'media' => 'media',
+	'dirs' => [
+		'media' => 'media'
+	],
 	'appjs' => 'app.js',
 	'appcss' => 'app.css',
-
+	'media' => [
+		'images' => ['jpg','gif','jpeg','png']
+	],
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode

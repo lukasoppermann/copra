@@ -10,10 +10,14 @@ return array(
 	|
 	*/
 
-	'media' => 'media',
+	'dirs' => [
+		'media' => 'media'
+	],
 	'appjs' => 'app.min.js',
 	'appcss' => 'app.min.css',
-	'apiurl' => 'http://api.formandsystem.com/v1/stream',
+	'media' => [
+		'images' => ['jpg','gif','jpeg','png']
+	],
 
 	/*
 	|--------------------------------------------------------------------------

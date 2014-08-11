@@ -26,25 +26,28 @@
 			foreach($section['content'] as $child)
 			{
 
-				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).
-							' '.App::make('Utilities')->variable($child['class']).' '.$child['type'].'">';
+				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].
+							' '.App::make('Utilities')->variable($child['class']).'">';
 
-				if( $child['type'] == 'text' )
+
+				if( $child['type'] == 'default' )
 				{
-					$output_sections .= Markdown::defaultTransform($child['content']);
+					$output_sections .= block_default($child);
 				}
 
-				elseif( $child['type'] == 'image' )
+				elseif( $child['type'] == 'subsection' )
 				{
-					$output_sections .= "<div class='image'><img src='".asset(Config::get('app.media').'/'.$child['src'])."' alt='".
-						App::make('Utilities')->variable($child['description'],$child['src'])."' /></div>";
+						foreach($child['content'] as $subchild)
+						{
 
-					if(isset($child['content']) && trim($child['content']) != null)
-					{
-						$output_sections .= "<div class='content-for-image'>".Markdown::defaultTransform($child['content'])."</div>";
-					}
+							if( $subchild['type'] == 'default' )
+							{
+								$output_sections .= block_default($subchild);
+							}
 
+						}
 				}
+
 
 				$output_sections .= "</div>";
 
@@ -62,3 +65,39 @@
 
 
 	@stop
+
+
+<? // Functions to render html-content
+
+// default content
+function block_default( $el, $out = "" )
+{
+	// media
+	if( isset($el['media']) )
+	{
+		// file_exists(asset(Config::get('app.media').'/'.$el['src']))
+		foreach( $el['media'] as $m )
+		{
+			// get extension
+			$ext = trim(strrchr($m['src'], '.'),'.');
+			// check for image
+			if( in_array($ext, Config::get('app.media.images')) )
+			{
+				$out .= '<div class="block-content-image">
+					<img src="'.asset(Config::get('app.dirs.media').'/'.$m['src']).'"
+						alt="'.App::make('Utilities')->variable($m['description'],$m['src']).'" />
+				</div>';
+			}
+		}
+	}
+
+	// markdown content
+	if( isset($el['content']) )
+	{
+		$out .= '<div class="block-content-copy">'.Markdown::defaultTransform($el['content']).'</div>';
+	}
+
+	return $out;
+}
+
+?>

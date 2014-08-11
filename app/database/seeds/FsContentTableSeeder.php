@@ -26,10 +26,14 @@ class FsContentTableSeeder extends Seeder {
 				      "class": "section-01",
 				      "content": [
 				          {
-				              "type": "image",
+				              "type": "default",
 				              "column": 12,
-				              "src": "banner.jpg",
-				              "description": "Some optional text",
+				              "media": [
+				                  {
+				                      "src": "banner.jpg",
+				                      "description": "Some optional text"
+				                  }
+				              ],
 				              "content": "# Kliniken in ganz Deutschland.\\nDurch das Copra PMS wird die Arbeite in vielen Kliniken erleichtert.",
 				              "class": "banner js-banner"
 				          }
@@ -40,44 +44,38 @@ class FsContentTableSeeder extends Seeder {
 				      "link": "Vision",
 				      "content": [
 				          {
-				              "type": "text",
+				              "type": "default",
 				              "column": 12,
 				              "content": "#Unsere Vision\\n>Ein einheitliches System für die gesamte Arbeit auf der Station",
 				              "class": "space-bottom-wide"
 				          },
-									{
-											"type": "image",
-											"column": 4,
-											"src": "icon.png"
-									},
-									{
-											"type": "image",
-											"column": 4,
-											"src": "icon.png"
-									},
-									{
-											"type": "image",
-											"column": 4,
-											"src": "icon.png"
-									},
-									{
-											"type": "text",
-											"column": 4,
+				          {
+				              "type": "default",
+				              "column": 4,
+				              "media":[
+												{"src": "icon.png"}
+											],
 											"content": "##Patientenakte\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-											"class": "centered-content"
-									},
-									{
-											"type": "text",
-											"column": 4,
-											"content": "##Geräteübernahme\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-											"class": "centered-content"
-									},
-									{
-											"type": "text",
-											"column": 4,
-											"content": "##Auswertungen\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-											"class": "centered-content"
-									}
+				              "class": "centered-content"
+				          },
+				          {
+				              "type": "default",
+				              "column": 4,
+											"media":[
+												{"src": "icon.png"}
+											],
+				              "content": "##Geräteübernahme\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
+				              "class": "centered-content"
+				          },
+				          {
+				              "type": "default",
+				              "column": 4,
+											"media":[
+												{"src": "icon.png"}
+											],
+				              "content": "##Auswertungen\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
+				              "class": "centered-content"
+				          }
 				      ]
 				  },
 				  {
@@ -85,69 +83,93 @@ class FsContentTableSeeder extends Seeder {
 				      "link": "Anwendungsgebiete",
 				      "content": [
 				          {
-				              "type": "image",
+				              "type": "default",
 				              "column": 3,
-											"src": "doctor.png",
+											"media": [
+												{"src": "doctor.png"}
+											],
 				              "content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
 				          },
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									},
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									},
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									}
+				          {
+				              "type": "default",
+				              "column": 3,
+				              "media": [
+												{"src": "doctor.png"}
+											],
+				              "content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				              "class": "user-features"
+				          },
+				          {
+				              "type": "default",
+				              "column": 3,
+				              "media": [
+												{"src": "doctor.png"}
+											],
+				              "content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				              "class": "user-features"
+				          },
+				          {
+				              "type": "default",
+				              "column": 3,
+											"media": [
+												{"src": "doctor.png"}
+											],
+				              "content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				              "class": "user-features"
+				          }
 				      ]
 				  },
-					{
-							"class": "section-04",
-							"link": "Neuigkeiten",
-							"content": [
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									},
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									},
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									},
-									{
-											"type": "image",
-											"column": 3,
-											"src": "doctor.png",
-											"content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-											"class": "user-features"
-									}
-							]
-					}
+				  {
+				      "class": "section-04",
+				      "link": "Neuigkeiten",
+				      "content": [
+				          {
+				              "type": "subsection",
+				              "column": 8,
+				              "content": [
+				                  {
+				                      "type": "default",
+															"media": [
+				                      	{"src": "doctor.png"}
+															],
+				                      "content": "##Vorteile des Copra Systems\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+				                      "class": "user-features"
+				                  },
+				                  {
+				                      "type": "default",
+				                      "media": [
+																{"src": "doctor.png"}
+															],
+				                      "content": "##Integrationsprozess\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+				                      "class": "user-features"
+				                  }
+				              ]
+				          },
+				          {
+				              "type": "subsection",
+				              "column": 4,
+				              "content": [
+				                  {
+				                      "type": "default",
+															"media": [
+																{"src": "doctor.png"}
+															],
+				                      "content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				                      "class": "user-features"
+				                  },
+				                  {
+				                      "type": "default",
+															"media": [
+																{"src": "doctor.png"}
+															],
+				                      "content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				                      "class": "user-features"
+				                  }
+				              ]
+				          }
+				      ]
+				  }
 				]',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
