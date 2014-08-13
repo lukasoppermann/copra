@@ -26,9 +26,7 @@
 			foreach($section['content'] as $child)
 			{
 
-				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].
-							' '.App::make('Utilities')->variable($child['class']).'">';
-
+				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].'">';
 
 				if( $child['type'] == 'default' )
 				{
@@ -70,8 +68,9 @@
 <? // Functions to render html-content
 
 // default content
-function block_default( $el, $out = "" )
+function block_default( $el )
 {
+	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
 	// media
 	if( isset($el['media']) )
 	{
@@ -97,7 +96,7 @@ function block_default( $el, $out = "" )
 		$out .= '<div class="block-content-copy">'.Markdown::defaultTransform($el['content']).'</div>';
 	}
 
-	return $out;
+	return $out.'</div>';
 }
 
 ?>

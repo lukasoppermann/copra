@@ -131,18 +131,18 @@ class FsContentTableSeeder extends Seeder {
 				                  {
 				                      "type": "default",
 															"media": [
-				                      	{"src": "doctor.png"}
+				                      	{"src": "copra-features-teaser.jpg"}
 															],
 				                      "content": "##Vorteile des Copra Systems\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
-				                      "class": "user-features"
+				                      "class": "teaser-card teaser-card--image-right"
 				                  },
 				                  {
 				                      "type": "default",
 				                      "media": [
-																{"src": "doctor.png"}
+																{"src": "copra-features-teaser.jpg"}
 															],
 				                      "content": "##Integrationsprozess\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
-				                      "class": "user-features"
+				                      "class": "teaser-card"
 				                  }
 				              ]
 				          },
@@ -151,20 +151,8 @@ class FsContentTableSeeder extends Seeder {
 				              "column": 4,
 				              "content": [
 				                  {
-				                      "type": "default",
-															"media": [
-																{"src": "doctor.png"}
-															],
-				                      "content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				                      "class": "user-features"
-				                  },
-				                  {
-				                      "type": "default",
-															"media": [
-																{"src": "doctor.png"}
-															],
-				                      "content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				                      "class": "user-features"
+				                      "type": "posts",
+				                      "class": "news"
 				                  }
 				              ]
 				          }

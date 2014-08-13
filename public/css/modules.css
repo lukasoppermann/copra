@@ -35,3 +35,17 @@
 .block-content-image img{
   display: inline-block;
 }
+/* ----------------------
+    Module: Teaser
+*/
+.teaser-card{
+}
+.teaser-card .block-content-copy{
+  display: inline-block;
+  width: 40%;
+}
+.teaser-card .block-content-image{
+  display: inline-block;
+  overflow: hidden;
+  width: 60%;
+}
