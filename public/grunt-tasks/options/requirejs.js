@@ -12,7 +12,18 @@ module.exports = function(grunt, config) {
 				optimize: 'uglify',
 				// mainConfigFile: config.cwd+config.package.dirs.js+config.package.files["require-opt-config"],
 				useStrict: true,
-				wrap: true
+				wrap: true,
+        findNestedDependencies: true,
+        skipModuleInsertion: true,
+        onModuleBundleComplete: function (data) {
+          var fs = require('fs'),
+          amdclean = require('amdclean'),
+          outputFile = data.path;
+
+          fs.writeFileSync(outputFile, amdclean.clean({
+            'filePath': outputFile
+          }));
+        }
 			}
 		},
 		css: {

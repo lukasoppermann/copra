@@ -32,47 +32,13 @@ module.exports = function(grunt) {
 
 	grunt.initConfig(config);
 
-	var pkg = grunt.file.readJSON('package.json');
 	// Project configuration.
-	// grunt.initConfig({
-	// 	config: {
-	// 		layout: 'layout',
-	// 		images: 'images',
-	// 		css: 'css',
-	// 		js: 'js',
-	// 		mainjs: 'main.js',
-	// 		bower_path: 'bower_components'
-	// 	},
-	//
-	// 	// ----------------------------------------------
-	// 	// requirejs
-	// 	//
-	// 	requirejs: {
-	// 		js: {
-	// 			options: {
-	// 				baseUrl: "<%= config.js %>/<%=bower_path%>",
-	// 				// out: "<%=config.js%>/application"+calculateMD5String("<%=config.js%>/<%= config.mainjs %>")+'.min.js',
-	// 				out: "<%=config.js%>/application.js",
-	// 				name: 'main',
-	// 				optimize: 'uglify',
-	// 				mainConfigFile: '<%= config.js %>/<%= config.mainjs %>',
-	// 				useStrict: true,
-	// 				wrap: true
-	// 			}
-	// 		},
-	// 		css: {
-	// 			options: {
-	// 				optimizeCss: 'standard',
-	// 				cssIn: '<%= config.css %>/app.css',
-	// 				out: '<%= config.css %>/app.min.css'
-	// 			}
-	// 		}
-	// 	},
-	// });
+	var pkg = grunt.file.readJSON('package.json');
 
-	// Default task.
-	grunt.registerTask('default', ['svgstore']);
-	// Build task.
-	grunt.registerTask('build', ['autoprefixer', 'concat', 'uglify', 'cssmin']);
+	// Tasks
+	for( task in pkg.tasks )
+	{
+		grunt.registerTask(task, pkg.tasks[task]);
+	}
 
 };

@@ -20,17 +20,23 @@
     "require-css-main": "app.css",
     "require-css-out": "app.min.css"
   },
-  "require-paths":{
-      "jquery": "jquery/dist/jquery"
+  "require-paths": {
+    "jquery": "jquery/dist/jquery"
   },
   "load-tasks-pattern": [
     "grunt-*",
-    "rjs.js"
+    "rjs.js",
+    "amdclean.js"
   ],
+  "tasks": {
+    "default" : ["svgstore"],
+    "build": [""]
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
   "devDependencies": {
+    "amdclean": "^2.2.4",
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.7.3",
     "grunt-contrib-concat": "~0.3.0",
