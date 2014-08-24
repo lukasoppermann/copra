@@ -16,16 +16,15 @@ class CreateContentTable extends Migration {
 			// storage engine
 			$table->engine = 'MyISAM';
 			// fields
-			$table->increments('id');
-			$table->smallInteger('menu_id');
-			$table->integer('article_id');
+			$table->increments('id','true');
+			$table->integer('article_id')->nullable();
 			$table->string('menu_label')->nullable();
 			$table->string('link')->index()->nullable();
 			$table->boolean('status')->nullable();
-			$table->string('language', 2);
-			$table->smallInteger('type');
-			$table->string('title')->nullable();
-			$table->text('data')->nullable();
+			$table->string('language', 2)->nullable();
+			$table->smallInteger('type')->nullable();
+			$table->longtext('data')->nullable();
+			$table->text('tags')->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 		});

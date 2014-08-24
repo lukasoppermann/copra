@@ -103,4 +103,16 @@ require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 				},10);
 			}
 		});
+
+		// ---------------------------
+		// Image to element height
+		//
+		$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
+		var f;
+		$(window).on('resize', function(){
+			window.clearTimeout(f);
+			f = window.setTimeout(function(){
+				$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
+			},100);
+		});
 })

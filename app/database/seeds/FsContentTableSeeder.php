@@ -56,7 +56,7 @@ class FsContentTableSeeder extends Seeder {
 												{"src": "icon.png"}
 											],
 											"content": "##Patientenakte\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-				              "class": "centered-content"
+				              "class": "centered-content padded-column"
 				          },
 				          {
 				              "type": "default",
@@ -65,7 +65,7 @@ class FsContentTableSeeder extends Seeder {
 												{"src": "icon.png"}
 											],
 				              "content": "##Geräteübernahme\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-				              "class": "centered-content"
+				              "class": "centered-content padded-column"
 				          },
 				          {
 				              "type": "default",
@@ -74,7 +74,7 @@ class FsContentTableSeeder extends Seeder {
 												{"src": "icon.png"}
 											],
 				              "content": "##Auswertungen\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
-				              "class": "centered-content"
+				              "class": "centered-content padded-column"
 				          }
 				      ]
 				  },
@@ -121,12 +121,12 @@ class FsContentTableSeeder extends Seeder {
 				      ]
 				  },
 				  {
-				      "class": "section-04",
+				      "class": "section-04 section--gray",
 				      "link": "Neuigkeiten",
 				      "content": [
 				          {
 				              "type": "subsection",
-				              "column": 8,
+				              "column": 7,
 				              "content": [
 				                  {
 				                      "type": "default",
@@ -148,7 +148,7 @@ class FsContentTableSeeder extends Seeder {
 				          },
 				          {
 				              "type": "subsection",
-				              "column": 4,
+				              "column": 5,
 				              "content": [
 				                  {
 				                      "type": "posts",
@@ -186,7 +186,112 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '[{"class":"","resizeitems":".resizable","column":"12","children":[{"editorid":"0"}]},{"content":[{"column":"12","type":"text","editorid":"1","content":"# Yes"}]}]',
+				'data' => '{
+				"1":{
+							"class": "section-01",
+							"content": [
+									{
+											"type": "default",
+											"column": 12,
+											"media": [
+													{
+															"src": "banner.jpg",
+															"description": "Some optional text"
+													}
+											],
+											"content": "# Wir arbeiten an der Zukunft\\nCopra entickelt das PMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+											"class": "banner js-banner"
+									}
+							]
+					},
+				"2":{
+					"link": "Firmenwerte",
+					"content": [
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Stark individualisierbar\\nJeder Kunde baut sein eigenes COPRA wenn er will",
+								"class": "centered-content padded-column"
+						},
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Customer driven\\nStandardfunktionen werden mit dem Kunden entwickelt, Kooperation mit Unikliniken, agile Entwicklung, heißt interaktive Entwicklung der Funktionen nah am Kunden",
+								"class": "centered-content padded-column"
+						},
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Connect any device\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+								"class": "centered-content padded-column"
+						},
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Offenlegung vieler Daten\\nSkripting-Schnittstellen",
+								"class": "centered-content padded-column"
+						},
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Geförderter Kundenaustausch\\nAnwendertage",
+								"class": "centered-content padded-column"
+						},
+						{
+								"type": "default",
+								"column": 4,
+								"media":[
+									{"src": "icon.png"}
+								],
+								"content": "##Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
+								"class": "centered-content padded-column"
+						}
+				]},
+				"3":{
+					"class": "section--gray",
+					"link": "Firmengeschichte",
+					"content": [{
+						"type": "default",
+						"column": 12,
+						"media":[
+							{"src": "icon.png"}
+						],
+						"content": "##Zeitstrahl\\ngegründet in 1993 • Entwicklung des Produkts in enger Zusammenarbeit mit den Anwendern • (COPRA5-Meilensteine) • Umstellung auf .NET und C# • (Kunde XYZ rollt COPRA aus) • Stand heute",
+						"class": "centered-content padded-column"
+					}]
+				},
+				"4":{
+					"link": "Über die Firma",
+					"content": [{
+						"type": "default",
+						"column": 6,
+						"media":[
+							{"src": "copra-features-teaser.jpg"}
+						]
+					},
+					{
+						"type":"default",
+						"column": 6,
+						"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
+					}
+					]
+				}
+				}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '2014-07-28 12:26:06',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -228,6 +333,48 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			6 =>
+			array (
+				'id' => 8,
+				'article_id' => 8,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			7 =>
+			array (
+				'id' => 9,
+				'article_id' => 9,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			8 =>
+			array (
+				'id' => 10,
+				'article_id' => 10,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
 				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',

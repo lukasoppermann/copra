@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('FsContentTableSeeder');
 		$this->call('FsNavigationTableSeeder');
+		$this->call('FsPostsTableSeeder');
 	}
 
 }
