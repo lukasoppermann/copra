@@ -14,5 +14,5 @@ module.exports = function(grunt, config) {
 				dest: config.cwd+config.package.dirs.media, // Destination path prefix
 			}]
 		}
-	}
-}
+	};
+};

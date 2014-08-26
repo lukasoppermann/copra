@@ -4,7 +4,7 @@ var support = {
 	svg: function(){
 		return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
 	}
-}
+};
 
 require.config({
 	baseUrl: "/copra/public/js/bower_components",
@@ -55,8 +55,7 @@ require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 		};
 		positionSectionMenu();
 
-		var f;
-		$(window).on('resize', function(){
+		$(window).on('resize', function(f){
 			window.clearTimeout(f);
 			f = window.setTimeout(function(){
 				positionSectionMenu();
@@ -95,7 +94,7 @@ require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 		// Scroll state
 		//
 		$(window).on('scroll', function(f){
-			if($('.js-banner') != undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
 				clearTimeout(f);
 				f = setTimeout(function(){
 					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
@@ -108,11 +107,10 @@ require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
 		// Image to element height
 		//
 		$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
-		var f;
-		$(window).on('resize', function(){
+		$(window).on('resize', function(f){
 			window.clearTimeout(f);
 			f = window.setTimeout(function(){
 				$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
 			},100);
 		});
-})
+});

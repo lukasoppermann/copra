@@ -28,22 +28,25 @@
 
 				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].'">';
 
-				if( $child['type'] == 'default' )
+				if( $child['type'] == 'subsection' )
 				{
-					$output_sections .= block_default($child);
+					foreach($child['content'] as $subchild)
+					{
+
+						if( function_exists( 'block_'.$subchild['type'] ) )
+						{
+							$output_sections .= call_user_func_array('block_'.$subchild['type'], array($subchild));
+						}
+
+					}
 				}
 
-				elseif( $child['type'] == 'subsection' )
+				else
 				{
-						foreach($child['content'] as $subchild)
-						{
-
-							if( $subchild['type'] == 'default' )
-							{
-								$output_sections .= block_default($subchild);
-							}
-
-						}
+					if( function_exists( 'block_'.$child['type'] ) )
+					{
+						$output_sections .= call_user_func_array('block_'.$child['type'], array($child));
+					}
 				}
 
 
@@ -95,6 +98,18 @@ function block_default( $el )
 	{
 		$out .= '<div class="block-content-copy">'.Markdown::defaultTransform($el['content']).'</div>';
 	}
+
+	return $out.'</div>';
+}
+
+// posts block
+function block_posts( $el )
+{
+	// get posts
+
+
+	// build view
+	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">'.$el['stream'];
 
 	return $out.'</div>';
 }

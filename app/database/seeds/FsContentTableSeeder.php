@@ -152,7 +152,8 @@ class FsContentTableSeeder extends Seeder {
 				              "content": [
 				                  {
 				                      "type": "posts",
-				                      "class": "news"
+				                      "class": "news",
+															"stream": "news"
 				                  }
 				              ]
 				          }

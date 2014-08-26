@@ -8,9 +8,10 @@ module.exports = function(grunt, config) {
 		},
 		css_files: {
 			src: config.cwd+config.package.dirs.css+'/*.css'
-		},
-		js_css: {
-			src: config.cwd+config.package.dirs.js+'/**/**/*.css'
 		}
-  }
-}
+    //,
+		// js_css: {
+		// 	src: config.cwd+config.package.dirs.js+'/**/**/*.css'
+		// }
+  };
+};

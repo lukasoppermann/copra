@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 	var pkg = grunt.file.readJSON('package.json');
 
 	// Tasks
-	for( task in pkg.tasks )
+	for( var task in pkg.tasks )
 	{
 		grunt.registerTask(task, pkg.tasks[task]);
 	}

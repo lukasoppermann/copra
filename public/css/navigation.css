@@ -7,6 +7,7 @@
 	position: fixed;
 	z-index: 999;
 	top: 0;
+	-webkit-transition: background .75s ease .0s;
 	transition: background .75s ease .0s;
 }
 .main-navigation.is-scrolled{
@@ -14,6 +15,7 @@
 }
 .main-navigation.shadow-inside-bend:after{
 	opacity: 0;
+	-webkit-transition: opacity .75s ease .0s;
 	transition: opacity .75s ease .0s;
 }
 .main-navigation.shadow-inside-bend.is-scrolled:after{

@@ -19,5 +19,5 @@ module.exports = function(grunt, config) {
 				'<%=cwd+package.dirs.layout%>svg-sprite.svg': ['<%=cwd+package.dirs.devlayout%>icons/*.svg'],
 			}
 		}
-  }
-}
+  };
+};

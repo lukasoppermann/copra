@@ -33,5 +33,5 @@ module.exports = function(grunt, config) {
 				out: config.cwd+config.package.dirs.css+config.package.files["require-css-out"]
 			}
 		}
-  }
-}
+  };
+};

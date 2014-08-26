@@ -29,8 +29,18 @@
     "amdclean.js"
   ],
   "tasks": {
-    "default" : ["svgstore"],
-    "build": [""]
+    "default": [
+      "svgstore",
+      "autoprefixer",
+      "imagemin",
+      "jshint:all",
+      "csslint"
+    ],
+    "build": [
+      "default",
+      "jshint:files",
+      "requirejs"
+    ]
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -41,10 +51,12 @@
     "grunt-autoprefixer": "~0.7.3",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-imagemin": "~0.7.0",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-uglify": "~0.2.7",
+    "grunt-release-branch": "^0.2.0",
     "grunt-replace": ">=0.7.8",
     "grunt-shell": "^0.7.0",
     "grunt-svgstore": ">0.2.6",
