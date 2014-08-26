@@ -37,10 +37,11 @@
       "csslint"
     ],
     "build": [
-      "releaseBranchPre:releaseBranchOptions",
+      "releaseBranchPre",
       "default",
       "jshint:files",
-      "requirejs"
+      "requirejs",
+      "releaseBranch"
     ]
   },
   "engines": {

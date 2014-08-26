@@ -16,7 +16,7 @@ module.exports = function(grunt, config) {
       commit: true,
       //should the orphan branch be pushed to the remote repository
       //default is false
-      push: false,
+      push: true,
       //should the branch be an orphan branch
       //default is false
       orphan: true,
