@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["requirejs-domready/domReady!", "jquery"], function(doc, $){
+require(["jquery"], function(){
 
 	// ---------------------------
 	// Navigation Highlight
