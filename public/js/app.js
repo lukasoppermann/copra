@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["jquery"], function(doc, $){
+require(["jquery"], function(){
 
 	// ---------------------------
 	// Navigation Highlight
