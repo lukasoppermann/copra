@@ -1,3 +1,37 @@
+
 .space-bottom-wide{
   margin-bottom: 100px;
+}
+.spacing-bottom{
+  margin-bottom: 50px;
+}
+
+/* ----------------------
+    separators
+
+    @Note:
+*/
+[class^=separator]{
+
+}
+
+.separator--dot{
+  padding: 0 10px;
+}
+
+/* ----------------------
+    separators
+
+    @Note:
+*/
+[class^=link]{
+  text-decoration: underline;
+}
+[class^=link]:hover{
+  text-decoration: none;
+}
+
+.link--quiet{
+  color: rgb(150,150,150);
+
 }
