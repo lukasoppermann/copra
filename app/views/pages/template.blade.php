@@ -135,7 +135,7 @@ function block_posts_preview( $el )
 	//
 	// 		$out.= "<div class='post-preview'>".$text."</div>";
 	// 	}
-	}
+	// }
 
 	return $out.'</div>';
 }
