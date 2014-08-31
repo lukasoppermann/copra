@@ -107,35 +107,34 @@ function block_posts_preview( $el )
 {
 	// get posts
 	$posts = Api::get('.json?stream='.$el['stream'].'&lang='.Config::get('app.locale'));
-	echo"<pre>";print_r($posts);echo"<pre>";
 
 	// build view
 	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
 
-	// if( !isset($el['mode']) || $el['mode'] == 'default' )
-	// {
-	//
-	// }
-	// elseif( $el['mode'] == 'preview' )
-	// {
-	// 	foreach($posts as $p)
-	// 	{
-	// 		$text = null;
-	//
-	// 		foreach( $p['data'] as $content )
-	// 		{
-	// 			foreach( $content['content'] as $c )
-	// 			{
-	// 				if($c['type'] == 'default'){
-	// 					$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
-	// 					break;
-	// 				}
-	// 			}
-	// 		}
-	//
-	// 		$out.= "<div class='post-preview'>".$text."</div>";
-	// 	}
-	// }
+	if( !isset($el['mode']) || $el['mode'] == 'default' )
+	{
+
+	}
+	elseif( $el['mode'] == 'preview' )
+	{
+		foreach($posts as $p)
+		{
+			$text = null;
+
+			foreach( $p['data'] as $content )
+			{
+				foreach( $content['content'] as $c )
+				{
+					if($c['type'] == 'default'){
+						$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+						break;
+					}
+				}
+			}
+
+			$out.= "<div class='post-preview'>".$text."</div>";
+		}
+	}
 
 	return $out.'</div>';
 }
