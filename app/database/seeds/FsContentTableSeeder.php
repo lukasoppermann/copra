@@ -151,9 +151,10 @@ class FsContentTableSeeder extends Seeder {
 				              "column": 5,
 				              "content": [
 				                  {
-				                      "type": "posts",
+				                      "type": "posts_preview",
 				                      "class": "news",
-															"stream": "news"
+															"stream": "news",
+															"mode": "preview"
 				                  }
 				              ]
 				          }
@@ -306,7 +307,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown\\nAnd a _little_ **Markdown**","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown\\nAnd a _little_ **Markdown**","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -320,7 +321,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -334,7 +335,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -348,7 +349,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag eins\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -362,7 +363,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -376,7 +377,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "text","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',

@@ -3,7 +3,7 @@
 	@section('content')
 
 	<?
-	use \Michelf\Markdown;
+	use \Michelf\MarkdownExtra;
 
 	$output_sections = "";
 	$output_sections_menu = "";
@@ -96,22 +96,59 @@ function block_default( $el )
 	// markdown content
 	if( isset($el['content']) )
 	{
-		$out .= '<div class="block-content-copy">'.Markdown::defaultTransform($el['content']).'</div>';
+		$out .= '<div class="block-content-copy">'.MarkdownExtra::defaultTransform($el['content']).'</div>';
 	}
 
 	return $out.'</div>';
 }
 
 // posts block
-function block_posts( $el )
+function block_posts_preview( $el )
 {
 	// get posts
-
+	$posts = Api::get('.json?stream='.$el['stream'].'&lang='.Config::get('app.locale'));
 
 	// build view
-	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">'.$el['stream'];
+	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
+
+	if( !isset($el['mode']) || $el['mode'] == 'default' )
+	{
+
+	}
+	elseif( $el['mode'] == 'preview' )
+	{
+		foreach($posts as $p)
+		{
+			$text = null;
+
+			foreach( $p['data'] as $content )
+			{
+				foreach( $content['content'] as $c )
+				{
+					if($c['type'] == 'default'){
+						$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+						break;
+					}
+				}
+			}
+
+			$out.= "<div class='post-preview'>".$text."</div>";
+		}
+	}
 
 	return $out.'</div>';
+}
+
+// change headlien in markdown
+function shiftHeaders($text,$level = 1)
+{
+	return preg_replace_callback(
+		"!(</?h)([1-6])(>|\\s)!i",
+		function ($treffer) use($level)
+		{
+			return $treffer[2]+$level >=6 ? $treffer[1]."6".$treffer[3]: $treffer[1].($treffer[2]+$level).$treffer[3];
+		},
+		$text);
 }
 
 ?>

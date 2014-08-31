@@ -29,7 +29,6 @@ $env = $app->detectEnvironment(array(
 	'local' => array('lukass-mbp.fritz.box','Lukass-MacBook-Pro.local')
 
 ));
-
 /*
 |--------------------------------------------------------------------------
 | Bind Paths
