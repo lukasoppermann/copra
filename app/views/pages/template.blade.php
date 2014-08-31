@@ -18,7 +18,7 @@
 			$section_link_data = "id='$section_link' name='$section_link' ";
 		}
 
-		$output_sections .= "<div ".$section_link_data."class='section grid no-pseudo ".App::make('Utilities')->variable($section['class'],"")."'>";
+		$output_sections .= "<div ".$section_link_data."class='section ".App::make('Utilities')->variable($section['class'],"")."'><div class='inner-section grid no-pseudo'>";
 
 		if( isset($section['content']) )
 		{
@@ -55,7 +55,7 @@
 			}
 		}
 
-		$output_sections .= "</div>";
+		$output_sections .= "</div></div>";
 
 	}
 

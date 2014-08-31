@@ -22,6 +22,7 @@
 		@yield('content','')
 	</div>
 
+@include('partials.footer')
 
 	<script data-main='{{asset("/js/".Config::get('app.appjs'))}}' src="{{asset('/js/bower_components/requirejs/require.js')}}"></script>
 

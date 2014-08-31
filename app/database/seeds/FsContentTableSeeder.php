@@ -208,6 +208,7 @@ class FsContentTableSeeder extends Seeder {
 					},
 				"2":{
 					"link": "Firmenwerte",
+					"class": "spacing-bottom",
 					"content": [
 						{
 								"type": "default",
@@ -265,17 +266,14 @@ class FsContentTableSeeder extends Seeder {
 						}
 				]},
 				"3":{
-					"class": "section--gray",
+					"class": "section spacing-bottom",
 					"link": "Firmengeschichte",
 					"content": [{
 						"type": "default",
 						"column": 12,
 						"media":[
-							{"src": "icon.png"}
-						],
-						"content": "##Zeitstrahl\\ngegründet in 1993 • Entwicklung des Produkts in enger Zusammenarbeit mit den Anwendern • (COPRA5-Meilensteine) • Umstellung auf .NET und C# • (Kunde XYZ rollt COPRA aus) • Stand heute",
-						"class": "centered-content padded-column"
-					}]
+							{"src": "timeline.png"}
+						]}]
 				},
 				"4":{
 					"link": "Über die Firma",
@@ -288,6 +286,7 @@ class FsContentTableSeeder extends Seeder {
 					},
 					{
 						"type":"default",
+						"class":"padded-column",
 						"column": 6,
 						"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
 					}
