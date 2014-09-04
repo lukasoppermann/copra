@@ -106,7 +106,7 @@ function block_default( $el )
 function block_posts_preview( $el )
 {
 	// get posts
-	$posts = Api::get('.json?stream='.$el['stream'].'&lang='.Config::get('app.locale'));
+	$posts = Api::get('streams/'.$el['stream'].'?language='.Config::get('app.locale'));
 
 	// build view
 	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';

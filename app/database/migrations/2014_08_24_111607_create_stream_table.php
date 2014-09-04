@@ -3,21 +3,22 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration {
+class CreateStreamTable extends Migration {
 
 	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
+	* Run the migrations.
+	*
+	* @return void
+	*/
 	public function up()
 	{
-		Schema::create('fs_posts', function(Blueprint $table)
+		Schema::create('fs_stream', function(Blueprint $table)
 		{
 			// storage engine
 			$table->engine = 'MyISAM';
 			// fields
 			$table->increments('id',true);
+			$table->integer('parent_id')->nullable()->default(NULL);
 			$table->integer('article_id');
 			$table->string('stream',255);
 			$table->integer('position');
@@ -25,13 +26,13 @@ class CreatePostsTable extends Migration {
 	}
 
 	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
+	* Reverse the migrations.
+	*
+	* @return void
+	*/
 	public function down()
 	{
-		Schema::drop('fs_posts');
+		Schema::drop('fs_stream');
 	}
 
 }

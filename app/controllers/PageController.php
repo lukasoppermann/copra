@@ -6,7 +6,7 @@ class PageController extends BaseController {
 
 	public function index($path)
 	{
-		$api = Api::get('.json?path='.$path.'&lang='.Config::get('app.locale'));
+		$api = Api::get('pages/'.str_replace('/','.',$path).'?language='.Config::get('app.locale'));
 
 		if( isset($api) && isset($api['data']))
 		{
@@ -14,7 +14,7 @@ class PageController extends BaseController {
 		}
 		else
 		{
-			return "Error";
+			return "Error from Controller (by fs)";
 		}
 	}
 

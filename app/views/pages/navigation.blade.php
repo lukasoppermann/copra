@@ -1,35 +1,25 @@
 <?php
-function loop( $nav, $lang, $parent = "", $result = "" )
+function loop( $nav, $parent = "", $result = "" )
 {
 	foreach ($nav as $item)
 	{
-		if( isset($item['content']) && array_key_exists(Config::get('app.locale'), $item['content']) )
-		{
 
-			// get item and url
-			$itemContent = $item['content'][Config::get('app.locale')];
+		$result .= '<li class="'.
+			( trim($item['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
+			( strpos(Request::path(), trim($item['link'], '/')) !== false ? ' is-active js-is-active' : '').
+			'">
 
+			<a rel="dns-prefetch" data-id="'.$item['id'].'" href="'.url($item['link']).'">
+					'.$item['menu_label'].'
+			</a>';
 
-			$result .= '<li class="'.
-				( trim($itemContent['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
-				( strpos(Request::path(), trim($itemContent['link'], '/')) !== false ? ' is-active js-is-active' : '').
-				'">
-
-				<a rel="dns-prefetch" data-id="'.$itemContent['id'].'" href="'.url($itemContent['link']).'">
-						'.$itemContent['menu_label'].'
-				</a>';
-
-				// loop through children if they exist
-				if ( isset($item['children']) && is_array($item['children']) ){
-					$result .= loop($item['children'], $lang, $itemContent);
-				}
+			// loop through children if they exist
+			if ( isset($item['children']) && is_array($item['children']) ){
+				$result .= loop($item['children'], $item);
+			}
 
 
-			$result .= '</li>';
-
-			// reset item
-			$itemContent = null;
-		}
+		$result .= '</li>';
 	}
 	if($result != ""){
 		return "<ul>".$result."</ul>";
@@ -96,9 +86,9 @@ function loop( $nav, $lang, $parent = "", $result = "" )
 
 			<div class="logo-shadow"></div>
 		</a>
-
 		<div class="main-navigation-list">
-			<?=loop(Api::get('navigation.json'), 'en'); ?>
+			<?=loop(Api::get('streams/navigation?nested=true&limit=100&language='.Config::get('app.locale')));
+			?>
 		</div>
 
 	</div>
