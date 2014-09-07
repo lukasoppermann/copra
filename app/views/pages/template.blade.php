@@ -103,40 +103,59 @@ function block_default( $el )
 }
 
 // posts block
-function block_posts_preview( $el )
+function block_stream( $el )
 {
-	// get posts
-	$posts = Api::get('streams/'.$el['stream'].'?language='.Config::get('app.locale'));
-
-	// build view
-	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
-
-	if( !isset($el['mode']) || $el['mode'] == 'default' )
+	if( isset($el['stream']) )
 	{
+		// get posts
+		$stream = Api::get('streams/'.$el['stream'].'?language='.Config::get('app.locale'));
 
-	}
-	elseif( $el['mode'] == 'preview' )
-	{
-		foreach($posts as $p)
+		// build view
+		$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
+
+		if( !isset($el['mode']) || $el['mode'] == 'default' )
 		{
-			$text = null;
-
-			foreach( $p['data'] as $content )
+			foreach($stream as $p)
 			{
-				foreach( $content['content'] as $c )
+				$text = null;
+
+				foreach( $p['data'] as $content )
 				{
-					if($c['type'] == 'default'){
-						$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
-						break;
+					foreach( $content['content'] as $c )
+					{
+						if($c['type'] == 'default'){
+							$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+							break;
+						}
 					}
 				}
+
+				$out.= "<div class='post-preview'>".$text."</div>";
 			}
-
-			$out.= "<div class='post-preview'>".$text."</div>";
 		}
-	}
+		elseif( $el['mode'] == 'preview' )
+		{
+			foreach($stream as $p)
+			{
+				$text = null;
 
-	return $out.'</div>';
+				foreach( $p['data'] as $content )
+				{
+					foreach( $content['content'] as $c )
+					{
+						if($c['type'] == 'default'){
+							$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+							break;
+						}
+					}
+				}
+
+				$out.= "<div class='post-preview'>".$text."</div>";
+			}
+		}
+
+		return $out.'</div>';
+	}
 }
 
 // change headlien in markdown

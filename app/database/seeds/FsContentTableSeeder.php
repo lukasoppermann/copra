@@ -151,7 +151,7 @@ class FsContentTableSeeder extends Seeder {
 				              "column": 5,
 				              "content": [
 				                  {
-				                      "type": "posts_preview",
+				                      "type": "stream",
 				                      "class": "news",
 															"stream": "news",
 															"mode": "preview"
@@ -306,7 +306,35 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown\\nAnd a _little_ **Markdown**","class": "optional-classes"}}}}',
+				'data' => '{
+					"1":{
+						"class": "section-01",
+						"content": [
+							{
+								"type": "default",
+								"column": 12,
+								"media": [
+									{
+										"src": "banner.jpg",
+										"description": "Some optional text"
+									}
+								],
+								"content": "#Universitätsklinikum Braunschweig\\nCase Study zum Integrationsprozess des Copra PMS. [Case Study ](refrenzen/universitaetsklinikum-braunschweig)",
+								"class": "banner js-banner"
+							}
+						]
+					},
+					"2":{
+						"class":"section-02",
+						"content":[
+							{
+								"type": "stream",
+								"column": 12,
+								"stream": "references"
+							}
+						]
+					}
+				}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -320,7 +348,25 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 1,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{
+					"1":{
+								"class": "section-01",
+								"content": [
+										{
+												"type": "default",
+												"column": 12,
+												"media": [
+														{
+																"src": "banner.jpg",
+																"description": "Some optional text"
+														}
+												],
+												"content": "#Wir arbeiten an der Zukunft\\nCopra entickelt das PMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+												"class": "banner js-banner"
+										}
+								]
+						},
+					"2":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -371,6 +417,50 @@ class FsContentTableSeeder extends Seeder {
 			array (
 				'id' => 10,
 				'article_id' => 10,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			9 =>
+			array (
+				'id' => 11,
+				'article_id' => 11,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
+				'data' => '{
+					{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},
+					{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			10 =>
+			array (
+				'id' => 12,
+				'article_id' => 12,
+				'menu_label' => '',
+				'link' => '',
+				'status' => 1,
+				'language' => 'de',
+				'type' => 2,
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'created_at' => '0000-00-00 00:00:00',
+				'updated_at' => '0000-00-00 00:00:00',
+				'deleted_at' => '0000-00-00 00:00:00',
+			),
+			11 =>
+			array (
+				'id' => 13,
+				'article_id' => 13,
 				'menu_label' => '',
 				'link' => '',
 				'status' => 1,
