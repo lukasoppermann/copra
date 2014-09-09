@@ -153,9 +153,35 @@ function block_stream( $el )
 				$out.= "<div class='post-preview'>".$text."</div>";
 			}
 		}
+		// cards
+		elseif( $el['mode'] == 'card' )
+		{
+			foreach($stream as $card)
+			{
+				$sides = array_values(array_slice($card['data'],0,2));
+
+				foreach( $sides as $side)
+				{
+					// echo"<pre>";print_r($side['content']);echo"<pre>";
+					foreach( $side['content'] as $item )
+					{
+						$out.= "<div class='card-front ".App::make('Utilities')->variable($item['class'],"").">".
+										call_user_func_array('block_'.$item['type'], array($item))."</div>";
+					}
+				}
+			}
+		}
 
 		return $out.'</div>';
 	}
+}
+// block table
+function block_table( $el )
+{
+	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
+	// table
+	echo HTML::table($el['content']);
+	return $out.'</div>';
 }
 
 // change headlien in markdown

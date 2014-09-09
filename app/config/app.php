@@ -140,6 +140,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Formandsystem\Api\ApiServiceProvider',
 		'Formandsystem\Utilities\UtilitiesServiceProvider',
+		'Libraries\Extensions\Html\HtmlServiceProvider'
 		//'Orangehill\Iseed\IseedServiceProvider' // delete when publishing
 	),
 

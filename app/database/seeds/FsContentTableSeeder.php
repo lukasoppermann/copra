@@ -330,7 +330,8 @@ class FsContentTableSeeder extends Seeder {
 							{
 								"type": "stream",
 								"column": 12,
-								"stream": "references"
+								"stream": "references",
+								"mode": "card"
 							}
 						]
 					}
@@ -436,9 +437,36 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{
-					{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},
-					{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '[
+					{
+						"class":"card-frontside",
+						"content":[
+							{
+								"type": "default",
+								"column": 2,
+								"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+								"class": "optional-classes",
+								"src": "imagefile.png"
+							}
+						]
+					},
+					{
+						"class":"card-backside",
+						"content":[
+							{
+								"type": "default",
+								"content": "#Universitätskilinkum Hamburg\\nseit Januar 2004"
+							},
+							{
+								"type": "table",
+								"content": [
+									["Fachbereiche","Intensivstation, Zentrale Arbeitsplätze, IMC", "tet"],
+									["Arbeitsplätze Gesamt", "38 Arbeitsplätze"]
+								]
+							}
+						]
+					}
+				]',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -452,7 +480,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -466,7 +494,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',

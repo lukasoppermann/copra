@@ -26,10 +26,10 @@
 		"classmap": [
 			"app/commands",
 			"app/controllers",
-			"app/lib",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/tests/TestCase.php"
+			"app/tests/TestCase.php",
+			"app/Libraries"
 		]
 	},
 	"scripts": {
