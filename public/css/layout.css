@@ -268,3 +268,12 @@
 	padding: 25px;
 	border-left: 4px solid rgb(225,70,7);
 }
+
+/* ----------------------
+		Module: Cards
+*/
+.news .post-preview{
+	margin-left: 40px;
+	padding: 25px;
+	border-left: 4px solid rgb(225,70,7);
+}

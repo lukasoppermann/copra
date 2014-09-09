@@ -458,11 +458,11 @@ class FsContentTableSeeder extends Seeder {
 								"content": "#Universitätskilinkum Hamburg\\nseit Januar 2004"
 							},
 							{
-								"type": "table",
-								"content": [
-									["Fachbereiche","Intensivstation, Zentrale Arbeitsplätze, IMC", "tet"],
-									["Arbeitsplätze Gesamt", "38 Arbeitsplätze"]
-								]
+								"type": "definitions",
+								"content": {
+									"Fachbereiche": "Intensivstation, Zentrale Arbeitsplätze, IMC",
+									"Arbeitsplätze Gesamt": "38 Arbeitsplätze"
+								}
 							}
 						]
 					}

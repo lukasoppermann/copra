@@ -160,15 +160,19 @@ function block_stream( $el )
 			{
 				$sides = array_values(array_slice($card['data'],0,2));
 
+				$out .= '<div class="card column-4">';
+				$sideClass = 'card-front';
 				foreach( $sides as $side)
 				{
-					// echo"<pre>";print_r($side['content']);echo"<pre>";
+					$out .= '<div class="'.$sideClass.'">';
 					foreach( $side['content'] as $item )
 					{
-						$out.= "<div class='card-front ".App::make('Utilities')->variable($item['class'],"").">".
-										call_user_func_array('block_'.$item['type'], array($item))."</div>";
+						$out.= call_user_func_array('block_'.$item['type'], array($item));
 					}
+					$out .= '</div>';
+					$sideClass = 'card-back';
 				}
+				$out .= '</div>';
 			}
 		}
 
@@ -182,6 +186,19 @@ function block_table( $el )
 	// table
 	echo HTML::table($el['content']);
 	return $out.'</div>';
+}
+
+// block table
+function block_definitions( $el )
+{
+	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'"><dl>';
+	// definition
+	foreach($el['content'] as $term => $def)
+	{
+		$out .='<dt>'.$term.'</dt><dd>'.$def.'</dd>';
+	}
+
+	return $out.'</dl></div>';
 }
 
 // change headlien in markdown
