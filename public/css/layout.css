@@ -291,8 +291,8 @@
 	transform: translate(0,-50%) scale(0.9);
 	background-color: rgb(225,70,75);
 	border-radius: 3px;
-	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
-	transition: opacity .5s ease, transform .5s ease;
+	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s;
+	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s;
 }
 .card.js-active .card-back{
 	opacity: 1;
@@ -300,8 +300,8 @@
 	-webkit-transform: translate(0,-50%) scale(1, 1);
 	-ms-transform: translate(0,-50%) scale(1, 1);
 	transform: translate(0,-50%) scale(1, 1);
-	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s;
-	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s;
+	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease 0s;
+	transition: opacity .5s ease, transform .5s ease, z-index 0 ease 0s;
 }
 .card .close{
 	cursor: pointer;
