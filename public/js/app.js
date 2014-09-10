@@ -76,13 +76,17 @@ require(["jquery"], function(){
 
 		});
 
+		function scrollTop(){
+			return (document.documentElement && document.documentElement.scrollTop || document && document.scrollTop  || document.body && document.body.scrollTop  || 0);
+		}
+
 		// ---------------------------
 		// Scroll state
 		//
 		$(window).on('scroll', function(f){
 			clearTimeout(f);
 			f = setTimeout(function(){
-				if((document && document.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
+				if( scrollTop() > 100 ){
 					$(".main-navigation").addClass('is-scrolled');
 				}else{
 					$(".main-navigation").removeClass('is-scrolled');
@@ -94,10 +98,10 @@ require(["jquery"], function(){
 		// Scroll state
 		//
 		$(window).on('scroll', function(f){
-			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+			if($('.js-banner') !== undefined && scrollTop() < 500){
 				clearTimeout(f);
 				f = setTimeout(function(){
-					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+					$('.js-banner img').css('top',-parseInt((scrollTop()/100)*50)+'px');
 					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
 				},10);
 			}
