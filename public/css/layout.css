@@ -451,12 +451,12 @@
 	content: "";
 	display: block;
 	width: 100%;
+	width: -webkit-calc(100% - 40px);
 	width: calc(100% - 40px);
-	width: -moz-calc(100% - 40px);
 	position: absolute;
 	left: 0;
+	left: -webkit-calc(10px + 10px);
 	left: calc(10px + 10px);
-	left: -moz-calc(10px + 10px);
 	bottom: 0px;
 	border-bottom: 1px solid rgb(200,200,200);
 }
