@@ -167,7 +167,7 @@ function block_stream( $el )
 					$content = "";
 					foreach( $side['content'] as $item )
 					{
-						$content.= call_user_func_array('block_'.$item['type'], array($item, 2));
+						$content.= call_user_func_array('block_'.$item['type'], array($item));
 					}
 					$out .= View::make('partials.'.$sideClass)->with('content', $content);
 

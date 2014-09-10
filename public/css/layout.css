@@ -283,8 +283,25 @@
 	padding: 20px;
 	z-index: 1;
 }
-[class|=card]{
+.card-front, .card-back{
 	box-shadow: 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.25);
+}
+.card-front{
+	opacity: 1;
+	z-index: 2;
+	border-radius: 3px;
+	overflow: hidden;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+	transition: opacity .5s ease, transform .5s ease;
+}
+.card.js-active .card-front{
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
 }
 .card-back{
 	opacity: 0;
@@ -326,18 +343,14 @@
 .card .close:hover{
 	color: rgb(255,255,255);
 }
-.card-front{
-	opacity: 1;
-	z-index: 2;
-	border-radius: 3px;
-}
 .card .block-content-copy{
-	padding: 20px 20px 0 20px;
+	padding: 10px 20px 0 20px;
 }
 .card .action-bar{
 	text-align: right;
 	background-color: rgb(245,245,245);
 	padding: 10px;
+	margin-top: 15px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
@@ -355,6 +368,9 @@
 	content: "\2192";
 	padding-left: 10px;
 }
+.card .block-content-image, .card .block-content-image img{
+	width: 100%;
+}
 .card .card-back .def-item{
 	/*margin: 10px;
 	padding: 15px 10px;*/
@@ -364,7 +380,7 @@
 	background: rgba(165,30,40,0.15);
 }
 .card .card-back .def-item .def-term{
-	color: rgb(165,30,40);
+	color: rgb(120,30,35);
 	font-size: 12px;
 	line-height: 14px;
 	margin: 0;
@@ -372,7 +388,7 @@
 	display: block;
 }
 .card .card-back .def-item .def-content{
-	color: rgba(255,255,255,1);
+	color: rgb(245,220,220);
 	font-size: 16px;
 	font-weight: 400;
 	margin: 0 0 10px 0;
@@ -424,4 +440,29 @@
 }
 .card .card-back .def-item:nth-child(4){
 	padding-top: 15px;
+}
+.card-header p{
+	color: rgb(150,150,150);
+}
+.card-header{
+	padding-bottom: 10px;
+}
+.card-header:after{
+	content: "";
+	display: block;
+	width: 100%;
+	width: calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	position: absolute;
+	left: 0;
+	left: calc(10px + 10px);
+	left: -moz-calc(10px + 10px);
+	bottom: 0px;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+.card .card-front h4{
+	color: rgb(225,70,75);
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0;
 }
