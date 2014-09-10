@@ -33,8 +33,7 @@
       "svgstore",
       "autoprefixer",
       "imagemin",
-      "jshint:all",
-      "csslint"
+      "jshint:all"
     ],
     "build": [
       "default",
