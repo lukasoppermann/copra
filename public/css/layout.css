@@ -296,6 +296,22 @@
 	z-index: 3;
 	transform: translate(0,-50%) scale(1, 1);
 }
+.card .close{
+	cursor: pointer;
+	color: rgb(165,30,40);
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 32px;
+}
+.card .close:hover{
+	color: rgb(255,255,255);
+}
 .card-front{
 	opacity: 1;
 	z-index: 2;

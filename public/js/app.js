@@ -113,4 +113,15 @@ require(["jquery"], function(){
 				$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
 			},100);
 		});
+
+
+		// ---------------------------
+		// Cards
+		//
+		$('.js-card-details').on('click', function(){
+			$(this).parents('.card').addClass('js-active');
+		});
+		$('.card').find('.js-close').on('click', function(){
+			$(this).parents('.card').removeClass('js-active');
+		});
 });
