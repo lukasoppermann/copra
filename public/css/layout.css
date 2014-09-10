@@ -410,6 +410,7 @@
 	top: 0;
 	width: 1px;
 	height: 100%;
+	background-image: -webkit-linear-gradient(top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 	background-image: linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 	background-image: -webkit-linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 }
