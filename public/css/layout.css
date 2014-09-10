@@ -300,6 +300,8 @@
 	-webkit-transform: translate(0,-50%) scale(1, 1);
 	-ms-transform: translate(0,-50%) scale(1, 1);
 	transform: translate(0,-50%) scale(1, 1);
+	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s;
+	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s;
 }
 .card .close{
 	cursor: pointer;
