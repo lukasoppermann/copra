@@ -444,10 +444,17 @@ class FsContentTableSeeder extends Seeder {
 						"content":[
 							{
 								"type": "default",
-								"column": 2,
-								"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-								"class": "optional-classes",
-								"src": "imagefile.png"
+								"content": "###Universitätsklinikum Würzburg\\nInbetriebnahme 4Q 2011",
+								"class": "card-header",
+								"media": [
+									{
+										"src": "hospital.png"
+									}
+								]
+							},
+							{
+								"type": "default",
+								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
 							}
 						]
 					},
@@ -460,7 +467,7 @@ class FsContentTableSeeder extends Seeder {
 								"content": {
 									"Headline": "Universitätsklinikum Würzburg",
 									"Umfang": "320 Arbeitsplätze",
-									"Inbetriebnahme": "seit 4Q 2011",
+									"Inbetriebnahme": "4Q 2011",
 									"Fachbereiche": "Anästhesie, Intensivstation, Zentrale Arbeitsplätze",
 									"Monitoring": "Philips",
 									"Beatmung": "Dräger, Bennett, Maquet",
