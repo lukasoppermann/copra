@@ -119,7 +119,7 @@ require(["jquery"], function(){
 		// Cards
 		//
 		$('.js-card-details').on('click', function(){
-			$(this).parents('.card').addClass('js-active');
+			$(this).parents('.card').addClass('js-active').siblings('.card').removeClass('js-active');
 		});
 		$('.card').find('.js-close').on('click', function(){
 			$(this).parents('.card').removeClass('js-active');
