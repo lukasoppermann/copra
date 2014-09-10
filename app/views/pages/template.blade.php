@@ -124,13 +124,13 @@ function block_stream( $el )
 					foreach( $content['content'] as $c )
 					{
 						if($c['type'] == 'default'){
-							$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+							$text = "NOT DONE ".shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
 							break;
 						}
 					}
 				}
 
-				$out.= "<div class='post-preview'>".$text."</div>";
+				$out.= "<div class='post'>".$text."</div>";
 			}
 		}
 		elseif( $el['mode'] == 'preview' )
@@ -164,12 +164,13 @@ function block_stream( $el )
 				$sideClass = 'card-front';
 				foreach( $sides as $side)
 				{
-					$out .= '<div class="'.$sideClass.'">';
+					$content = "";
 					foreach( $side['content'] as $item )
 					{
-						$out.= call_user_func_array('block_'.$item['type'], array($item));
+						$content.= call_user_func_array('block_'.$item['type'], array($item));
 					}
-					$out .= '</div>';
+					$out .= View::make('partials.'.$sideClass)->with('content', $content);
+
 					$sideClass = 'card-back';
 				}
 				$out .= '</div>';
@@ -180,25 +181,26 @@ function block_stream( $el )
 	}
 }
 // block table
-function block_table( $el )
+function block_array( $el )
 {
 	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
-	// table
-	echo HTML::table($el['content']);
-	return $out.'</div>';
-}
 
-// block table
-function block_definitions( $el )
-{
-	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'"><dl>';
-	// definition
-	foreach($el['content'] as $term => $def)
+	if( !isset($mode) || $mode == 'default' )
 	{
-		$out .='<dt>'.$term.'</dt><dd>'.$def.'</dd>';
+		$out .= '<dl>';
+		foreach($el['content'] as $term => $def)
+		{
+			$out .='<dt>'.$term.'</dt><dd>'.$def.'</dd>';
+		}
+		$out .= '</dl>';
+	}
+	// table
+	elseif( $mode == 'table' )
+	{
+		$out .= HTML::table($el['content']);
 	}
 
-	return $out.'</dl></div>';
+	return $out.'</div>';
 }
 
 // change headlien in markdown

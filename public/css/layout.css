@@ -266,14 +266,62 @@
 .news .post-preview{
 	margin-left: 40px;
 	padding: 25px;
-	border-left: 4px solid rgb(225,70,7);
+	border-left: 4px solid rgb(225,70,75);
 }
 
 /* ----------------------
 		Module: Cards
 */
-.news .post-preview{
-	margin-left: 40px;
-	padding: 25px;
-	border-left: 4px solid rgb(225,70,7);
+.card{
+	position: relative;
+	padding: 20px;
+	z-index: 1;
+}
+[class|=card]{
+	box-shadow: 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.25);
+}
+.card-back{
+	opacity: 0;
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translate(0,-50%) scale(0.9);
+	background-color: rgb(225,70,75);
+	border-radius: 3px;
+	transition: opacity .5s ease, transform .5s ease;
+}
+.card.js-active .card-back{
+	opacity: 1;
+	z-index: 3;
+	transform: translate(0,-50%) scale(1, 1);
+}
+.card-front{
+	opacity: 1;
+	z-index: 2;
+	border-radius: 3px;
+}
+.card .block-content-copy{
+	padding: 10px;
+}
+.card .action-bar{
+	text-align: right;
+	background-color: rgb(245,245,245);
+	padding: 10px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.card .action-bar a{
+	display: inline-block;
+	color: rgb(225,70,75);
+	text-decoration: none;
+	font-weight: 600;
+	padding: 5px 15px;
+	line-height: 100%;
+	border-radius: 20px;
+	border: 2px solid rgb(225,70,75);
+}
+.card .action-bar a:after{
+	content: "➞";
+	padding-left: 10px;
 }
