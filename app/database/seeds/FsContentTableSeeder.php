@@ -455,15 +455,20 @@ class FsContentTableSeeder extends Seeder {
 						"class":"card-backside",
 						"content":[
 							{
-								"type": "default",
-								"content": "#Universitätskilinkum Hamburg\\nseit Januar 2004"
-							},
-							{
 								"type": "array",
 								"mode": "default",
 								"content": {
-									"Fachbereiche": "Intensivstation, Zentrale Arbeitsplätze, IMC",
-									"Arbeitsplätze Gesamt": "38 Arbeitsplätze"
+									"Headline": "Universitätsklinikum Würzburg",
+									"Umfang": "320 Arbeitsplätze",
+									"Inbetriebnahme": "seit 4Q 2011",
+									"Fachbereiche": "Anästhesie, Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring": "Philips",
+									"Beatmung": "Dräger, Bennett, Maquet",
+									"Labor": "Frey SwisslabII, Lauris",
+									"Infusion": "B|Braun Melsungen",
+									"Narkose": "Dräger",
+									"KIS": "i.s.h.med für SAP",
+									"Weiteres": "Radiometer ABL"
 								}
 							}
 						]

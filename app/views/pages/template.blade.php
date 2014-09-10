@@ -71,7 +71,7 @@
 <? // Functions to render html-content
 
 // default content
-function block_default( $el )
+function block_default( $el, $lvl = 0 )
 {
 	$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
 	// media
@@ -96,7 +96,7 @@ function block_default( $el )
 	// markdown content
 	if( isset($el['content']) )
 	{
-		$out .= '<div class="block-content-copy">'.MarkdownExtra::defaultTransform($el['content']).'</div>';
+		$out .= '<div class="block-content-copy">'.shiftHeaders(MarkdownExtra::defaultTransform($el['content']),$lvl).'</div>';
 	}
 
 	return $out.'</div>';
@@ -167,7 +167,7 @@ function block_stream( $el )
 					$content = "";
 					foreach( $side['content'] as $item )
 					{
-						$content.= call_user_func_array('block_'.$item['type'], array($item));
+						$content.= call_user_func_array('block_'.$item['type'], array($item, 2));
 					}
 					$out .= View::make('partials.'.$sideClass)->with('content', $content);
 
@@ -187,12 +187,10 @@ function block_array( $el )
 
 	if( !isset($mode) || $mode == 'default' )
 	{
-		$out .= '<dl>';
 		foreach($el['content'] as $term => $def)
 		{
-			$out .='<dt>'.$term.'</dt><dd>'.$def.'</dd>';
+			$out .='<div class="def-item item-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'"><span class="def-term">'.$term.'</span><span class="def-content">'.$def.'</span></div>';
 		}
-		$out .= '</dl>';
 	}
 	// table
 	elseif( $mode == 'table' )
