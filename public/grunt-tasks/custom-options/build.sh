@@ -9,10 +9,8 @@ else
   ck public
   grunt make-build
   git status
-  read -p "Do you want to deploy this build? (yes/No)" yn
-  case $yn in
-        [Yy]* ) make install; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
-  esac
+  read -p "Do you want to deploy this build? (yes/No)" -n 1
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "do_something"
+  fi
 fi
