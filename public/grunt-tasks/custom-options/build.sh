@@ -8,9 +8,12 @@ else
   git merge master
   ck public
   grunt make-build
-  git status
-  read -p "Do you want to deploy this build? (yes/No)" yn
+  echo ""
+  echo -e "\n\033[32mBuild branch status\033[0m\n";
+  read -p "\nDo you want to deploy this build? (yes/No)\n" yn
   if [[ $yn =~ ^[Yy]$ ]]; then
-    echo "do_something"
+    git add --all
+    git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
+    git push server build:master
   fi
 fi
