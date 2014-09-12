@@ -106,11 +106,22 @@ require(["jquery"], function(){
 		// ---------------------------
 		// Image to element height
 		//
-		$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
+		function imgFill(){
+			var $imgBlock = $('.teaser-card').find('.block-content-image');
+			$imgBlock.height($('.teaser-card').height()).find('img').css('display','block');
+
+			if( $imgBlock.find('img').css('width') < $imgBlock.css('width') )
+			{
+				$imgBlock.find('img').css('width',$imgBlock.css('width')).css('height','auto');
+			}
+		};
+
+		imgFill();
+
 		$(window).on('resize', function(f){
 			window.clearTimeout(f);
 			f = window.setTimeout(function(){
-				$('.teaser-card').find('.block-content-image').height($('.teaser-card').height()).find('img').css('display','block');
+				imgFill();
 			},100);
 		});
 
