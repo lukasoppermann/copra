@@ -10,7 +10,7 @@ else
 
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
   git checkout build
-  git merge master
+  git merge master --no-edit
 
   if [ "${PWD##*/}" != $gruntDir ]; then
     dir="$(find . -name "$gruntDir" -type d -maxdepth 1)"
