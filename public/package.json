@@ -14,7 +14,7 @@
     "js": "js/",
     "bower": "bower_components"
   },
-  "files": {
+  "variables": {
     "require-js-main": "../app",
     "require-js-out": "app.min.js",
     "require-css-main": "app.css",
@@ -36,6 +36,9 @@
       "jshint:all"
     ],
     "build": [
+      "command:build"
+    ],
+    "make-build": [
       "default",
       "jshint:files",
       "requirejs"
@@ -48,6 +51,7 @@
     "amdclean": "^2.2.4",
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.7.3",
+    "grunt-contrib-command": "^0.1.6",
     "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-imagemin": "~0.7.0",
     "grunt-contrib-jshint": "*",

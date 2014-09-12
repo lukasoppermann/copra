@@ -64,7 +64,7 @@ class FsContentTableSeeder extends Seeder {
 											"media":[
 												{"src": "icon-verfuegbarkeit.svg"}
 											],
-				              "content": "##99,99% verfügbar\\nEgal ob unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
+				              "content": "##99% verfügbar\\nEgal ob unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
 				              "class": "centered-content padded-column"
 				          },
 				          {
