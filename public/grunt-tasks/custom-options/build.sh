@@ -10,7 +10,7 @@ else
   grunt make-build
   rm
   echo -e "\n\033[32mBuild branch status\033[0m\n";
-  read -p "Do you want to deploy this build? (yes/No)" yn
+  read -p "Do you want to deploy this build? (yes/No) " yn
   if [[ $yn =~ ^[Yy]$ ]]; then
     echo "\n"
     git add --all
