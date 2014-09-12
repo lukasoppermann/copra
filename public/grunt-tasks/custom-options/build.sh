@@ -9,6 +9,7 @@ else
   git checkout build
   git merge master
   if [[ ${PWD##*/} == $gruntDir ]]; then
+    echo ""
   elif [[ -d $(find . -name $gruntDir -type d) ]]; then
     cd $(find . -name $gruntDir -type d)
   elif [[ -d '../public' ]]; then
