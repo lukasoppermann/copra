@@ -20,7 +20,7 @@
 }
 
 /* ----------------------
-    separators
+    Links
 
     @Note:
 */
@@ -34,4 +34,14 @@
 .link--quiet{
   color: rgb(150,150,150);
 
+}
+
+/* ----------------------
+    Headlines & Typo
+
+    @Note:
+*/
+.align-left h2{
+  text-align: left;
+  padding-left: 0;
 }

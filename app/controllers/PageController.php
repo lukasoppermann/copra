@@ -6,6 +6,8 @@ class PageController extends BaseController {
 
 	public function index($path)
 	{
+		$path = ( $path == "/" ? "home" : $path);
+
 		$api = Api::get('pages/'.str_replace('/','.',$path).'?language='.Config::get('app.locale'));
 
 		if( isset($api) && isset($api['data']))

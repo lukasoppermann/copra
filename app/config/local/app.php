@@ -16,7 +16,7 @@ return array(
 	'appjs' => 'app.js',
 	'appcss' => 'app.css',
 	'media' => [
-		'images' => ['jpg','gif','jpeg','png']
+		'images' => ['jpg','gif','jpeg','png','svg']
 	],
 	/*
 	|--------------------------------------------------------------------------
