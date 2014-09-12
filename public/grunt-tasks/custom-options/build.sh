@@ -9,8 +9,8 @@ else
   ck public
   grunt make-build
   git status
-  read -p "Do you want to deploy this build? (yes/No)" -n 1
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
+  read -p "Do you want to deploy this build? (yes/No)" yn
+  if [[ $yn =~ ^[Yy]$ ]]; then
     echo "do_something"
   fi
 fi
