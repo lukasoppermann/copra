@@ -40,40 +40,40 @@ class FsContentTableSeeder extends Seeder {
 				      ]
 				  },
 				  {
-				      "class": "section-02",
+				      "class": "space-bottom-wide",
 				      "link": "Vision",
 				      "content": [
 				          {
 				              "type": "default",
 				              "column": 12,
-				              "content": "#Unsere Vision\\n>Ein einheitliches System für die gesamte Arbeit auf der Station",
+				              "content": "#Vision\\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
 				              "class": "space-bottom-wide"
 				          },
 				          {
 				              "type": "default",
 				              "column": 4,
 				              "media":[
-												{"src": "icon.png"}
+												{"src": "icon-connected.svg"}
 											],
-											"content": "##Patientenakte\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
+											"content": "##Vernetzt\\nCopra ermöglicht eine leichte Anbindung an viele Drittsysteme, Geräte, Exportschnittstellen und Apps.",
 				              "class": "centered-content padded-column"
 				          },
 				          {
 				              "type": "default",
 				              "column": 4,
 											"media":[
-												{"src": "icon.png"}
+												{"src": "icon-verfuegbarkeit.svg"}
 											],
-				              "content": "##Geräteübernahme\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
+				              "content": "##99,99% verfügbar\\nEgal ob unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
 				              "class": "centered-content padded-column"
 				          },
 				          {
 				              "type": "default",
 				              "column": 4,
 											"media":[
-												{"src": "icon.png"}
+												{"src": "icon-customize.svg"}
 											],
-				              "content": "##Auswertungen\\nEine elektronische Dokumentation mit COPRA trägt zu einer Standardisierung der Sprache in der Klinik bei, da die  Auswahlmöglichkeiten individuell, aber eindeutig sind.",
+				              "content": "##Customizable\\nPerfekte Integration in Ihre Prozesse und individuelle Anpassung auf die Vorzüge eines Hauses.",
 				              "class": "centered-content padded-column"
 				          }
 				      ]
@@ -86,7 +86,7 @@ class FsContentTableSeeder extends Seeder {
 				              "type": "default",
 				              "column": 3,
 											"media": [
-												{"src": "doctor.png"}
+												{"src": "icon-doctor.svg"}
 											],
 				              "content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
@@ -95,7 +95,7 @@ class FsContentTableSeeder extends Seeder {
 				              "type": "default",
 				              "column": 3,
 				              "media": [
-												{"src": "doctor.png"}
+												{"src": "icon-nurse.svg"}
 											],
 				              "content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
@@ -104,7 +104,7 @@ class FsContentTableSeeder extends Seeder {
 				              "type": "default",
 				              "column": 3,
 				              "media": [
-												{"src": "doctor.png"}
+												{"src": "icon-management.svg"}
 											],
 				              "content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
@@ -113,7 +113,7 @@ class FsContentTableSeeder extends Seeder {
 				              "type": "default",
 				              "column": 3,
 											"media": [
-												{"src": "doctor.png"}
+												{"src": "icon-it.svg"}
 											],
 				              "content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
@@ -171,7 +171,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 2,
 				'menu_label' => 'Produkt',
 				'link' => 'produkt',
-				'status' => 1,
+				'status' => 2,
 				'language' => 'de',
 				'type' => 1,
 				'data' => '{"1":{"class":"section-01","content":{"1":{"type":"image","column":3,"src":"imagefile.png","description":"Some optional text","class":"optional-classes"},"2":{"type":"text","column":2,"content":"#Headline content is in markdown","class":"optional-classes"},"3":{"type":"text","column":2,"content":"This is real **markdown** copy.","class":"optional-classes"}}}}',
@@ -352,7 +352,6 @@ class FsContentTableSeeder extends Seeder {
 				'type' => 1,
 				'data' => '{
 					"1":{
-								"class": "section-01",
 								"content": [
 										{
 												"type": "default",
@@ -363,12 +362,32 @@ class FsContentTableSeeder extends Seeder {
 																"description": "Some optional text"
 														}
 												],
-												"content": "#Wir arbeiten an der Zukunft\\nCopra entickelt das PMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+												"content": "#Wir arbeiten an der Zukunft\\nCopra entwickelt das PDMS von morgen, mit innovative Ideen und neuen Ansätzen.",
 												"class": "banner js-banner"
 										}
 								]
 						},
-					"2":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+					"2":{
+						"class": "spacing-bottom",
+						"content":[{
+							"type": "default",
+							"column": 12,
+							"content": "##Kontaktieren Sie uns",
+							"class": "align-left"
+							},{
+								"type": "default",
+								"column": 8,
+								"content": "Haben Sie Interesse an mehr Informationen oder möchten Sie einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen, so rufen Sie uns bitte an oder senden Sie uns eine Email.",
+								"class": "append-2"
+							},{
+									"type": "default",
+									"column": 4,
+									"content": "####Copra System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
+									"class": "contact-box"
+							}
+						]
+					}
+				}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',

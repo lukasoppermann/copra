@@ -5,7 +5,7 @@ function loop( $nav, $parent = "", $result = "" )
 	{
 
 		$result .= '<li class="'.
-			( trim($item['link'], '/') == Request::path() ? ' is-active js-is-active' : '').
+			( trim($item['link'], '/') == (Request::path() != "/" ? Request::path() : 'home') ? ' is-active js-is-active' : '').
 			( strpos(Request::path(), trim($item['link'], '/')) !== false ? ' is-active js-is-active' : '').
 			'">
 
@@ -87,7 +87,7 @@ function loop( $nav, $parent = "", $result = "" )
 			<div class="logo-shadow"></div>
 		</a>
 		<div class="main-navigation-list">
-			<?=loop(Api::get('streams/navigation?nested=true&limit=100&language='.Config::get('app.locale')));
+			<?=loop(Api::get('streams/navigation?nested=true&limit=100&status=1&language='.Config::get('app.locale')));
 			?>
 		</div>
 

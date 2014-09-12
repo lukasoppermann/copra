@@ -63,6 +63,9 @@
   height: auto;
   vertical-align: top;
 }
+.teaser-card.teaser-card--image-right .block-content-image{
+  float: right;
+}
 .teaser-card:after{
   content: "";
   display: block;

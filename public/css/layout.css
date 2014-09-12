@@ -229,7 +229,7 @@
 .red-section .user-features h2{
 	font-weight: 400;
 	color: rgb(255,255,255);
-	margin: 10px 0 20px;
+	margin: 20px 0 20px;
 }
 .red-section .user-features ul{
 	display: inline-block;
@@ -265,7 +265,24 @@
 	content: "\2192";
 	padding-left: 10px;
 }
-
+.red-section .user-features .block-content-image img{
+	z-index: 2;
+	position: relative;
+}
+.red-section .user-features .block-content-image:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/*border: 5px solid rgb(255,255,255);*/
+	background: rgba(165,30,40,0.5);
+	z-index: 1;
+}
 /* ----------------------
 		Module: News post-preview
 */
@@ -464,4 +481,30 @@
 	font-weight: 400;
 	font-size: 14px;
 	margin: 0;
+}
+/* ----------------------
+		contact-box
+
+		@Note:
+*/
+.contact-box h4{
+	margin-top: 0;
+}
+.contact-box{
+	padding: 20px;
+	background-color: rgb(225,70,75);
+	color: rgb(255,255,255);
+}
+.contact-box p{
+	margin-top: 10px;
+}
+.contact-box .label{
+	color: rgb(120,30,35);
+}
+.contact-box a{
+	color: rgb(255,255,255);
+	text-decoration: underline;
+}
+.contact-box a:hover{
+	text-decoration: none;
 }
