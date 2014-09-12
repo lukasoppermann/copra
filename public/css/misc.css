@@ -1,11 +1,19 @@
-
 .space-bottom-wide{
   margin-bottom: 100px;
 }
 .spacing-bottom{
   margin-bottom: 50px;
 }
+.padding-bottom{
+  padding-bottom: 50px;
+}
+.padding-bottom-wide{
+  padding-bottom: 100px;
+}
 
+.inner-section-padding-bottom .inner-section{
+  padding-bottom: 50px;
+}
 /* ----------------------
     separators
 

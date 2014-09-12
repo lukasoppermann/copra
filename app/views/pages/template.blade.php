@@ -187,9 +187,19 @@ function block_array( $el )
 
 	if( !isset($mode) || $mode == 'default' )
 	{
-		foreach($el['content'] as $term => $def)
+		if( array_merge($el['content']) !== $el['content'] || !is_numeric(implode(array_keys($el['content']))) )
 		{
-			$out .='<div class="def-item item-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'"><span class="def-term">'.$term.'</span><span class="def-content">'.$def.'</span></div>';
+			foreach($el['content'] as $term => $def)
+			{
+				$out .='<div class="def-item item-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'"><span class="def-term">'.$term.'</span><span class="def-content">'.MarkdownExtra::defaultTransform($def).'</span></div>';
+			}
+		}
+		else
+		{
+			foreach($el['content'] as $def)
+			{
+				$out .='<div class="item"><span class="visual"></span>'.MarkdownExtra::defaultTransform($def).'</div>';
+			}
 		}
 	}
 	// table

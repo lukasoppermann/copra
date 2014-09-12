@@ -208,7 +208,7 @@ class FsContentTableSeeder extends Seeder {
 					},
 				"2":{
 					"link": "Firmenwerte",
-					"class": "spacing-bottom",
+					"class": "spacing-bottom inner-section-padding-bottom inner-section-shadow",
 					"content": [
 						{
 								"type": "default",
@@ -266,30 +266,38 @@ class FsContentTableSeeder extends Seeder {
 						}
 				]},
 				"3":{
-					"class": "section spacing-bottom",
+					"class": "section section--white-to-gray padding-bottom-wide",
 					"link": "Firmengeschichte",
 					"content": [{
-						"type": "default",
+							"type": "default",
+							"column": 12,
+							"content": "#Firmengeschichte"
+						},
+						{
+						"type": "array",
 						"column": 12,
-						"media":[
-							{"src": "timeline.png"}
-						]}]
+						"class": "timeline",
+						"content": [
+							"####Stand heute  \nWir investieren viel in Innovationen.",
+							"####Headline  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern",
+							"####COPRA5-Meilensteine  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern",
+							"####Gegründet in 1993  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern"
+						]
+					}]
 				},
 				"4":{
 					"link": "Über die Firma",
-					"content": [{
-						"type": "default",
-						"column": 6,
-						"media":[
-							{"src": "copra-features-teaser.jpg"}
-						]
-					},
-					{
-						"type":"default",
-						"class":"padded-column",
-						"column": 6,
-						"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
-					}
+					"class": "section--gray",
+					"content": [
+						{
+							"type":"default",
+							"class":"teaser-card teaser-card--halfed prepend-1",
+							"column": 11,
+							"media":[
+								{"src": "copra-features-teaser.jpg"}
+							],
+							"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
+						}
 					]
 				}
 				}',

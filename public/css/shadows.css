@@ -1,10 +1,11 @@
 /* ----------------------
-		Inside bend shadow on bottom 
-		
+		Inside bend shadow on bottom
+
 		@Note:	box-shadow support IE9+
 						.shadow-inside-bend need to be positioned
 */
-.shadow-inside-bend:after {
+.shadow-inside-bend:after, .inner-section-shadow .inner-section:after {
+    display: block;
     content: "";
     position: absolute;
     left: 0;
@@ -15,7 +16,6 @@
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.05);
     z-index: -1;
 }
-
 
 
 .dropshadow-small{
