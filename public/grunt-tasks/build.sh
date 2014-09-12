@@ -10,7 +10,7 @@ else
 
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
   git checkout build
-  git merge master
+  git merge master --no-edit
 
   if [ "${PWD##*/}" != $gruntDir ]; then
     dir="$(find . -name "$gruntDir" -type d -maxdepth 1)"
@@ -24,13 +24,13 @@ else
   fi
 
   grunt make-build
-  
+
   echo -e "\n\033[32mBuild branch status\033[0m\n";
 
   read -p "Do you want to deploy this build? (yes/No) " yn
 
   if [[ $yn =~ ^[Yy]$ ]]; then
-    echo "\n"
+    echo -e "\n"
     git add --all
     git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
     git push server build:master
