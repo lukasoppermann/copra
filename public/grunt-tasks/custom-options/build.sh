@@ -8,16 +8,15 @@ else
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
   git checkout build
   git merge master
-  if [[ ${PWD##*/} == ${gruntDir} ]]; then
-    echo "0"
-  elif [[ -d $(find . -name $gruntDir -type d) ]]; then
-    echo "1"
-    cd $(find . -name $gruntDir -type d)
-  elif [[ -d '../public' ]]; then
-    echo "2"
-    cd '../public'
-  elif [[ -d '../../public' ]]; then
-    cd '../../public'
+  if [ "${PWD##*/}" != $gruntDir ]; then
+    dir="$(find . -name "$gruntDir" -type d -maxdepth 1)"
+    if [ -n $dir ]; then
+      cd $dir
+    elif [[ -d '../public' ]]; then
+      cd '../public'
+    elif [[ -d '../../public' ]]; then
+      cd '../../public'
+    fi
   fi
   grunt make-build
   rm
@@ -31,6 +30,3 @@ else
     git checkout  master
   fi
 fi
-
-gruntDir="public"
-echo $(find . -name $gruntDir -type d)
