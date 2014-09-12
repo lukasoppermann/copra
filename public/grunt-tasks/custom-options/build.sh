@@ -8,8 +8,8 @@ else
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
   git checkout build
   git merge master
-  if [[ ${PWD##*/} == $gruntDir ]]; then
-    echo ""
+  if [[ ${PWD##*/} == ${gruntDir} ]]; then
+    echo "0"
   elif [[ -d $(find . -name $gruntDir -type d) ]]; then
     echo "1"
     cd $(find . -name $gruntDir -type d)
