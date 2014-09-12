@@ -6,12 +6,13 @@ else
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
   git checkout build
   git merge master
-  ck public
+  # cd public
   grunt make-build
-  echo ""
+  rm
   echo -e "\n\033[32mBuild branch status\033[0m\n";
-  read -p "\nDo you want to deploy this build? (yes/No)\n" yn
+  read -p "Do you want to deploy this build? (yes/No)" yn
   if [[ $yn =~ ^[Yy]$ ]]; then
+    echo "\n"
     git add --all
     git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
     git push server build:master
