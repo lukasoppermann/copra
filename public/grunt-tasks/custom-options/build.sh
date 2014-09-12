@@ -11,8 +11,10 @@ else
   if [[ ${PWD##*/} == $gruntDir ]]; then
     echo ""
   elif [[ -d $(find . -name $gruntDir -type d) ]]; then
+    echo "1"
     cd $(find . -name $gruntDir -type d)
   elif [[ -d '../public' ]]; then
+    echo "2"
     cd '../public'
   elif [[ -d '../../public' ]]; then
     cd '../../public'
@@ -29,3 +31,6 @@ else
     git checkout  master
   fi
 fi
+
+gruntDir="public"
+echo $(find . -name $gruntDir -type d)
