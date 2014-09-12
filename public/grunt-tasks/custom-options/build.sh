@@ -8,4 +8,11 @@ else
   git merge master
   ck public
   grunt make-build
+  git status
+  read -p "Do you want to deploy this build? (yes/No)" yn
+  case $yn in
+        [Yy]* ) make install; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+  esac
 fi
