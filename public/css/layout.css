@@ -443,6 +443,7 @@
 	top: 0;
 	width: 1px;
 	height: 100%;
+	background-image: -webkit-linear-gradient(top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 	background-image: linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 	background-image: -webkit-linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 }
@@ -467,12 +468,12 @@
 	content: "";
 	display: block;
 	width: 100%;
+	width: -webkit-calc(100% - 40px);
 	width: calc(100% - 40px);
-	width: -moz-calc(100% - 40px);
 	position: absolute;
 	left: 0;
+	left: -webkit-calc(10px + 10px);
 	left: calc(10px + 10px);
-	left: -moz-calc(10px + 10px);
 	bottom: 0px;
 	border-bottom: 1px solid rgb(200,200,200);
 }
