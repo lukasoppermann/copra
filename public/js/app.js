@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["jquery"], function(){
+require(["jquery", "onMediaQuery/js/onmediaquery"], function(){
 
 	// ---------------------------
 	// Navigation Highlight
@@ -139,4 +139,23 @@ require(["jquery"], function(){
 		$('.card').find('.js-close').on('click', function(){
 			$(this).parents('.card').removeClass('js-active');
 		});
+
+
+
+		// ---------------------------
+		// Mediaqueries
+		//
+		var queries = [{
+			context: ['small','medium','large'],
+			match: function(size) {
+				$('body').addClass(size);
+			},
+			unmatch: function(size) {
+				$('body').removeClass(size);
+			}
+    }
+		];
+		// Go!
+		MQ.init(queries);
+
 });

@@ -10,7 +10,7 @@
 		@Note: Use in elements to keep inside main width
 */
 .main-width{
-	min-width: 1000px;
+	min-width: 960px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -78,6 +78,8 @@
 	display: block;
 	position: absolute;
 	top: 0;
+	left: 2%;
+	width: 96%;
 }
 .banner .block-content-copy{
 	background: rgb(225,70,75);
@@ -85,7 +87,7 @@
 	box-sizing: border-box;
 	padding: 20px;
 	display: inline-block;
-	margin: -120px 0 50px 20px;
+	margin: -120px 0 50px 4%;
 }
 .banner .block-content-copy:after{
 	content:"";

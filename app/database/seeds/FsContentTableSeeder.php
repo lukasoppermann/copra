@@ -201,7 +201,7 @@ class FsContentTableSeeder extends Seeder {
 															"description": "Some optional text"
 													}
 											],
-											"content": "# Wir arbeiten an der Zukunft\\nCopra entickelt das PMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+											"content": "# Wir arbeiten an der Zukunft\\nCopra entwickelt das PDMS von morgen, mit innovative Ideen und neuen Ansätzen.",
 											"class": "banner js-banner"
 									}
 							]
