@@ -107,6 +107,7 @@
 .main-navigation-list, .main-navigation-list > ul{
 	position: relative;
 	float: right;
+	margin-right: 25px;
 }
 .main-navigation-list:after{
 	z-index: 1;
