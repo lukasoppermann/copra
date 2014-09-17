@@ -213,62 +213,54 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "subsection",
 							"column": 4,
+							"class":"padded-column",
 							"content": [
 								{
 									"type": "default",
 									"media":[
-										{"src": "icon.png"}
+										{
+											"src": "icon.png",
+											"class": "media--noResize"
+										}
 									],
-									"content": "##Stark individualisierbar",
-									"class": "centered-content padded-column"
-								},
-								{
-										"type": "default",
-										"content": "##Customer driven\\nStandardfunktionen werden mit dem Kunden entwickelt, Kooperation mit Unikliniken, agile Entwicklung, heißt interaktive Entwicklung der Funktionen nah am Kunden",
-										"class": "centered-content padded-column"
-								},
-								{
-										"type": "default",
-										"content": "##Connect any device\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-										"class": "centered-content padded-column"
+									"content": "##Starke Kundenorientierung\\nFeatures werden in sehr enger Zusammenarbeit mit dem Kunden abgestimmt.\\n\\nDurch jährliche Anwendertreffen ist eine aktive COPRA-Community entstanden, die sich über die verschiedenen Lösungsansätze im stark individualisierbarem COPRA austauschen.",
+									"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						},
 						{
 							"type": "subsection",
 							"column": 4,
+							"class":"padded-column",
 							"content": [
 								{
 										"type": "default",
 										"media":[
-											{"src": "icon.png"}
+											{
+												"src": "icon.png",
+												"class": "media--noResize"
+												}
 										],
-										"content": "##Offenlegung vieler Daten",
-										"class": "centered-content padded-column"
-								},
-								{
-										"type": "default",
-										"content": "##Geförderter Kundenaustausch\\nAnwendertage",
-										"class": "centered-content padded-column"
-								},
-								{
-										"type": "default",
-										"content": "##Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
-										"class": "centered-content padded-column"
+										"content": "##Innovation\\nEin Großteil unserer Kunden sind Universitätskliniken, die am Puls der Zeit mit großem Forschungsinteresse neue Ideen entwickeln und ausprobieren wollen.\\n\\nWir holen uns Experten für die Bereiche, die eine intensive und kontinuierliche Entwicklung erleben oder stark spezialisiert sind. Z.B. Softwarearchitektur-Pattern, UI/UX Design, Fachmodule (Neonatologie)",
+										"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						},
 						{
 							"type": "subsection",
 							"column": 4,
+							"class":"padded-column",
 							"content": [
 								{
 										"type": "default",
 										"media":[
-											{"src": "icon.png"}
+											{
+												"src": "icon.png",
+												"class": "media--noResize"
+											}
 										],
-										"content": "##Offenlegung vieler Daten\\n###Geförderter Kundenaustausch\\nAnwendertage\\n###Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
-										"class": "centered-content padded-column"
+										"content": "##Spezialisierte Software für einen spezialisierten Bereich\\n**Offlineverfügbarkeit** – Weil das System in kritischen Situationen immer verfügbar sein muss.\\n\\n**Kompatibel** – Ein großes Arsenal an Treibern und hoch integrierte Anbindungen von Drittsystemen bedeutet, COPRA spricht die Sprache des Einsatzbereichs.",
+										"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						}
@@ -302,7 +294,9 @@ class FsContentTableSeeder extends Seeder {
 							"class":"teaser-card teaser-card--halfed prepend-1",
 							"column": 11,
 							"media":[
-								{"src": "copra-features-teaser.jpg"}
+								{
+									"src": "copra-features-teaser.jpg"
+								}
 							],
 							"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
 						}

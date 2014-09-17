@@ -10,6 +10,9 @@
 .padding-bottom-wide{
   padding-bottom: 100px;
 }
+.padding-top-small{
+  padding-top: 25px;
+}
 
 .inner-section-padding-bottom .inner-section{
   padding-bottom: 50px;

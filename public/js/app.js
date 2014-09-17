@@ -107,13 +107,20 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		// Image to element height
 		//
 		function imgFill(){
-			var $imgBlock = $('.teaser-card').find('.block-content-image');
-			$imgBlock.height($('.teaser-card').height()).find('img').css('display','block');
+			$('.teaser-card').find('.block-content-image').each(function(){
+				var $this = $(this), $img = $this.find('img');
 
-			if( $imgBlock.find('img').css('width') < $imgBlock.css('width') )
-			{
-				$imgBlock.find('img').css('width',$imgBlock.css('width')).css('height','auto');
-			}
+				if( ! $img.hasClass('media--noResize') )
+				{
+					$this.height($this.parents('.teaser-card').height()).find('img').css('display','block');
+
+					if( $img.css('width') < $this.css('width') )
+					{
+						$img.css('width',$this.css('width')).css('height','auto');
+					}
+				}
+
+			});
 		};
 
 		imgFill();

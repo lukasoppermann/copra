@@ -25,8 +25,6 @@
 			foreach($section['content'] as $child)
 			{
 
-				$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].'">';
-
 				if($child['type'] == "stream")
 				{
 					$output_sections .= '<input class="search" placeholder="Search" />';
@@ -34,6 +32,8 @@
 
 				if( $child['type'] == 'subsection' )
 				{
+					$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].' '.App::make('Utilities')->variable($child['class'],"").'">';
+
 					foreach($child['content'] as $subchild)
 					{
 
@@ -47,6 +47,8 @@
 
 				else
 				{
+					$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].'">';
+
 					if( function_exists( 'block_'.$child['type'] ) )
 					{
 						$output_sections .= call_user_func_array('block_'.$child['type'], array($child));
@@ -90,7 +92,7 @@ function block_default( $el, $lvl = 0 )
 			if( in_array($ext, Config::get('app.media.images')) )
 			{
 				$out .= '<div class="block-content-image">
-					<img src="'.asset(Config::get('app.dirs.media').'/'.$m['src']).'"
+					<img class="'.App::make('Utilities')->variable($m['class']).'" src="'.asset(Config::get('app.dirs.media').'/'.$m['src']).'"
 						alt="'.App::make('Utilities')->variable($m['description'],$m['src']).'" />
 				</div>';
 			}
