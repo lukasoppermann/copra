@@ -117,6 +117,7 @@
   height: -webkit-calc(100% + 4px);
   width: calc(100% + 4px);
   width: -webkit-calc(100% + 4px);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), rgb(255,255,255) 50%);
   background-image: linear-gradient( top, rgba(255,255,255,0), rgb(255,255,255) 50%);
   background-image: -webkit-linear-gradient( top, rgba(255,255,255,0), rgb(255,255,255) 50%);
 }
