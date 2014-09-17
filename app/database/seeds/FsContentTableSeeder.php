@@ -208,61 +208,69 @@ class FsContentTableSeeder extends Seeder {
 					},
 				"2":{
 					"link": "Firmenwerte",
-					"class": "spacing-bottom inner-section-padding-bottom inner-section-shadow",
+					"class": "spacing-bottom inner-section-padding-bottom inner-section-shadow teaser-box-section",
 					"content": [
 						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Stark individualisierbar\\nJeder Kunde baut sein eigenes COPRA wenn er will",
-								"class": "centered-content padded-column"
+							"type": "subsection",
+							"column": 4,
+							"content": [
+								{
+									"type": "default",
+									"media":[
+										{"src": "icon.png"}
+									],
+									"content": "##Stark individualisierbar",
+									"class": "centered-content padded-column"
+								},
+								{
+										"type": "default",
+										"content": "##Customer driven\\nStandardfunktionen werden mit dem Kunden entwickelt, Kooperation mit Unikliniken, agile Entwicklung, heißt interaktive Entwicklung der Funktionen nah am Kunden",
+										"class": "centered-content padded-column"
+								},
+								{
+										"type": "default",
+										"content": "##Connect any device\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+										"class": "centered-content padded-column"
+								}
+							]
 						},
 						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Customer driven\\nStandardfunktionen werden mit dem Kunden entwickelt, Kooperation mit Unikliniken, agile Entwicklung, heißt interaktive Entwicklung der Funktionen nah am Kunden",
-								"class": "centered-content padded-column"
+							"type": "subsection",
+							"column": 4,
+							"content": [
+								{
+										"type": "default",
+										"media":[
+											{"src": "icon.png"}
+										],
+										"content": "##Offenlegung vieler Daten",
+										"class": "centered-content padded-column"
+								},
+								{
+										"type": "default",
+										"content": "##Geförderter Kundenaustausch\\nAnwendertage",
+										"class": "centered-content padded-column"
+								},
+								{
+										"type": "default",
+										"content": "##Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
+										"class": "centered-content padded-column"
+								}
+							]
 						},
 						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Connect any device\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-								"class": "centered-content padded-column"
-						},
-						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Offenlegung vieler Daten\\nSkripting-Schnittstellen",
-								"class": "centered-content padded-column"
-						},
-						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Geförderter Kundenaustausch\\nAnwendertage",
-								"class": "centered-content padded-column"
-						},
-						{
-								"type": "default",
-								"column": 4,
-								"media":[
-									{"src": "icon.png"}
-								],
-								"content": "##Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
-								"class": "centered-content padded-column"
+							"type": "subsection",
+							"column": 4,
+							"content": [
+								{
+										"type": "default",
+										"media":[
+											{"src": "icon.png"}
+										],
+										"content": "##Offenlegung vieler Daten\\n###Geförderter Kundenaustausch\\nAnwendertage\\n###Ständige Unterstützung des behandelnden Teams\\nOffline-Verfügbarkeit",
+										"class": "centered-content padded-column"
+								}
+							]
 						}
 				]},
 				"3":{
@@ -327,7 +335,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Some optional text"
 									}
 								],
-								"content": "#Universitätsklinikum Braunschweig\\nCase Study zum Integrationsprozess des Copra PMS. [Case Study ](refrenzen/universitaetsklinikum-braunschweig)",
+								"content": "#Unsere Referenzkliniken",
 								"class": "banner js-banner"
 							}
 						]
@@ -340,7 +348,7 @@ class FsContentTableSeeder extends Seeder {
 								"column": 12,
 								"stream": "references",
 								"mode": "card",
-								"class": "grid"
+								"class": "grid js-searchable"
 							}
 						]
 					}
@@ -521,7 +529,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "###Uniklinik Jena\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
@@ -535,7 +543,7 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "###Krankenhaus Hamburg\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',

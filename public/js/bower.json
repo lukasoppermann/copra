@@ -21,6 +21,7 @@
     "require-css": "*",
     "jquery": "1.*",
     "requirejs-domready": "~2.0.1",
-    "onMediaQuery": "https://github.com/lukasoppermann/on-media-query.git#*"
+    "onMediaQuery": "https://github.com/lukasoppermann/on-media-query.git#*",
+    "list.js": "~1.*"
   }
 }

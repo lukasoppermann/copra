@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["jquery", "onMediaQuery/js/onmediaquery"], function(){
+require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 
 	// ---------------------------
 	// Navigation Highlight
@@ -136,8 +136,31 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function(){
 			$(this).parents('.card').removeClass('js-active');
 		});
 
+		// ---------------------------
+		// Searchable list with list.js
+		//
+		$('.search').on('keyup', function(){
+			var term = $(this).val().toUpperCase();
+
+			$('.card').each(function(){
+				if( term !== "" && ! $(this).find("h3").text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+				{
+					$(this).hide();
+				}
+				else
+				{
+					$(this).show();
+				}
+			});
 
 
+		});
+// $('.card h3').each(function(){
+// if( $('.search').val().toUpperCase().match($(this).text().toUpperCase().replace(/\s+/g, '.+')) ){
+// $(this).parents('.card').hide()
+// }
+//
+// })
 		// ---------------------------
 		// Mediaqueries
 		//
