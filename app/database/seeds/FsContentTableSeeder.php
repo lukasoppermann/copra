@@ -213,7 +213,7 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "subsection",
 							"column": 4,
-							"class":"padded-column",
+							"class":"padded-column-small",
 							"content": [
 								{
 									"type": "default",
@@ -224,14 +224,14 @@ class FsContentTableSeeder extends Seeder {
 										}
 									],
 									"content": "##Starke Kundenorientierung\\nFeatures werden in sehr enger Zusammenarbeit mit dem Kunden abgestimmt.\\n\\nDurch jährliche Anwendertreffen ist eine aktive COPRA-Community entstanden, die sich über die verschiedenen Lösungsansätze im stark individualisierbarem COPRA austauschen.",
-									"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
+									"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						},
 						{
 							"type": "subsection",
 							"column": 4,
-							"class":"padded-column",
+							"class":"padded-column-small",
 							"content": [
 								{
 										"type": "default",
@@ -242,14 +242,14 @@ class FsContentTableSeeder extends Seeder {
 												}
 										],
 										"content": "##Innovation\\nEin Großteil unserer Kunden sind Universitätskliniken, die am Puls der Zeit mit großem Forschungsinteresse neue Ideen entwickeln und ausprobieren wollen.\\n\\nWir holen uns Experten für die Bereiche, die eine intensive und kontinuierliche Entwicklung erleben oder stark spezialisiert sind. Z.B. Softwarearchitektur-Pattern, UI/UX Design, Fachmodule (Neonatologie)",
-										"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
+										"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						},
 						{
 							"type": "subsection",
 							"column": 4,
-							"class":"padded-column",
+							"class":"padded-column-small",
 							"content": [
 								{
 										"type": "default",
@@ -260,7 +260,7 @@ class FsContentTableSeeder extends Seeder {
 											}
 										],
 										"content": "##Spezialisierte Software für einen spezialisierten Bereich\\n**Offlineverfügbarkeit** – Weil das System in kritischen Situationen immer verfügbar sein muss.\\n\\n**Kompatibel** – Ein großes Arsenal an Treibern und hoch integrierte Anbindungen von Drittsystemen bedeutet, COPRA spricht die Sprache des Einsatzbereichs.",
-										"class": "padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
+										"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						}
