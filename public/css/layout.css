@@ -321,6 +321,7 @@
 	transform: scale(0.9);
 }
 .card-back{
+	visibility: hidden;
 	opacity: 0;
 	z-index: 0;
 	position: absolute;
@@ -332,10 +333,11 @@
 	transform: translate(0,-50%) scale(0.9);
 	background-color: rgb(225,70,75);
 	border-radius: 3px;
-	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s;
-	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s;
+	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s, visibility 0 ease .5s;
+	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s, visibility 0 ease .5s;
 }
 .card.js-active .card-back{
+	visibility: visible;
 	opacity: 1;
 	z-index: 3;
 	-webkit-transform: translate(0,-50%) scale(1, 1);

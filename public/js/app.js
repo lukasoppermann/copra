@@ -149,8 +149,22 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		$('.search').on('keyup', function(){
 			var term = $(this).val().toUpperCase();
 
+			var hide = true;
+
 			$('.card').each(function(){
-				if( term !== "" && ! $(this).find("h3").text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+
+				hide = true
+
+				$(this).find('.js-searchable-entry').each(function(){
+					
+					if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+					{
+						hide = false;
+						return false;
+					}
+				});
+
+				if( hide === true && term !== "" )
 				{
 					$(this).hide();
 				}
