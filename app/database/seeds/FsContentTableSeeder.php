@@ -523,7 +523,47 @@ class FsContentTableSeeder extends Seeder {
 				'status' => 1,
 				'language' => 'de',
 				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "###Uniklinik Jena\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '[{
+					"class":"card-frontside",
+					"content":[
+						{
+							"type": "default",
+							"content": "###Universitätsklinikum Jena\\nInbetriebnahme 4Q 2013",
+							"class": "card-header",
+							"media": [
+								{
+									"src": "hospital.png"
+								}
+							]
+						},
+						{
+							"type": "default",
+							"content": "####Fachbereiche\\nAnästhesie, Neonatologie, Zentrale Arbeitsplätze"
+						}
+					]
+				},
+				{
+					"class":"card-backside",
+					"content":[
+						{
+							"type": "array",
+							"mode": "default",
+							"content": {
+								"Headline": "Universitätsklinikum Jena",
+								"Umfang": "130 Arbeitsplätze",
+								"Inbetriebnahme": "4Q 2013",
+								"Fachbereiche": "Anästhesie, Neonatologie, Zentrale Arbeitsplätze",
+								"Monitoring": "Siemens",
+								"Beatmung": "Dräger, Bennett, Maquet",
+								"Labor": "Frey SwisslabII, Lauris",
+								"Infusion": "B|Braun Melsungen",
+								"Narkose": "Dräger",
+								"KIS": "i.s.h.med für SAP",
+								"Weiteres": "Radiometer ABL"
+							}
+						}
+					]
+				}]',
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',

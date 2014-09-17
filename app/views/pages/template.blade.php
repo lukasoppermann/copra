@@ -197,7 +197,7 @@ function block_array( $el )
 		{
 			foreach($el['content'] as $term => $def)
 			{
-				$out .='<div class="def-item item-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'"><span class="def-term">'.$term.'</span><span class="def-content item-content-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'">'.MarkdownExtra::defaultTransform($def).'</span></div>';
+				$out .='<div class="def-item item-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'"><span class="def-term">'.$term.'</span><div class="def-content js-searchable-entry item-content-'.strtolower(preg_replace('/[^a-zA-Z0-9\s]/', '',str_replace(' ','',$term))).'">'.MarkdownExtra::defaultTransform($def).'</div></div>';
 			}
 		}
 		else
