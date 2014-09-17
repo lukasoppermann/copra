@@ -219,7 +219,7 @@ class FsContentTableSeeder extends Seeder {
 									"type": "default",
 									"media":[
 										{
-											"src": "icon.png",
+											"src": "icon-listen.svg",
 											"class": "media--noResize"
 										}
 									],
@@ -237,7 +237,7 @@ class FsContentTableSeeder extends Seeder {
 										"type": "default",
 										"media":[
 											{
-												"src": "icon.png",
+												"src": "icon-innovation.svg",
 												"class": "media--noResize"
 												}
 										],
@@ -255,7 +255,7 @@ class FsContentTableSeeder extends Seeder {
 										"type": "default",
 										"media":[
 											{
-												"src": "icon.png",
+												"src": "icon-hospital.svg",
 												"class": "media--noResize"
 											}
 										],
