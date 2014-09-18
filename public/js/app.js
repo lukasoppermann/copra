@@ -141,51 +141,148 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		// Cards
 		//
 		$('.js-card-details').on('click', function(){
-			$(this).parents('.card').addClass('js-active').siblings('.card').removeClass('js-active');
+			$(this).parents('.card').addClass('is-active').siblings('.card').removeClass('is-active');
 		});
 		$('.card').find('.js-close').on('click', function(){
-			$(this).parents('.card').removeClass('js-active');
+			$(this).parents('.card').removeClass('is-active');
 		});
 
 		// ---------------------------
 		// Searchable list with list.js
 		//
-		$('.search').on('keyup', function(){
-			var term = $(this).val().toUpperCase();
+		$('.js-searchable').each(function(){
+			var $this = $(this);
+			$this.db = {};
+			$this.opts = {
+				item: '.card',
+				searchBox: '.js-searchable-searchBox',
+				itemCount: '.js-searchable-itemCount',
+				emptyState: '.js-emptyState'
+			};
+			// hide empty state
+			$this.find($this.opts.emptyState).hide()
 
-			var hide = true;
+			// build database
+			var itemId = 0, searchableData;
+			$this.find($this.opts.item).each(function(){
 
-			$('.card').each(function(){
+				// reset
+				searchableData = "";
 
-				hide = true
+				// add id
+				itemId++;
+				$(this).attr('data-searchableID', itemId)
 
-				$(this).find('.js-searchable-entry').each(function(){
-					
-					if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+				// add to db
+				.find('.js-searchable-entry').each(function(){
+					searchableData += $(this).text().toUpperCase().replace(/(\r\n|\n|\r)/gm,"")+' ';
+				});
+				$this.db[itemId] = searchableData;
+			});
+
+			// search
+			var term, count = 0, hide = false;
+
+			$this.find($this.opts.searchBox).on('keyup', function(){
+
+				term = $(this).val().toUpperCase().replace(/(,)/gm," ").split(" ");
+				count = 0;
+
+				$.each($this.db, function(id, value){
+
+					// reset
+					hide = false;
+
+					$.each(term, function(k, t){
+						if( ! value.match( t ) )
+						{
+							hide = true;
+							return false;
+						}
+					});
+
+					if( hide === true )
 					{
-						hide = false;
-						return false;
+						$this.find("[data-searchableid="+id+"]").hide();
 					}
+					else
+					{
+						$this.find("[data-searchableid="+id+"]").show();
+						count++;
+					}
+
 				});
 
-				if( hide === true && term !== "" )
+				// $this.find($this.opts.item).each(function(){
+				//
+				// 	hide = true;
+				// 	var $item = $(this);
+				//
+				// 	$item.find('.js-searchable-entry').each(function(){
+				//
+				// 		if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+				// 		{
+				// 			hide = false;
+				// 			return false;
+				// 		}
+				// 	});
+				//
+				// 	if( hide === true && term !== "" )
+				// 	{
+				// 		$item.hide().removeClass('is-active');
+				// 	}
+				// 	else
+				// 	{
+				// 		$item.show();
+				// 		count++;
+				// 	}
+				// });
+
+				// set count
+				$this.find($this.opts.itemCount).text(count+' Ergebnisse');
+
+				// check if empty
+				if( count === 0 )
 				{
-					$(this).hide();
+					$this.find($this.opts.emptyState).show();
 				}
 				else
 				{
-					$(this).show();
+					$this.find($this.opts.emptyState).hide();
 				}
+
 			});
 
-
 		});
-// $('.card h3').each(function(){
-// if( $('.search').val().toUpperCase().match($(this).text().toUpperCase().replace(/\s+/g, '.+')) ){
-// $(this).parents('.card').hide()
-// }
-//
-// })
+
+		// $('.search').on('keyup', function(){
+		//
+		//
+		// 	$('.card').each(function(){
+		//
+		// 		hide = true
+		//
+		// 		$(this).find('.js-searchable-entry').each(function(){
+		//
+		// 			if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
+		// 			{
+		// 				hide = false;
+		// 				return false;
+		// 			}
+		// 		});
+		//
+		// 		if( hide === true && term !== "" )
+		// 		{
+		// 			$(this).hide().removeClass('is-active');
+		// 		}
+		// 		else
+		// 		{
+		// 			$(this).show();
+		// 		}
+		// 	});
+		//
+		//
+		// });
 		// ---------------------------
 		// Mediaqueries
 		//

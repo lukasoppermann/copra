@@ -315,7 +315,7 @@
 	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
 	transition: opacity .5s ease, transform .5s ease;
 }
-.card.js-active .card-front{
+.card.is-active .card-front{
 	opacity: 0;
 	-webkit-transform: scale(0.9);
 	-ms-transform: scale(0.9);
@@ -337,7 +337,7 @@
 	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease, z-index 0 ease .5s, visibility 0 ease .5s;
 	transition: opacity .5s ease, transform .5s ease, z-index 0 ease .5s, visibility 0 ease .5s;
 }
-.card.js-active .card-back{
+.card.is-active .card-back{
 	visibility: visible;
 	opacity: 1;
 	z-index: 3;
