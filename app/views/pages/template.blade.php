@@ -25,11 +25,6 @@
 			foreach($section['content'] as $child)
 			{
 
-				if($child['type'] == "stream")
-				{
-					$output_sections .= '<input class="search" placeholder="Search" />';
-				}
-
 				if( $child['type'] == 'subsection' )
 				{
 					$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].' '.App::make('Utilities')->variable($child['class'],"").'">';
@@ -119,6 +114,20 @@ function block_stream( $el )
 		// build view
 		$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
 
+		$out .= "<div class='searchable-optionsGroup'>";
+			// add search
+			if( isset($el['variables']) && isset($el['variables']['search']) && $el['variables']['search'] == "true" )
+			{
+				$out .= '<input class="js-searchable-searchBox searchable-searchBox" placeholder="Suche">';
+			}
+			// add count
+			if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
+			{
+				$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream)." Ergebnisse</div>";
+			}
+		$out .= "</div>";
+
+
 		if( !isset($el['mode']) || $el['mode'] == 'default' )
 		{
 			foreach($stream as $p)
@@ -181,6 +190,11 @@ function block_stream( $el )
 				}
 				$out .= '</div>';
 			}
+		}
+
+		if( isset($el['variables']) && isset($el['variables']['emptyState']) && $el['variables']['emptyState'] !== "false" )
+		{
+			$out .= "<div class='stream-emptyState js-emptyState'>".$el['variables']['emptyState']."</div>";
 		}
 
 		return $out.'</div>';

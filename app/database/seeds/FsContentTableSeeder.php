@@ -341,6 +341,11 @@ class FsContentTableSeeder extends Seeder {
 								"type": "stream",
 								"column": 12,
 								"stream": "references",
+								"variables": {
+									"itemCount": "true",
+									"search": "true",
+									"emptyState": "Mit ihren Kriterien konnte keine Refernz gefunden werden."
+								},
 								"mode": "card",
 								"class": "grid js-searchable"
 							}
