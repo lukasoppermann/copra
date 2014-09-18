@@ -92,30 +92,30 @@ class FsStreamTableSeeder extends Seeder {
 				'position' => 3,
 				'article_id' => 10,
 			),
-			10 =>
-			array (
-				'id' => 11,
-				'stream' => 'references',
-				'parent_id' => NULL,
-				'position' => 1,
-				'article_id' => 11,
-			),
-			11 =>
-			array (
-				'id' => 12,
-				'stream' => 'references',
-				'parent_id' => NULL,
-				'position' => 2,
-				'article_id' => 12,
-			),
-			13 =>
-			array (
-				'id' => 13,
-				'stream' => 'references',
-				'parent_id' => NULL,
-				'position' => 3,
-				'article_id' => 13,
-			),
+			// 10 =>
+			// array (
+			// 	'id' => 11,
+			// 	'stream' => 'references',
+			// 	'parent_id' => NULL,
+			// 	'position' => 1,
+			// 	'article_id' => 11,
+			// ),
+			// 11 =>
+			// array (
+			// 	'id' => 12,
+			// 	'stream' => 'references',
+			// 	'parent_id' => NULL,
+			// 	'position' => 2,
+			// 	'article_id' => 12,
+			// ),
+			// 13 =>
+			// array (
+			// 	'id' => 13,
+			// 	'stream' => 'references',
+			// 	'parent_id' => NULL,
+			// 	'position' => 3,
+			// 	'article_id' => 13,
+			// ),
 		));
 	}
 

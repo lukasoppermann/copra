@@ -344,7 +344,7 @@ class FsContentTableSeeder extends Seeder {
 								"variables": {
 									"itemCount": "true",
 									"search": "true",
-									"emptyState": "Mit ihren Kriterien konnte keine Refernz gefunden werden."
+									"emptyState": "Mit ihren Kriterien konnte keine Referenz gefunden werden."
 								},
 								"mode": "card",
 								"class": "grid js-searchable"
@@ -462,131 +462,7 @@ class FsContentTableSeeder extends Seeder {
 				'created_at' => '0000-00-00 00:00:00',
 				'updated_at' => '0000-00-00 00:00:00',
 				'deleted_at' => '0000-00-00 00:00:00',
-			),
-			9 =>
-			array (
-				'id' => 11,
-				'article_id' => 11,
-				'menu_label' => '',
-				'link' => '',
-				'status' => 1,
-				'language' => 'de',
-				'type' => 2,
-				'data' => '[
-					{
-						"class":"card-frontside",
-						"content":[
-							{
-								"type": "default",
-								"content": "###Universitätsklinikum Würzburg\\nInbetriebnahme 4Q 2011",
-								"class": "card-header",
-								"media": [
-									{
-										"src": "hospital.png"
-									}
-								]
-							},
-							{
-								"type": "default",
-								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
-							}
-						]
-					},
-					{
-						"class":"card-backside",
-						"content":[
-							{
-								"type": "array",
-								"mode": "default",
-								"content": {
-									"Headline": "Universitätsklinikum Würzburg",
-									"Umfang": "320 Arbeitsplätze",
-									"Inbetriebnahme": "4Q 2011",
-									"Fachbereiche": "Anästhesie, Intensivstation, Zentrale Arbeitsplätze",
-									"Monitoring": "Philips",
-									"Beatmung": "Dräger, Bennett, Maquet",
-									"Labor": "Frey SwisslabII, Lauris",
-									"Infusion": "B|Braun Melsungen",
-									"Narkose": "Dräger",
-									"KIS": "i.s.h.med für SAP",
-									"Weiteres": "Radiometer ABL"
-								}
-							}
-						]
-					}
-				]',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
-				'deleted_at' => '0000-00-00 00:00:00',
-			),
-			10 =>
-			array (
-				'id' => 12,
-				'article_id' => 12,
-				'menu_label' => '',
-				'link' => '',
-				'status' => 1,
-				'language' => 'de',
-				'type' => 2,
-				'data' => '[{
-					"class":"card-frontside",
-					"content":[
-						{
-							"type": "default",
-							"content": "###Universitätsklinikum Jena\\nInbetriebnahme 4Q 2013",
-							"class": "card-header",
-							"media": [
-								{
-									"src": "hospital.png"
-								}
-							]
-						},
-						{
-							"type": "default",
-							"content": "####Fachbereiche\\nAnästhesie, Neonatologie, Zentrale Arbeitsplätze"
-						}
-					]
-				},
-				{
-					"class":"card-backside",
-					"content":[
-						{
-							"type": "array",
-							"mode": "default",
-							"content": {
-								"Headline": "Universitätsklinikum Jena",
-								"Umfang": "130 Arbeitsplätze",
-								"Inbetriebnahme": "4Q 2013",
-								"Fachbereiche": "Anästhesie, Neonatologie, Zentrale Arbeitsplätze",
-								"Monitoring": "Siemens",
-								"Beatmung": "Dräger, Bennett, Maquet",
-								"Labor": "Frey SwisslabII, Lauris",
-								"Infusion": "B|Braun Melsungen",
-								"Narkose": "Dräger",
-								"KIS": "i.s.h.med für SAP",
-								"Weiteres": "Radiometer ABL"
-							}
-						}
-					]
-				}]',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
-				'deleted_at' => '0000-00-00 00:00:00',
-			),
-			11 =>
-			array (
-				'id' => 13,
-				'article_id' => 13,
-				'menu_label' => '',
-				'link' => '',
-				'status' => 1,
-				'language' => 'de',
-				'type' => 2,
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "default","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "###Krankenhaus Hamburg\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
-				'deleted_at' => '0000-00-00 00:00:00',
-			),
+			)
 		));
 	}
 
