@@ -11,9 +11,21 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
+		// --------------------------
+		// Content Seeding
+		//
+		// this seeder truncates DB !
 		$this->call('FsContentTableSeeder');
-		// $this->call('FsNavigationTableSeeder');
+		// additional seeders
+		$this->call('ReferencesContentTableSeeder');
+
+		// --------------------------
+		// Stream Seeding
+		//
+		// this seeder truncates DB !
 		$this->call('FsStreamTableSeeder');
+		// additional seeders only add data
+		$this->call('ReferencesStreamTableSeeder');
 	}
 
 }

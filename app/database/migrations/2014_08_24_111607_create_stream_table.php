@@ -18,10 +18,11 @@ class CreateStreamTable extends Migration {
 			$table->engine = 'MyISAM';
 			// fields
 			$table->increments('id',true);
-			$table->integer('parent_id')->nullable()->default(NULL);
-			$table->integer('article_id');
+			$table->integer('parent_id')->default(0);
+			$table->integer('article_id')->unique();
 			$table->string('stream',255);
 			$table->integer('position');
+			$table->softDeletes();
 		});
 	}
 

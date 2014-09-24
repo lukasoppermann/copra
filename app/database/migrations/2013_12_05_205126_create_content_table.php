@@ -22,7 +22,6 @@ class CreateContentTable extends Migration {
 			$table->string('link')->index()->nullable();
 			$table->boolean('status')->nullable();
 			$table->string('language', 2)->nullable();
-			$table->smallInteger('type')->nullable();
 			$table->longtext('data')->nullable();
 			$table->text('tags')->nullable();
 			$table->timestamps();

@@ -87,7 +87,12 @@ function loop( $nav, $parent = "", $result = "" )
 			<div class="logo-shadow"></div>
 		</a>
 		<div class="main-navigation-list">
-			<?=loop(Api::get('streams/navigation?nested=true&limit=100&status=1&language='.Config::get('app.locale')));
+			<?
+				$navItems = Api::stream('navigation')->get(['nested' => true, 'limit' => 100, 'status'=>1, 'language' => Config::get('app.locale')]);
+				if($navItems['success'] === 'true')
+				{
+					echo loop( $navItems['content'] );
+				}
 			?>
 		</div>
 
