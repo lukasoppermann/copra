@@ -24,7 +24,7 @@ class FsStreamTableSeeder extends Seeder {
 			// array (
 			// 	'id' => 2,
 			// 	'stream' => 'navigation',
-			// 	'parent_id' => 0,
+			// 	'parent_id' => 1,
 			// 	'position' => 2,
 			// 	'article_id' => 2,
 			// ),

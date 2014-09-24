@@ -22,6 +22,7 @@ class CreateStreamTable extends Migration {
 			$table->integer('article_id')->unique();
 			$table->string('stream',255);
 			$table->integer('position');
+			$table->softDeletes();
 		});
 	}
 

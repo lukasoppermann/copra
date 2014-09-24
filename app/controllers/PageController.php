@@ -8,7 +8,7 @@ class PageController extends BaseController {
 	{
 		$path = ( $path == "/" ? "home" : $path);
 
-		$api = Api::get('pages/'.str_replace('/','.',$path).'?language='.Config::get('app.locale'));
+		$api = Api::pages(str_replace('/','.',$path))->get(['language' => Config::get('app.locale')]);
 
 		if( isset($api) && isset($api['data']))
 		{
@@ -16,7 +16,8 @@ class PageController extends BaseController {
 		}
 		else
 		{
-			return "Error from Controller (by fs)";
+			Log::error($api);
+			App::abort(404);
 		}
 	}
 

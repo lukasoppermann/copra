@@ -109,95 +109,97 @@ function block_stream( $el )
 	if( isset($el['stream']) )
 	{
 		// get posts
-		$stream = Api::get('streams/'.$el['stream'].'?language='.Config::get('app.locale'));
-
-		// build view
-		$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
-
-		$out .= "<div class='searchable-optionsGroup'>";
-			// add search
-			if( isset($el['variables']) && isset($el['variables']['search']) && $el['variables']['search'] == "true" )
-			{
-				$out .= '<input class="js-searchable-searchBox searchable-searchBox" placeholder="Suche">';
-			}
-			// add count
-			if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
-			{
-				$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream)." Ergebnisse</div>";
-			}
-		$out .= "</div>";
-
-
-		if( !isset($el['mode']) || $el['mode'] == 'default' )
+		$stream = Api::stream($el['stream'])->get(['language' => Config::get('app.locale')]);
+		if( $stream['success'] === 'true' )
 		{
-			foreach($stream as $p)
-			{
-				$text = null;
+			// build view
+			$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
 
-				foreach( $p['data'] as $content )
+			$out .= "<div class='searchable-optionsGroup'>";
+				// add search
+				if( isset($el['variables']) && isset($el['variables']['search']) && $el['variables']['search'] == "true" )
 				{
-					foreach( $content['content'] as $c )
+					$out .= '<input class="js-searchable-searchBox searchable-searchBox" placeholder="Suche">';
+				}
+				// add count
+				if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
+				{
+					$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream)." Ergebnisse</div>";
+				}
+			$out .= "</div>";
+
+
+			if( !isset($el['mode']) || $el['mode'] == 'default' )
+			{
+				foreach($stream['content'] as $p)
+				{
+					$text = null;
+
+					foreach( $p['data'] as $content )
 					{
-						if($c['type'] == 'default'){
-							$text = "NOT DONE ".shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
-							break;
+						foreach( $content['content'] as $c )
+						{
+							if($c['type'] == 'default'){
+								$text = "NOT DONE ".shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+								break;
+							}
 						}
 					}
+
+					$out.= "<div class='post'>".$text."</div>";
 				}
-
-				$out.= "<div class='post'>".$text."</div>";
 			}
-		}
-		elseif( $el['mode'] == 'preview' )
-		{
-			foreach($stream as $p)
+			elseif( $el['mode'] == 'preview' )
 			{
-				$text = null;
-
-				foreach( $p['data'] as $content )
+				foreach($stream['content'] as $p)
 				{
-					foreach( $content['content'] as $c )
+					$text = null;
+
+					foreach( $p['data'] as $content )
 					{
-						if($c['type'] == 'default'){
-							$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
-							break;
+						foreach( $content['content'] as $c )
+						{
+							if($c['type'] == 'default'){
+								$text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+								break;
+							}
 						}
 					}
-				}
 
-				$out.= "<div class='post-preview'>".$text."</div>";
+					$out.= "<div class='post-preview'>".$text."</div>";
+				}
 			}
-		}
-		// cards
-		elseif( $el['mode'] == 'card' )
-		{
-			foreach($stream as $card)
+			// cards
+			elseif( $el['mode'] == 'card' )
 			{
-				$sides = array_values(array_slice($card['data'],0,2));
-
-				$out .= '<div class="card column-4">';
-				$sideClass = 'card-front';
-				foreach( $sides as $side)
+				foreach($stream['content'] as $card)
 				{
-					$content = "";
-					foreach( $side['content'] as $item )
+					$sides = array_values(array_slice($card['data'],0,2));
+
+					$out .= '<div class="card column-4">';
+					$sideClass = 'card-front';
+					foreach( $sides as $side)
 					{
-						$content.= call_user_func_array('block_'.$item['type'], array($item));
+						$content = "";
+						foreach( $side['content'] as $item )
+						{
+							$content.= call_user_func_array('block_'.$item['type'], array($item));
+						}
+						$out .= View::make('partials.'.$sideClass)->with('content', $content);
+
+						$sideClass = 'card-back';
 					}
-					$out .= View::make('partials.'.$sideClass)->with('content', $content);
-
-					$sideClass = 'card-back';
+					$out .= '</div>';
 				}
-				$out .= '</div>';
 			}
-		}
 
-		if( isset($el['variables']) && isset($el['variables']['emptyState']) && $el['variables']['emptyState'] !== "false" )
-		{
-			$out .= "<div class='stream-emptyState js-emptyState'>".$el['variables']['emptyState']."</div>";
-		}
+			if( isset($el['variables']) && isset($el['variables']['emptyState']) && $el['variables']['emptyState'] !== "false" )
+			{
+				$out .= "<div class='stream-emptyState js-emptyState'>".$el['variables']['emptyState']."</div>";
+			}
 
-		return $out.'</div>';
+			return $out.'</div>';
+		}
 	}
 }
 // block table

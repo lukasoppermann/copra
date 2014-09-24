@@ -19,3 +19,8 @@ Route::group(array('before' => array('cache.fetch'), 'after' => array('cache.put
 	Route::any('/{path?}', "PageController@index")->where('path', '.+');
 
 });
+
+App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});
