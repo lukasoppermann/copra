@@ -103,7 +103,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 				f = setTimeout(function(){
 					$('.js-banner img').css('top',-parseInt((scrollTop()/100)*50)+'px');
 					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
-				},10);
+				},1);
 			}
 		});
 
