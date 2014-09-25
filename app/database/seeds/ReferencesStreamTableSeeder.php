@@ -10,7 +10,7 @@ class ReferencesStreamTableSeeder extends Seeder {
 	public function run()
 	{
 		$start = 11;
-		$amount = 41;
+		$amount = 42;
 
 		for( $i = 0; $i < $amount; $i++ )
 		{
