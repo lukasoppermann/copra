@@ -10,7 +10,7 @@ class ReferencesStreamTableSeeder extends Seeder {
 	public function run()
 	{
 		$start = 11;
-		$amount = 40;
+		$amount = 41;
 
 		for( $i = 0; $i < $amount; $i++ )
 		{
@@ -23,33 +23,6 @@ class ReferencesStreamTableSeeder extends Seeder {
 			);
 		}
 		\DB::table('fs_stream')->insert($array);
-		// \DB::table('fs_stream')->insert(array (
-		// 	10 =>
-		// 	array (
-		// 		'id' => 11,
-		// 		'stream' => 'references',
-		// 		'parent_id' => 0,
-		// 		'position' => 1,
-		// 		'article_id' => 11,
-		// 	),
-		// 	11 =>
-		// 	array (
-		// 		'id' => 12,
-		// 		'stream' => 'references',
-		// 		'parent_id' => 0,
-		// 		'position' => 2,
-		// 		'article_id' => 12,
-		// 	),
-		// 	13 =>
-		// 	array (
-		// 		'id' => 13,
-		// 		'stream' => 'references',
-		// 		'parent_id' => 0,
-		// 		'position' => 3,
-		// 		'article_id' => 13,
-		// 	),
-		//
-		// ));
 	}
 
 }

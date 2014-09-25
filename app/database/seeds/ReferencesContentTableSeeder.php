@@ -1256,10 +1256,831 @@ class ReferencesContentTableSeeder extends Seeder {
          	'created_at' => date("Y-m-d h:i:s"),
          	'updated_at' => date("Y-m-d h:i:s"),
          ),
-
-
-
-
+        36 =>
+         array (
+         	'id' => 36,
+         	'article_id' => 36,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###AUVA UKH Kalwang\nInbetriebnahme 2Q 2012",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"AUVA UKH Kalwang",
+									"Umfang":"34 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 2012",
+									"Fachbereiche":"Anästhesie, Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Philips",
+									"Beatmung":"Dräger Evita, Dräger Primus",
+									"KIS":"ASTRA"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        37 =>
+         array (
+         	'id' => 37,
+         	'article_id' => 37,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Kantonsspital Bruderholz\nInbetriebnahme 1Q 2003",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Kantonsspital Bruderholz",
+									"Umfang":"33 Arbeitsplätze",
+									"Inbetriebnahme":"1. Quartal 2003",
+									"Fachbereiche":"Anästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze",
+									"Monitoring":"Hewlett Packard-CMS",
+									"Beatmung":"Dräger Evita, Maquet Servo Ventilator",
+									"Narkose":"Dräger Fabius, Dräger Primus"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        38 =>
+         array (
+         	'id' => 38,
+         	'article_id' => 38,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###AUVA UKH Wien Lorenz Böhler\nInbetriebnahme 2Q 2012",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"AUVA UKH Wien Lorenz Böhler",
+									"Umfang":"33 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 2012",
+									"Fachbereiche":"Anästhesie, Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Philips",
+									"Beatmung":"Dräger Evita",
+									"KIS":"ASTRA"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        39 =>
+         array (
+         	'id' => 39,
+         	'article_id' => 39,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###AUVA UKH Klagenfurt\nInbetriebnahme 1Q 2009",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, IMC"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"AUVA UKH Klagenfurt",
+									"Umfang":"28 Arbeitsplätze",
+									"Inbetriebnahme":"1. Quartal 2009",
+									"Fachbereiche":"Anästhesie, Intensivstation, Zentrale Arbeitsplätze, IMC",
+									"Monitoring":"Philips",
+									"Beatmung":"Dräger Evita",
+									"KIS":"ASTRA"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        40 =>
+         array (
+         	'id' => 40,
+         	'article_id' => 40,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Kantonsspital Liestal\nInbetriebnahme 1Q 2001",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Kantonsspital Liestal",
+									"Umfang":"26 Arbeitsplätze",
+									"Inbetriebnahme":"1. Quartal 2001",
+									"Fachbereiche":"Anästhesie, Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze",
+									"Monitoring":"Marquette Hellige, Dräger DASH",
+									"Narkose":"Dräger Fabius, Dräger Primus, Dräger Gasmonitor PM8050"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        41 =>
+         array (
+         	'id' => 41,
+         	'article_id' => 41,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Klinikum Heilbronn\nInbetriebnahme 1Q 2002",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nKinder-Intensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Klinikum Heilbronn",
+									"Umfang":"24 Arbeitsplätze",
+									"Inbetriebnahme":"1. Quartal 2002",
+									"Fachbereiche":"Kinder-Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Hewlett Packard-CMS",
+									"Beatmung":"MAQUET: Servo Ventilator 300, Dräger: Babylog 8000",
+									"KIS":"gap it! [drg] FA: iSOFT Deutschland"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        42 =>
+         array (
+         	'id' => 42,
+         	'article_id' => 42,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Klinikum Erlabrunn\nInbetriebnahme 2Q 2007",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Klinikum Erlabrunn",
+									"Umfang":"20 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 2007",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Dräger Infinity Delta",
+									"Beatmung":"Dräger Evita",
+									"KIS":"Care-Center von Siemens"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        43 =>
+         array (
+         	'id' => 43,
+         	'article_id' => 43,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Evangelisches Krankenhaus Wesel\nInbetriebnahme 2Q 2007",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Evangelisches Krankenhaus Wesel",
+									"Umfang":"20 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 2007",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Dräger Infinity",
+									"Beatmung":"Dräger Evita 4",
+									"KIS":"iSoft/Bokis Prosight von Torex",
+									"Weiteres":"Radionmeter ABL"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        44 =>
+         array (
+         	'id' => 44,
+         	'article_id' => 44,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Medizinische Hochschule Hannover (MHH)\nInbetriebnahme 1Q 2010",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Kinder-Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Medizinische Hochschule Hannover (MHH)",
+									"Inbetriebnahme":"1. Quartal 2010",
+									"Fachbereiche":"Anästhesie, Kinder-Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze",
+									"Monitoring":"GE Solar 8000i",
+									"Beatmung":"Dräger Evita, Siemens Servo",
+									"Labor":"Anbindung des Zentrallabors via HL7-Protokoll",
+									"Infusion":"B|Braun Melsungen",
+									"KIS":"i.s.h.med für SAP",
+									"Weiteres":"Radiometer ABL, ALIDA"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        45 =>
+         array (
+         	'id' => 45,
+         	'article_id' => 45,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###RPTC München\nInbetriebnahme 4Q 2005",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Aufwachraum, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"RPTC München",
+									"Umfang":"18 Arbeitsplätze",
+									"Inbetriebnahme":"4. Quartal 2005",
+									"Fachbereiche":"Anästhesie, Aufwachraum, Zentrale Arbeitsplätze",
+									"Monitoring":"Dräger, Saegeling",
+									"Beatmung":"Dräger Evita",
+									"Infusion":"Alaris",
+									"KIS":"AGFA ORBIS"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        46 =>
+         array (
+         	'id' => 46,
+         	'article_id' => 46,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Klinikum Altenburger Land\nInbetriebnahme 4Q 2004",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Klinikum Altenburger Land",
+									"Umfang":"16 Arbeitsplätze",
+									"Inbetriebnahme":"4. Quartal 2004",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Philips",
+									"Beatmung":"Dräger Evita",
+									"Labor":"MCS ProMed-open via HL7-Protokoll",
+									"KIS":"iSoft/Bokis Prosight von Torex"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        47 =>
+         array (
+         	'id' => 47,
+         	'article_id' => 47,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Helios-Klinik Gotha\nInbetriebnahme 2Q 1996",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Helios-Klinik Gotha",
+									"Umfang":"14 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 1996",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Hewlett Packard-CMS",
+									"Beatmung":"Maquet Servo Ventilator, KION",
+									"Labor":"Fa. BOSS"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        48 =>
+         array (
+         	'id' => 48,
+         	'article_id' => 48,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Evangelisches Krankenhaus Bielefeld\nInbetriebnahme 2Q 2001",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Evangelisches Krankenhaus Bielefeld",
+									"Umfang":"14 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 2001",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Siemens SC7000",
+									"Beatmung":"MAQUET: Servo Ventilator 300, MAQUET: Servo Ventilator 900, Dräger Evita 4",
+									"Infusion":"B|Braun Melsungen"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        49 =>
+         array (
+         	'id' => 49,
+         	'article_id' => 49,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Kantonsspital Schaffhausen\nInbetriebnahme 3Q 2003",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Kantonsspital Schaffhausen",
+									"Umfang":"12 Arbeitsplätze",
+									"Inbetriebnahme":"3. Quartal 2003",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Philips",
+									"Beatmung":"Dräger Evita, Puritan Bennett",
+									"Weiteres":"LEP 2.0"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        50 =>
+         array (
+         	'id' => 50,
+         	'article_id' => 50,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Elblandkliniken Meißen-Radebeul\nInbetriebnahme 3Q 1997",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Elblandkliniken Meißen-Radebeul",
+									"Umfang":"9 Arbeitsplätze",
+									"Inbetriebnahme":"3. Quartal 1997",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Hewlett Packard-CMS",
+									"Beatmung":"Puritan Bennett",
+									"Infusion":"B|Braun Melsungen",
+									"KIS":"Waldbrenner"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        51 =>
+         array (
+         	'id' => 51,
+         	'article_id' => 51,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Kreiskrankenhaus Rotenburg a.d.Fulda\nInbetriebnahme 4Q 2005",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Kreiskrankenhaus Rotenburg a.d.Fulda",
+									"Umfang":"9 Arbeitsplätze",
+									"Inbetriebnahme":"4. Quartal 2005",
+									"Fachbereiche":"Intensivstation, Zentrale Arbeitsplätze",
+									"Monitoring":"Dräger",
+									"Beatmung":"Siemens",
+									"Labor":"GWI",
+									"Infusion":"B|Braun Melsungen",
+									"KIS":"AGFA ORBIS",
+									"Weiteres":"BGA - Radiometer"
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
+        52 =>
+         array (
+         	'id' => 52,
+         	'article_id' => 52,
+         	'menu_label' => '',
+         	'link' => '',
+         	'status' => 1,
+         	'language' => 'de',
+         	'data' => '[{
+         		"class":"card-frontside",
+         		"content":[
+         			{
+         				"type": "default",
+         				"content": "###Kreiskrankenhaus Wurzen\nInbetriebnahme 2Q 1995",
+         				"class": "card-header",
+         				"media": [
+         					{
+         						"src": "hospital.png"
+         					}
+         				]
+         			},
+         			{
+         				"type": "default",
+         				"content": "####Fachbereiche\nAnästhesie, Zentrale Arbeitsplätze"
+         			}
+         		]
+         	},
+         	{
+         		"class":"card-backside",
+         		"content":[
+         			{
+         				"type": "array",
+         				"mode": "default",
+         				"content": {
+									"Headline":"Kreiskrankenhaus Wurzen",
+									"Umfang":"6 Arbeitsplätze",
+									"Inbetriebnahme":"2. Quartal 1995",
+									"Fachbereiche":"Anästhesie, Zentrale Arbeitsplätze",
+									"Monitoring":"Datex Capnomac, Datex Capnomac Ultima, Datex Cardiocap II, Bruker Physiogard",
+									"Beatmung":"Datex Ohmeda Modulus CD, CD/CV",
+									"Narkose":"Datex Capnomac, Datex Cardiocap II, Bruker Physiogard",
+									"KIS":"i.s.h.med für SAP",
+         				}
+         			}
+         		]
+         	}]',
+         	'created_at' => date("Y-m-d h:i:s"),
+         	'updated_at' => date("Y-m-d h:i:s"),
+         ),
 
 
 		));
