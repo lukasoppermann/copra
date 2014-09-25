@@ -2073,7 +2073,7 @@ class ReferencesContentTableSeeder extends Seeder {
 									"Monitoring":"Datex Capnomac, Datex Capnomac Ultima, Datex Cardiocap II, Bruker Physiogard",
 									"Beatmung":"Datex Ohmeda Modulus CD, CD/CV",
 									"Narkose":"Datex Capnomac, Datex Cardiocap II, Bruker Physiogard",
-									"KIS":"i.s.h.med für SAP",
+									"KIS":"i.s.h.med für SAP"
          				}
          			}
          		]
