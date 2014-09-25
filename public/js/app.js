@@ -98,12 +98,23 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		// Scroll state
 		//
 		$(window).on('scroll', function(f){
+<<<<<<< HEAD
 			if($('.js-banner') !== undefined && scrollTop() < 500){
 				clearTimeout(f);
 				f = setTimeout(function(){
 					$('.js-banner img').css('top',-parseInt((scrollTop()/100)*50)+'px');
 					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
 				},1);
+=======
+			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+				// clearTimeout(f);
+				// f = setTimeout(function(){
+				// 	$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+				// 	$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+				// },1);
+				$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+				$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+>>>>>>> master
 			}
 		});
 
