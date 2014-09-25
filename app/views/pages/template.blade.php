@@ -109,7 +109,7 @@ function block_stream( $el )
 	if( isset($el['stream']) )
 	{
 		// get posts
-		$stream = Api::stream($el['stream'])->get(['language' => Config::get('app.locale')]);
+		$stream = Api::stream($el['stream'])->get(['language' => Config::get('app.locale'), 'limit' => 100]);
 		if( $stream['success'] === 'true' )
 		{
 			// build view
@@ -124,7 +124,7 @@ function block_stream( $el )
 				// add count
 				if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
 				{
-					$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream)." Ergebnisse</div>";
+					$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream['content'])." Ergebnisse</div>";
 				}
 			$out .= "</div>";
 
