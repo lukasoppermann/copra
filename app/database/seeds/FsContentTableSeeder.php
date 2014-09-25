@@ -326,7 +326,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Some optional text"
 									}
 								],
-								"content": "#Unsere Referenzkliniken",
+								"content": "#Unsere Kunden",
 								"class": "banner js-banner"
 							}
 						]
