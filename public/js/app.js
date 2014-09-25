@@ -95,11 +95,13 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		//
 		$(window).on('scroll', function(f){
 			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
-				clearTimeout(f);
-				f = setTimeout(function(){
-					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
-					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
-				},1);
+				// clearTimeout(f);
+				// f = setTimeout(function(){
+				// 	$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+				// 	$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+				// },1);
+				$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+				$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
 			}
 		});
 
