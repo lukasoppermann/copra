@@ -35,6 +35,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							},
 							{
 								"type": "default",
+								"class":"last-card-content",
 								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze"
 							}
 						]
@@ -85,7 +86,8 @@ class ReferencesContentTableSeeder extends Seeder {
 						},
 						{
 							"type": "default",
-							"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Aufwachraum, Kinder-Intensivstation, Zentrale Arbeitsplätze, Normalstation"
+							"class":"last-card-content",
+								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Aufwachraum, Kinder-Intensivstation, Zentrale Arbeitsplätze, Normalstation"
 						}
 					]
 				},
@@ -135,6 +137,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							},
 							{
 								"type": "default",
+								"class":"last-card-content",
 								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze, IMC"
 							}
 						]
@@ -186,7 +189,8 @@ class ReferencesContentTableSeeder extends Seeder {
 								},
 								{
 									"type": "default",
-									"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
+									"class":"last-card-content",
+								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
 								}
 							]
 						},
@@ -239,6 +243,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							},
 							{
 								"type": "default",
+								"class":"last-card-content",
 								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze"
 							}
 						]
@@ -290,7 +295,8 @@ class ReferencesContentTableSeeder extends Seeder {
 								},
 								{
 									"type": "default",
-									"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze"
+									"class":"last-card-content",
+								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze"
 								}
 							]
 						},
@@ -340,7 +346,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -391,7 +398,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -441,7 +449,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Kinder-Intensivstation, Zentrale Arbeitsplätze, Notfallstation"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Kinder-Intensivstation, Zentrale Arbeitsplätze, Notfallstation"
          			}
          		]
          	},
@@ -492,7 +501,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -540,7 +550,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -588,7 +599,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC, Verbrennungsstation"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC, Verbrennungsstation"
          			}
          		]
          	},
@@ -636,7 +648,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -686,7 +699,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, Notfallstation"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, Notfallstation"
          			}
          		]
          	},
@@ -734,7 +748,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie,Intensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie,Intensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -782,7 +797,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -830,7 +846,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -878,7 +895,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -926,7 +944,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -977,7 +996,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -1025,7 +1045,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -1077,7 +1098,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -1127,7 +1149,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum"
          			}
          		]
          	},
@@ -1179,7 +1202,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1230,7 +1254,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1279,7 +1304,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1327,7 +1353,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
          		]
          	},
@@ -1375,7 +1402,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1423,7 +1451,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, IMC"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, IMC"
          			}
          		]
          	},
@@ -1471,7 +1500,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
          		]
          	},
@@ -1518,7 +1548,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nKinder-Intensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nKinder-Intensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1566,7 +1597,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1614,7 +1646,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1663,7 +1696,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Kinder-Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Kinder-Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
          		]
          	},
@@ -1713,7 +1747,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Aufwachraum, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Aufwachraum, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1762,7 +1797,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1811,7 +1847,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1859,7 +1896,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1907,7 +1945,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -1955,7 +1994,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -2004,7 +2044,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
          		]
          	},
@@ -2055,7 +2096,8 @@ class ReferencesContentTableSeeder extends Seeder {
          			},
          			{
          				"type": "default",
-         				"content": "####Fachbereiche\nAnästhesie, Zentrale Arbeitsplätze"
+         				"class":"last-card-content",
+								"content": "####Fachbereiche\nAnästhesie, Zentrale Arbeitsplätze"
          			}
          		]
          	},
