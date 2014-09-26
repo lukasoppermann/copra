@@ -95,6 +95,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 				}
 			},10);
 		});
+		
 		// ---------------------------
 		// Scroll state
 		//
