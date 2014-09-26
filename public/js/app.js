@@ -79,6 +79,12 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		// ---------------------------
 		// Scroll state
 		//
+		if((document && document.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
+			$(".main-navigation").addClass('is-scrolled');
+		}else{
+			$(".main-navigation").removeClass('is-scrolled');
+		}
+		
 		$(window).on('scroll', function(f){
 			clearTimeout(f);
 			f = setTimeout(function(){
