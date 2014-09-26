@@ -107,6 +107,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 				},1);
 =======
 			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+<<<<<<< HEAD
 				// clearTimeout(f);
 				// f = setTimeout(function(){
 				// 	$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
@@ -114,6 +115,13 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 				// },1);
 				$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
 				$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+>>>>>>> master
+=======
+				clearTimeout(f);
+				f = setTimeout(function(){
+					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
+					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+				},10);
 >>>>>>> master
 			}
 		});
@@ -194,7 +202,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 			// search
 			var term, count = 0, hide = false;
 
-			$this.find($this.opts.searchBox).on('keyup', function(){
+			$this.find($this.opts.searchBox).on('keyup mouseup blur focus', function(){
 
 				term = $(this).val().toUpperCase().replace(/(,)/gm," ").split(" ");
 				count = 0;
@@ -224,30 +232,6 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 
 				});
 
-				// $this.find($this.opts.item).each(function(){
-				//
-				// 	hide = true;
-				// 	var $item = $(this);
-				//
-				// 	$item.find('.js-searchable-entry').each(function(){
-				//
-				// 		if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
-				// 		{
-				// 			hide = false;
-				// 			return false;
-				// 		}
-				// 	});
-				//
-				// 	if( hide === true && term !== "" )
-				// 	{
-				// 		$item.hide().removeClass('is-active');
-				// 	}
-				// 	else
-				// 	{
-				// 		$item.show();
-				// 		count++;
-				// 	}
-				// });
 
 				// set count
 				$this.find($this.opts.itemCount).text(count+' Ergebnisse');
@@ -266,34 +250,49 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 
 		});
 
-		// $('.search').on('keyup', function(){
+
+		// ---------------------------
+		// equal height
 		//
-		//
-		// 	$('.card').each(function(){
-		//
-		// 		hide = true
-		//
-		// 		$(this).find('.js-searchable-entry').each(function(){
-		//
-		// 			if( $(this).text().toUpperCase().match( term.replace(/\s+/g, '.+') ) )
-		// 			{
-		// 				hide = false;
-		// 				return false;
-		// 			}
-		// 		});
-		//
-		// 		if( hide === true && term !== "" )
-		// 		{
-		// 			$(this).hide().removeClass('is-active');
-		// 		}
-		// 		else
-		// 		{
-		// 			$(this).show();
-		// 		}
-		// 	});
-		//
-		//
-		// });
+		var row = {
+			top: 0,
+			height: 0,
+			items: []
+		},
+		currentDiv = 0,
+		$this;
+
+		$('.card').each(function(){
+
+			$this = $(this);
+
+			if( $this.position().top != row.top )
+			{
+				// resize last row
+				for (currentDiv = 0 ; currentDiv < row.items.length ; currentDiv++) {
+					row.items[currentDiv].height(row.height);
+				}
+
+				// set height for current row
+				row.items.length = 0;
+				row.top = $this.position().top;
+				row.height = $this.height();
+				row.items.push($this);
+			}
+			else
+			{
+				row.items.push($this);
+				row.height = (row.height < $this.height()) ? ($this.height()) : (row.height);
+			}
+
+			// do very last row
+			for (currentDiv = 0 ; currentDiv < row.items.length ; currentDiv++) {
+				row.items[currentDiv].height(row.height);
+			}
+
+		});
+
+
 		// ---------------------------
 		// Mediaqueries
 		//

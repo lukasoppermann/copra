@@ -308,6 +308,7 @@
 	opacity: 1;
 	z-index: 2;
 	border-radius: 3px;
+	height: 100%;
 	overflow: hidden;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
@@ -366,11 +367,16 @@
 .card .block-content-copy{
 	padding: 10px 20px 0 20px;
 }
+.card .last-card-content{
+	margin-bottom: 75px;
+}
 .card .action-bar{
+	position: absolute;
+	width: 100%;
 	text-align: right;
 	background-color: rgb(245,245,245);
 	padding: 10px;
-	margin-top: 15px;
+	bottom: 0;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
@@ -387,6 +393,10 @@
 .card .action-bar a:after{
 	content: "\2192";
 	padding-left: 10px;
+}
+.card .action-bar a:hover{
+	background-color: rgb(225,70,75);
+	color: rgb(255,255,255);
 }
 .card .block-content-image, .card .block-content-image img{
 	width: 100%;
