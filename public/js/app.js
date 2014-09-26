@@ -84,7 +84,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		}else{
 			$(".main-navigation").removeClass('is-scrolled');
 		}
-		
+
 		$(window).on('scroll', function(f){
 			clearTimeout(f);
 			f = setTimeout(function(){
