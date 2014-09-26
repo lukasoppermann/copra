@@ -9,8 +9,11 @@ if [ -n "$(git status --porcelain)" ]; then
 else
 
   echo -e "\n\033[32mLet's create your build.\033[0m\n";
+
+  git merge -s ours build
   git checkout build
-  git merge -s ours master --no-edit
+  git merge master --no-edit
+
 
   if [ "${PWD##*/}" != $gruntDir ]; then
     dir="$(find . -name "$gruntDir" -type d -maxdepth 1)"
