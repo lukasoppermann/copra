@@ -258,9 +258,9 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 			top: 0,
 			height: 0,
 			items: []
-		},
-		currentDiv = 0,
-		$this;
+		};
+		var currentDiv = 0;
+		var $this;
 
 		$('.card').each(function(){
 
