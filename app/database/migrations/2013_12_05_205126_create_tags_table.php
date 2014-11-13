@@ -19,7 +19,6 @@ class CreateTagsTable extends Migration {
 			$table->increments('id','true');
 			$table->string('name');
 			$table->boolean('internal')->nullable();
-			$table->timestamps();
 		});
 	}
 

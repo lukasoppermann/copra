@@ -11,7 +11,7 @@ class CreateContentTagTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('fs_content_tag', function($table)
+		Schema::create('fs_content_tags', function($table)
 		{
 			// storage engine
 			$table->engine = 'MyISAM';
@@ -33,7 +33,7 @@ class CreateContentTagTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('fs_content_tag');
+		Schema::dropIfExists('fs_content_tags');
 	}
 
 }

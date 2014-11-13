@@ -26,6 +26,14 @@ class DatabaseSeeder extends Seeder {
 		$this->call('FsStreamTableSeeder');
 		// additional seeders only add data
 		$this->call('ReferencesStreamTableSeeder');
+
+		// --------------------------
+		// Tags Seeding
+		//
+		// this seeder truncates DB !
+		$this->call('FsTagsTableSeeder');
+		// additional seeders only add data
+		$this->call('FsContentTagsTableSeeder');
 	}
 
 }
