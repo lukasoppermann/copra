@@ -13,11 +13,13 @@
 			"url": "https://github.com/formandsystem/utilities.git"
 		}
 	],
+	"require-dev": {
+		"fzaninotto/faker": "~1.5@dev"
+	},
 	"require": {
 		"laravel/framework": "4.2.*",
 		"laravelbook/ardent": "dev-master",
 		"guzzlehttp/guzzle": "~4.0",
-		"formandsystem/api": "*@dev",
 		"formandsystem/utilities": "*@dev",
 		"michelf/php-markdown": "1.4.*",
 		"orangehill/iseed": "dev-master"
