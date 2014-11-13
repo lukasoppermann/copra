@@ -10,6 +10,7 @@ class BaseController extends Controller {
 	 */
 	function __construct()
 	{
+		header('content-type: application/json; charset=utf-8');
 		Config::set('app.locale', 'de');
 	}
 

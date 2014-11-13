@@ -33,6 +33,7 @@ database.php
 # laravel #
 ############
 vendor/
+workbench/
 composer.lock
 CONTRIBUTING.md
 bootstrap/compiled.php
