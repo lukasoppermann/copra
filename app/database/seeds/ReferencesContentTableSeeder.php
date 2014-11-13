@@ -17,7 +17,7 @@ class ReferencesContentTableSeeder extends Seeder {
 				'article_id' => 11,
 				'menu_label' => '',
 				'link' => '',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '[
 					{
@@ -69,7 +69,7 @@ class ReferencesContentTableSeeder extends Seeder {
 				'article_id' => 12,
 				'menu_label' => '',
 				'link' => '',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '[{
 					"class":"card-frontside",
@@ -120,7 +120,7 @@ class ReferencesContentTableSeeder extends Seeder {
 					'article_id' => 13,
 					'menu_label' => '',
 					'link' => '',
-					'status' => 1,
+					'published' => 1,
 					'language' => 'de',
 					'data' => '[{
 						"class":"card-frontside",
@@ -171,7 +171,7 @@ class ReferencesContentTableSeeder extends Seeder {
 					'article_id' => 14,
 					'menu_label' => '',
 					'link' => '',
-					'status' => 1,
+					'published' => 1,
 					'language' => 'de',
 					'data' => '[
 						{
@@ -226,7 +226,7 @@ class ReferencesContentTableSeeder extends Seeder {
 					'article_id' => 15,
 					'menu_label' => '',
 					'link' => '',
-					'status' => 1,
+					'published' => 1,
 					'language' => 'de',
 					'data' => '[{
 						"class":"card-frontside",
@@ -278,7 +278,7 @@ class ReferencesContentTableSeeder extends Seeder {
 						'article_id' => 16,
 						'menu_label' => '',
 						'link' => '',
-						'status' => 1,
+						'published' => 1,
 						'language' => 'de',
 						'data' => '[{
 							"class":"card-frontside",
@@ -329,7 +329,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 17,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -381,7 +381,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 18,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -432,7 +432,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 19,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -484,7 +484,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 20,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -533,7 +533,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 21,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -582,7 +582,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 22,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -631,7 +631,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 23,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -682,7 +682,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 24,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -731,7 +731,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 25,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -780,7 +780,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 26,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -829,7 +829,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 27,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -878,7 +878,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 28,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -927,7 +927,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 29,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -979,7 +979,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 30,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1028,7 +1028,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 31,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1081,7 +1081,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 32,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1132,7 +1132,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 33,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1185,7 +1185,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 34,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1237,7 +1237,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 35,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1287,7 +1287,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 36,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1336,7 +1336,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 37,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1385,7 +1385,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 38,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1434,7 +1434,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 39,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1483,7 +1483,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 40,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1531,7 +1531,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 41,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1580,7 +1580,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 42,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1629,7 +1629,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 43,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1679,7 +1679,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 44,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1730,7 +1730,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 45,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1780,7 +1780,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 46,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1830,7 +1830,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 47,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1879,7 +1879,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 48,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1928,7 +1928,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 49,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -1977,7 +1977,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 50,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -2027,7 +2027,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 51,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",
@@ -2079,7 +2079,7 @@ class ReferencesContentTableSeeder extends Seeder {
          	'article_id' => 52,
          	'menu_label' => '',
          	'link' => '',
-         	'status' => 1,
+         	'published' => 1,
          	'language' => 'de',
          	'data' => '[{
          		"class":"card-frontside",

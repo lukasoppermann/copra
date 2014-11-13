@@ -18,7 +18,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 1,
 				'menu_label' => 'Home',
 				'link' => 'home',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '[
 				  {
@@ -170,7 +170,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 2,
 				'menu_label' => 'Produkt',
 				'link' => 'produkt',
-				'status' => 2,
+				'published' => 2,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"1":{"type":"image","column":3,"src":"imagefile.png","description":"Some optional text","class":"optional-classes"},"2":{"type":"text","column":2,"content":"#Headline content is in markdown","class":"optional-classes"},"3":{"type":"text","column":2,"content":"This is real **markdown** copy.","class":"optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
@@ -183,7 +183,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 3,
 				'menu_label' => 'Firmenprofil',
 				'link' => 'firmenprofil',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{
 				"1":{
@@ -310,7 +310,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 4,
 				'menu_label' => 'Referenzen',
 				'link' => 'referenzen',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 
 				'data' => '{
@@ -359,7 +359,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 6,
 				'menu_label' => 'Kontakt',
 				'link' => 'kontakt',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{
 					"1":{
@@ -409,7 +409,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 7,
 				'menu_label' => 'Sub',
 				'link' => 'home/sub',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
@@ -422,7 +422,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 8,
 				'menu_label' => '',
 				'link' => '',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag eins\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
@@ -435,7 +435,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 9,
 				'menu_label' => '',
 				'link' => '',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
@@ -448,7 +448,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 10,
 				'menu_label' => '',
 				'link' => '',
-				'status' => 1,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),

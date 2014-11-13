@@ -20,7 +20,7 @@ class CreateContentTable extends Migration {
 			$table->integer('article_id')->nullable();
 			$table->string('menu_label')->nullable();
 			$table->string('link')->index()->nullable();
-			$table->boolean('status')->nullable();
+			$table->boolean('published');
 			$table->string('language', 2)->nullable();
 			$table->longtext('data')->nullable();
 			$table->text('tags')->nullable();
