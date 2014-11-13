@@ -1,31 +1,3 @@
-<?php
-function loop( $nav, $parent = "", $result = "" )
-{
-	foreach ($nav as $item)
-	{
-
-		$result .= '<li class="'.
-			( trim($item['link'], '/') == (Request::path() != "/" ? Request::path() : 'home') ? ' is-active js-is-active' : '').
-			( strpos(Request::path(), trim($item['link'], '/')) !== false ? ' is-active js-is-active' : '').
-			'">
-
-			<a rel="dns-prefetch" data-id="'.$item['id'].'" href="'.url($item['link']).'">
-					'.$item['menu_label'].'
-			</a>';
-
-			// loop through children if they exist
-			if ( isset($item['children']) && is_array($item['children']) ){
-				$result .= loop($item['children'], $item);
-			}
-
-
-		$result .= '</li>';
-	}
-	if($result != ""){
-		return "<ul>".$result."</ul>";
-	}
-}
-?>
 {{--------------------------
 
 	Template: Menu
@@ -88,10 +60,11 @@ function loop( $nav, $parent = "", $result = "" )
 		</a>
 		<div class="main-navigation-list">
 			<?
-				$navItems = Api::stream('navigation')->get(['nested' => true, 'limit' => 100, 'status'=>1, 'language' => Config::get('app.locale')]);
-				if($navItems['success'] === 'true')
+				$navItems = Api::stream('navigation')->get(['limit' => 100, 'language' => Config::get('app.locale')]);
+
+				if($navItems['success'] === true)
 				{
-					echo loop( $navItems['content'] );
+					echo App::make('Services\NavigationViewService')->build( $navItems['data'] );
 				}
 			?>
 		</div>

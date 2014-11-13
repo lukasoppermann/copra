@@ -11,8 +11,6 @@ class PageController extends BaseController {
 
 		$api = Api::pages(str_replace('/','.',$path))->get(['language' => Config::get('app.locale')]);
 
-		dd($api);
-
 		if( isset($api) && isset($api['data']))
 		{
 			return View::make($this->layout)->with('data', $api['data']);

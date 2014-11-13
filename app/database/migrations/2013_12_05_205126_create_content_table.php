@@ -23,7 +23,7 @@ class CreateContentTable extends Migration {
 			$table->boolean('published');
 			$table->string('language', 2)->nullable();
 			$table->longtext('data')->nullable();
-			$table->text('tags')->nullable();
+			// $table->text('tags')->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 		});

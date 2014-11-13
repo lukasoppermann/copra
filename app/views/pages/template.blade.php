@@ -9,7 +9,7 @@
 	$output_sections_menu = "";
 	$section_link_data = "";
 
-	foreach($data as $section)
+	foreach($data['content'][Config::get('app.locale')]['data'] as $section)
 	{
 		if( isset($section['link']) )
 		{
@@ -110,10 +110,11 @@ function block_stream( $el )
 	{
 		// get posts
 		$stream = Api::stream($el['stream'])->get(['language' => Config::get('app.locale'), 'limit' => 100]);
-		if( $stream['success'] === 'true' )
+		if( $stream['success'] === true )
 		{
 			// build view
-			$out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
+			//
+			$out = '<div class="'.($el['class'] ?:'').'">';
 
 			$out .= "<div class='searchable-optionsGroup'>";
 				// add search
@@ -124,15 +125,16 @@ function block_stream( $el )
 				// add count
 				if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
 				{
-					$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream['content'])." Ergebnisse</div>";
+					$out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream['data'])." Ergebnisse</div>";
 				}
 			$out .= "</div>";
 
 
 			if( !isset($el['mode']) || $el['mode'] == 'default' )
 			{
-				foreach($stream['content'] as $p)
+				foreach($stream['data'] as $p)
 				{
+					$p = $p['content'][Config::get('app.locale')];
 					$text = null;
 
 					foreach( $p['data'] as $content )
@@ -151,8 +153,9 @@ function block_stream( $el )
 			}
 			elseif( $el['mode'] == 'preview' )
 			{
-				foreach($stream['content'] as $p)
+				foreach($stream['data'] as $p)
 				{
+					$p = $p['content'][Config::get('app.locale')];
 					$text = null;
 
 					foreach( $p['data'] as $content )
@@ -172,8 +175,9 @@ function block_stream( $el )
 			// cards
 			elseif( $el['mode'] == 'card' )
 			{
-				foreach($stream['content'] as $card)
+				foreach($stream['data'] as $card)
 				{
+					$card = $card['content'][Config::get('app.locale')];
 					$sides = array_values(array_slice($card['data'],0,2));
 
 					$out .= '<div class="card column-4">';
