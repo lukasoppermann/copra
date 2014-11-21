@@ -44,7 +44,7 @@ else
   git add --all
   git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
 
-  read -p "Do you want to deploy this build? (y/N) " yn
+  read -p "Do you want to deploy this build to $server? (y/N) " yn
 
   if [[ $yn =~ ^[Yy]$ ]]; then
     echo -e "\n"
