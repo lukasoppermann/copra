@@ -316,6 +316,9 @@
 	-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
 	transition: opacity .5s ease, transform .5s ease;
 }
+.card.is-active{
+	z-index: 99;
+}
 .card.is-active .card-front{
 	opacity: 0;
 	-webkit-transform: scale(0.9);
