@@ -39,7 +39,7 @@ else
 
   grunt make-build
 
-  echo -e "\n\033[32mBuild branch status\033[0m\n";
+  echo -e "\n\033[32mBuild branch status:\033[0m";
 
   git add --all
   git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
