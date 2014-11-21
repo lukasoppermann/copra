@@ -300,6 +300,7 @@
 	position: relative;
 	padding: 20px;
 	z-index: 1;
+	transition: z-index .5s ease;
 }
 .card-front, .card-back{
 	box-shadow: 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.25);

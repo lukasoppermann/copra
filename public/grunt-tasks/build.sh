@@ -30,14 +30,15 @@ else
 
   echo -e "\n\033[32mBuild branch status\033[0m\n";
 
+  git add --all
+  git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
+
   read -p "Do you want to deploy this build? (y/N) " yn
 
   if [[ $yn =~ ^[Yy]$ ]]; then
     echo -e "\n"
-    git add --all
-    git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
     git push server build:master
-    git checkout  master
   fi
+  git checkout master
 
 fi
