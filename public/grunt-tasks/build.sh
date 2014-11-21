@@ -1,7 +1,17 @@
 # Build Script
 #
 gruntDir="public"
+
 server="server"
+if [ ! -z "$1" ]; then
+  server=$1
+fi
+
+if ! git remote | grep $server > /dev/null; then
+  echo -e "\n\033[31m[Error]\033[0m The remote $server does not exist\n"
+  return
+fi
+
 #
 if [ -n "$(git status --porcelain)" ]; then
 
