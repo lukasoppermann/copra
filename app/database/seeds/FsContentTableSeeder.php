@@ -25,7 +25,7 @@ class FsContentTableSeeder extends Seeder {
 				      "class": "section-01",
 				      "content": [
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 12,
 				              "media": [
 				                  {
@@ -43,13 +43,13 @@ class FsContentTableSeeder extends Seeder {
 				      "link": "Vision",
 				      "content": [
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 12,
 				              "content": "#Vision\\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
 				              "class": "space-bottom-wide"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 4,
 				              "media":[
 												{"src": "icon-connected.svg"}
@@ -58,7 +58,7 @@ class FsContentTableSeeder extends Seeder {
 				              "class": "centered-content padded-column"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 4,
 											"media":[
 												{"src": "icon-verfuegbarkeit.svg"}
@@ -67,7 +67,7 @@ class FsContentTableSeeder extends Seeder {
 				              "class": "centered-content padded-column"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 4,
 											"media":[
 												{"src": "icon-customize.svg"}
@@ -82,7 +82,7 @@ class FsContentTableSeeder extends Seeder {
 				      "link": "Anwendungsgebiete",
 				      "content": [
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 3,
 											"media": [
 												{"src": "icon-doctor.svg"}
@@ -91,7 +91,7 @@ class FsContentTableSeeder extends Seeder {
 				              "class": "user-features"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 3,
 				              "media": [
 												{"src": "icon-nurse.svg"}
@@ -100,16 +100,16 @@ class FsContentTableSeeder extends Seeder {
 				              "class": "user-features"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 3,
 				              "media": [
-												{"src": "icon-management.svg"}
+												{"src": "icon-controlling.svg"}
 											],
-				              "content": "##Management\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
+				              "content": "##Controlling\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
 				              "class": "user-features"
 				          },
 				          {
-				              "type": "default",
+				              "type": "block",
 				              "column": 3,
 											"media": [
 												{"src": "icon-it.svg"}
@@ -128,7 +128,7 @@ class FsContentTableSeeder extends Seeder {
 				              "column": 7,
 				              "content": [
 				                  {
-				                      "type": "default",
+				                      "type": "block",
 															"media": [
 				                      	{"src": "copra-features-teaser.jpg"}
 															],
@@ -136,7 +136,7 @@ class FsContentTableSeeder extends Seeder {
 				                      "class": "teaser-card teaser-card--image-right"
 				                  },
 				                  {
-				                      "type": "default",
+				                      "type": "block",
 				                      "media": [
 																{"src": "copra-features-teaser.jpg"}
 															],
@@ -190,7 +190,7 @@ class FsContentTableSeeder extends Seeder {
 							"class": "section-01",
 							"content": [
 									{
-											"type": "default",
+											"type": "block",
 											"column": 12,
 											"media": [
 													{
@@ -213,7 +213,7 @@ class FsContentTableSeeder extends Seeder {
 							"class":"padded-column-small",
 							"content": [
 								{
-									"type": "default",
+									"type": "block",
 									"media":[
 										{
 											"src": "icon-listen.svg",
@@ -231,7 +231,7 @@ class FsContentTableSeeder extends Seeder {
 							"class":"padded-column-small",
 							"content": [
 								{
-										"type": "default",
+										"type": "block",
 										"media":[
 											{
 												"src": "icon-innovation.svg",
@@ -249,7 +249,7 @@ class FsContentTableSeeder extends Seeder {
 							"class":"padded-column-small",
 							"content": [
 								{
-										"type": "default",
+										"type": "block",
 										"media":[
 											{
 												"src": "icon-hospital.svg",
@@ -266,7 +266,7 @@ class FsContentTableSeeder extends Seeder {
 					"class": "section section--white-to-gray padding-bottom-wide",
 					"link": "Firmengeschichte",
 					"content": [{
-							"type": "default",
+							"type": "block",
 							"column": 12,
 							"content": "#Firmengeschichte"
 						},
@@ -318,7 +318,7 @@ class FsContentTableSeeder extends Seeder {
 						"class": "section-01",
 						"content": [
 							{
-								"type": "default",
+								"type": "block",
 								"column": 12,
 								"media": [
 									{
@@ -365,7 +365,7 @@ class FsContentTableSeeder extends Seeder {
 					"1":{
 								"content": [
 										{
-												"type": "default",
+												"type": "block",
 												"column": 12,
 												"media": [
 														{
@@ -381,17 +381,17 @@ class FsContentTableSeeder extends Seeder {
 					"2":{
 						"class": "spacing-bottom",
 						"content":[{
-							"type": "default",
+							"type": "block",
 							"column": 12,
 							"content": "##Kontaktieren Sie uns",
 							"class": "align-left"
 							},{
-								"type": "default",
+								"type": "block",
 								"column": 8,
 								"content": "Haben Sie Interesse an mehr Informationen oder möchten Sie einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen, so rufen Sie uns bitte an oder senden Sie uns eine Email.",
 								"class": "append-2"
 							},{
-									"type": "default",
+									"type": "block",
 									"column": 4,
 									"content": "####Copra System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
 									"class": "contact-box"
@@ -411,7 +411,7 @@ class FsContentTableSeeder extends Seeder {
 				'link' => 'home/sub',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
@@ -424,7 +424,7 @@ class FsContentTableSeeder extends Seeder {
 				'link' => '',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag eins\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag eins\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
@@ -437,7 +437,7 @@ class FsContentTableSeeder extends Seeder {
 				'link' => '',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
@@ -450,7 +450,7 @@ class FsContentTableSeeder extends Seeder {
 				'link' => '',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "default","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 

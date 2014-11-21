@@ -1,3 +1,10 @@
+<?php
+$navItems = Api::stream('navigation')->get(['limit' => 100, 'language' => Config::get('app.locale')]);
+if($navItems['success'] === true)
+{
+	$navigation = App::make('Services\NavigationViewService')->build( $navItems['data'] );
+}
+?>
 {{--------------------------
 
 	Template: Menu
@@ -58,16 +65,7 @@
 
 			<div class="logo-shadow"></div>
 		</a>
-		<div class="main-navigation-list">
-			<?
-				$navItems = Api::stream('navigation')->get(['limit' => 100, 'language' => Config::get('app.locale')]);
-
-				if($navItems['success'] === true)
-				{
-					echo App::make('Services\NavigationViewService')->build( $navItems['data'] );
-				}
-			?>
-		</div>
+		<div class="main-navigation-list">{{ $navigation }}</div>
 
 	</div>
 

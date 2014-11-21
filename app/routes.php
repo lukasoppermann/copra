@@ -10,12 +10,9 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 // disable cache for dev
-Cache::flush();
 Route::group(array('before' => array('cache.fetch'), 'after' => array('cache.put')), function()
 {
-
 	Route::any('/{path?}', "PageController@index")->where('path', '.+');
 
 });

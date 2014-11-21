@@ -16,8 +16,6 @@
 <body>
 
 	@include('pages.navigation')
-
-
 	<div class="main-content">
 		@yield('content','')
 	</div>

@@ -24,7 +24,7 @@ class ReferencesContentTableSeeder extends Seeder {
 						"class":"card-frontside",
 						"content":[
 							{
-								"type": "default",
+								"type": "block",
 								"content": "###Charité - Universitätsmedizin Berlin\\nInbetriebnahme 2Q 2001",
 								"class": "card-header",
 								"media": [
@@ -34,7 +34,7 @@ class ReferencesContentTableSeeder extends Seeder {
 								]
 							},
 							{
-								"type": "default",
+								"type": "block",
 								"class":"last-card-content",
 								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze"
 							}
@@ -75,7 +75,7 @@ class ReferencesContentTableSeeder extends Seeder {
 					"class":"card-frontside",
 					"content":[
 						{
-							"type": "default",
+							"type": "block",
 							"content": "###Friedrich-Schiller-Universitätsklinikum Jena\\nInbetriebnahme 2Q 1998",
 							"class": "card-header",
 							"media": [
@@ -85,7 +85,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							]
 						},
 						{
-							"type": "default",
+							"type": "block",
 							"class":"last-card-content",
 								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Aufwachraum, Kinder-Intensivstation, Zentrale Arbeitsplätze, Normalstation"
 						}
@@ -126,7 +126,7 @@ class ReferencesContentTableSeeder extends Seeder {
 						"class":"card-frontside",
 						"content":[
 							{
-								"type": "default",
+								"type": "block",
 								"content": "###Klinikum Stuttgart\\nInbetriebnahme 4Q 2001",
 								"class": "card-header",
 								"media": [
@@ -136,7 +136,7 @@ class ReferencesContentTableSeeder extends Seeder {
 								]
 							},
 							{
-								"type": "default",
+								"type": "block",
 								"class":"last-card-content",
 								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze, IMC"
 							}
@@ -178,7 +178,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							"class":"card-frontside",
 							"content":[
 								{
-									"type": "default",
+									"type": "block",
 									"content": "###Universitätsklinikum Würzburg\\nInbetriebnahme 4Q 2011",
 									"class": "card-header",
 									"media": [
@@ -188,7 +188,7 @@ class ReferencesContentTableSeeder extends Seeder {
 									]
 								},
 								{
-									"type": "default",
+									"type": "block",
 									"class":"last-card-content",
 								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
 								}
@@ -232,7 +232,7 @@ class ReferencesContentTableSeeder extends Seeder {
 						"class":"card-frontside",
 						"content":[
 							{
-								"type": "default",
+								"type": "block",
 								"content": "###Universitätsklinikum Leipzig\\nInbetriebnahme 1Q 1994",
 								"class": "card-header",
 								"media": [
@@ -242,7 +242,7 @@ class ReferencesContentTableSeeder extends Seeder {
 								]
 							},
 							{
-								"type": "default",
+								"type": "block",
 								"class":"last-card-content",
 								"content": "####Fachbereiche\\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze"
 							}
@@ -284,7 +284,7 @@ class ReferencesContentTableSeeder extends Seeder {
 							"class":"card-frontside",
 							"content":[
 								{
-									"type": "default",
+									"type": "block",
 									"content": "###Universitätsklinikum Freiburg\\nInbetriebnahme 2Q 2008",
 									"class": "card-header",
 									"media": [
@@ -294,7 +294,7 @@ class ReferencesContentTableSeeder extends Seeder {
 									]
 								},
 								{
-									"type": "default",
+									"type": "block",
 									"class":"last-card-content",
 								"content": "####Fachbereiche\\nIntensivstation, Zentrale Arbeitsplätze"
 								}
@@ -335,7 +335,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Universitätsmedizin Mainz\nInbetriebnahme 4Q 2007",
          				"class": "card-header",
          				"media": [
@@ -345,7 +345,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
@@ -387,7 +387,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Herz- und Diabeteszentrum NRW - Bad Oeynhausen\nInbetriebnahme 2Q 1999",
          				"class": "card-header",
          				"media": [
@@ -397,7 +397,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
          			}
@@ -438,7 +438,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Universitätsmedizin Rostock\nInbetriebnahme 2Q 2008",
          				"class": "card-header",
          				"media": [
@@ -448,7 +448,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Kinder-Intensivstation, Zentrale Arbeitsplätze, Notfallstation"
          			}
@@ -490,7 +490,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###SRH Wald-Klinikum Gera gGmbH\nInbetriebnahme 2Q 2001",
          				"class": "card-header",
          				"media": [
@@ -500,7 +500,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -539,7 +539,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Städtisches Klinikum Karlsruhe\nInbetriebnahme 1Q 1999",
          				"class": "card-header",
          				"media": [
@@ -549,7 +549,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -588,7 +588,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Linz\nInbetriebnahme 3Q 2005",
          				"class": "card-header",
          				"media": [
@@ -598,7 +598,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC, Verbrennungsstation"
          			}
@@ -637,7 +637,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Ruhr-Universität Bochum - Knappschaftskrankenhaus Langendreer\nInbetriebnahme 1Q 2007",
          				"class": "card-header",
          				"media": [
@@ -647,7 +647,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -688,7 +688,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kantonsspital Aarau\nInbetriebnahme 2Q 1997",
          				"class": "card-header",
          				"media": [
@@ -698,7 +698,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, Notfallstation"
          			}
@@ -737,7 +737,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Diakonissen-Krankenhaus Schladming\nInbetriebnahme 4Q 2006",
          				"class": "card-header",
          				"media": [
@@ -747,7 +747,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie,Intensivstation, Zentrale Arbeitsplätze"
          			}
@@ -786,7 +786,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Graz\nInbetriebnahme 4Q 2012",
          				"class": "card-header",
          				"media": [
@@ -796,7 +796,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze"
          			}
@@ -835,7 +835,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Wien Meidling\nInbetriebnahme 4Q 2011",
          				"class": "card-header",
          				"media": [
@@ -845,7 +845,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
          			}
@@ -884,7 +884,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Universitätsklinikum des Saarlandes Homburg\nInbetriebnahme 2Q 2007",
          				"class": "card-header",
          				"media": [
@@ -894,7 +894,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -933,7 +933,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Evangelisches Krankenhaus Königin Elisabeth Herzberge gGmbH Berlin\nInbetriebnahme 2Q 2008",
          				"class": "card-header",
          				"media": [
@@ -943,7 +943,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -985,7 +985,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Salzburg\nInbetriebnahme 4Q 2012",
          				"class": "card-header",
          				"media": [
@@ -995,7 +995,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, IMC"
          			}
@@ -1034,7 +1034,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Städtisches Klinikum Braunschweig\nInbetriebnahme 1Q 2010",
          				"class": "card-header",
          				"media": [
@@ -1044,7 +1044,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
@@ -1087,7 +1087,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Diakoniekrankenhaus Rotenburg (Wümme) gGmbH\nInbetriebnahme 3Q 2006",
          				"class": "card-header",
          				"media": [
@@ -1097,7 +1097,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze, IMC"
          			}
@@ -1138,7 +1138,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Mathias Spitalverbund Rheine\nInbetriebnahme 1Q 2010",
          				"class": "card-header",
          				"media": [
@@ -1148,7 +1148,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum"
          			}
@@ -1191,7 +1191,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###INCCI Luxemburg\nInbetriebnahme 4Q 2002",
          				"class": "card-header",
          				"media": [
@@ -1201,7 +1201,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1243,7 +1243,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Pleißentalklinik Werdau\nInbetriebnahme 1Q 2000",
          				"class": "card-header",
          				"media": [
@@ -1253,7 +1253,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1293,7 +1293,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Kalwang\nInbetriebnahme 2Q 2012",
          				"class": "card-header",
          				"media": [
@@ -1303,7 +1303,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1342,7 +1342,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kantonsspital Bruderholz\nInbetriebnahme 1Q 2003",
          				"class": "card-header",
          				"media": [
@@ -1352,7 +1352,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Aufwachraum, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
@@ -1391,7 +1391,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Wien Lorenz Böhler\nInbetriebnahme 2Q 2012",
          				"class": "card-header",
          				"media": [
@@ -1401,7 +1401,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1440,7 +1440,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###AUVA UKH Klagenfurt\nInbetriebnahme 1Q 2009",
          				"class": "card-header",
          				"media": [
@@ -1450,7 +1450,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, IMC"
          			}
@@ -1489,7 +1489,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kantonsspital Liestal\nInbetriebnahme 1Q 2001",
          				"class": "card-header",
          				"media": [
@@ -1499,7 +1499,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
@@ -1537,7 +1537,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Klinikum Heilbronn\nInbetriebnahme 1Q 2002",
          				"class": "card-header",
          				"media": [
@@ -1547,7 +1547,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nKinder-Intensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1586,7 +1586,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Klinikum Erlabrunn\nInbetriebnahme 2Q 2007",
          				"class": "card-header",
          				"media": [
@@ -1596,7 +1596,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1635,7 +1635,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Evangelisches Krankenhaus Wesel\nInbetriebnahme 2Q 2007",
          				"class": "card-header",
          				"media": [
@@ -1645,7 +1645,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1685,7 +1685,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Medizinische Hochschule Hannover (MHH)\nInbetriebnahme 1Q 2010",
          				"class": "card-header",
          				"media": [
@@ -1695,7 +1695,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Kinder-Intensivstation, Zentrale Arbeitsplätze, Mobile OP-Arbeitsplätze"
          			}
@@ -1736,7 +1736,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###RPTC München\nInbetriebnahme 4Q 2005",
          				"class": "card-header",
          				"media": [
@@ -1746,7 +1746,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Aufwachraum, Zentrale Arbeitsplätze"
          			}
@@ -1786,7 +1786,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Klinikum Altenburger Land\nInbetriebnahme 4Q 2004",
          				"class": "card-header",
          				"media": [
@@ -1796,7 +1796,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1836,7 +1836,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Helios-Klinik Gotha\nInbetriebnahme 2Q 1996",
          				"class": "card-header",
          				"media": [
@@ -1846,7 +1846,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1885,7 +1885,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Evangelisches Krankenhaus Bielefeld\nInbetriebnahme 2Q 2001",
          				"class": "card-header",
          				"media": [
@@ -1895,7 +1895,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1934,7 +1934,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kantonsspital Schaffhausen\nInbetriebnahme 3Q 2003",
          				"class": "card-header",
          				"media": [
@@ -1944,7 +1944,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -1983,7 +1983,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Elblandkliniken Meißen-Radebeul\nInbetriebnahme 3Q 1997",
          				"class": "card-header",
          				"media": [
@@ -1993,7 +1993,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -2033,7 +2033,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kreiskrankenhaus Rotenburg a.d.Fulda\nInbetriebnahme 4Q 2005",
          				"class": "card-header",
          				"media": [
@@ -2043,7 +2043,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nIntensivstation, Zentrale Arbeitsplätze"
          			}
@@ -2085,7 +2085,7 @@ class ReferencesContentTableSeeder extends Seeder {
          		"class":"card-frontside",
          		"content":[
          			{
-         				"type": "default",
+         				"type": "block",
          				"content": "###Kreiskrankenhaus Wurzen\nInbetriebnahme 2Q 1995",
          				"class": "card-header",
          				"media": [
@@ -2095,7 +2095,7 @@ class ReferencesContentTableSeeder extends Seeder {
          				]
          			},
          			{
-         				"type": "default",
+         				"type": "block",
          				"class":"last-card-content",
 								"content": "####Fachbereiche\nAnästhesie, Zentrale Arbeitsplätze"
          			}
