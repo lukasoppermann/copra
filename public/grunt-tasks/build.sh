@@ -1,6 +1,7 @@
 # Build Script
 #
 gruntDir="public"
+server="server"
 #
 if [ -n "$(git status --porcelain)" ]; then
 
@@ -37,7 +38,7 @@ else
 
   if [[ $yn =~ ^[Yy]$ ]]; then
     echo -e "\n"
-    git push server build:master
+    git push $server build:master
   fi
   git checkout master
 
