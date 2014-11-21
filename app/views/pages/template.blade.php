@@ -20,7 +20,7 @@
 			$section_link_data = "id='$section_link' name='$section_link' ";
 		}
 
-		$output_sections .= "<div ".$section_link_data." class='section ".App::make('Utilities')->variable($section['class'],"")."'><div class='inner-section grid no-pseudo'>";
+		$output_sections .= "<div ".$section_link_data." class='section ".variable($section['class'],"")."'><div class='inner-section grid no-pseudo'>";
 
 		if( isset($section['content']) )
 		{
@@ -29,7 +29,7 @@
 
 				if( $child['type'] == 'subsection' )
 				{
-					$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].' '.App::make('Utilities')->variable($child['class'],"").'">';
+					$output_sections .= '<div class="column-'.variable($child['column'],12).' '.$child['type'].' '.variable($child['class'],"").'">';
 
 					foreach($child['content'] as $subchild)
 					{
@@ -42,7 +42,7 @@
 				}
 				else
 				{
-					$output_sections .= '<div class="column-'.App::make('Utilities')->variable($child['column'],12).' '.$child['type'].'">';
+					$output_sections .= '<div class="column-'.variable($child['column'],12).' '.$child['type'].'">';
 					$method = 'from'.Ucfirst($child['type']);
 					if( method_exists( $blockView, $method ) )
 					{

@@ -47,7 +47,7 @@ class BlockViewService {
    */
   function fromArray( $el )
   {
-    $out = '<div class="'.App::make('Utilities')->variable($el['class']).'">';
+    $out = '<div class="'.variable($el['class']).'">';
 
     if( !isset($mode) || $mode == 'default' )
     {
@@ -167,12 +167,12 @@ class BlockViewService {
                 foreach( $side['content'] as $item )
                 {
                   $method = 'from'.Ucfirst($item['type']);
-                  if( method_exists( $blockView, $method ) )
+                  if( method_exists( $this, $method ) )
                   {
                     $content .= $this->$method($item);
                   }
                 }
-                $out .= View::make('partials.'.$sideClass)->with('content', $content);
+                $out .= \View::make('partials.'.$sideClass)->with('content', $content);
 
                 $sideClass = 'card-back';
               }
