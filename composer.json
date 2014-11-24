@@ -18,7 +18,6 @@
 	},
 	"require": {
 		"laravel/framework": "4.2.*",
-		"guzzlehttp/guzzle": "~4.0",
 		"formandsystem/utilities": "*@dev",
 		"formandsystem/api": "1.0.*",
 		"michelf/php-markdown": "1.4.*",
