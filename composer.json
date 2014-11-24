@@ -20,7 +20,7 @@
 		"laravel/framework": "4.2.*",
 		"guzzlehttp/guzzle": "~4.0",
 		"formandsystem/utilities": "*@dev",
-		"formandsystem/api": "*@dev",
+		"formandsystem/api": "1.0.*",
 		"michelf/php-markdown": "1.4.*",
 		"orangehill/iseed": "dev-master"
 	},
