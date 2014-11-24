@@ -43,7 +43,7 @@ else
   git commit -m "Build $(date +"%d.%m.%Y %H:%M:%S")"
 
   if [ ! -z "$server" ]; then
-    read -p "Do you want to deploy this build to " $server "? (y/N) " yn
+    read -p "Do you want to deploy this build to $server? (y/N) " yn
 
     if [[ $yn =~ ^[Yy]$ ]]; then
       echo -e "\n"
