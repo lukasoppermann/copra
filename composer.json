@@ -18,9 +18,9 @@
 	},
 	"require": {
 		"laravel/framework": "4.2.*",
-		"laravelbook/ardent": "dev-master",
 		"guzzlehttp/guzzle": "~4.0",
 		"formandsystem/utilities": "*@dev",
+		"formandsystem/api": "*@dev",
 		"michelf/php-markdown": "1.4.*",
 		"orangehill/iseed": "dev-master"
 	},
