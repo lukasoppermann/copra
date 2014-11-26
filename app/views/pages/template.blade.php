@@ -63,7 +63,7 @@
 	?>
 
 	<ul class="js-section-menu section-menu">{{variable($output_sections_menu)}}</ul>
-	{{$output_sections}}
+	{{variable($output_sections)}}
 
 
 	@stop
