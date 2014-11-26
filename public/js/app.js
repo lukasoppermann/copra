@@ -95,7 +95,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 				}
 			},10);
 		});
-		
+
 		// ---------------------------
 		// Scroll state
 		//
@@ -144,11 +144,16 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
 		//
 		$('.js-card-details').on('click', function(){
 			$(this).parents('.card').addClass('is-active').siblings('.card').removeClass('is-active');
+			$('.card-overlay').css({'width':$(window).width(),'height':$(window).height()}).addClass('is-active');
 		});
 		$('.card').find('.js-close').on('click', function(){
 			$(this).parents('.card').removeClass('is-active');
+			$('.card-overlay').removeClass('is-active');
 		});
-
+		$('.card-overlay').on('click', function(){
+			$('.card.is-active').removeClass('is-active');
+			$('.card-overlay').removeClass('is-active');
+		});
 		// ---------------------------
 		// Searchable list with list.js
 		//

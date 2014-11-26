@@ -159,24 +159,52 @@ class BlockViewService {
             $card = $card['content'][Config::get('app.locale')];
             $sides = array_values(array_slice($card['data'],0,2));
 
-            $out .= '<div class="card column-4">';
-              $sideClass = 'card-front';
-              foreach( $sides as $side)
+            $content = "";
+            foreach( $sides[0]['content'] as $item )
+            {
+              $method = 'from'.Ucfirst($item['type']);
+              if( method_exists( $this, $method ) )
               {
-                $content = "";
-                foreach( $side['content'] as $item )
-                {
-                  $method = 'from'.Ucfirst($item['type']);
-                  if( method_exists( $this, $method ) )
-                  {
-                    $content .= $this->$method($item);
-                  }
-                }
-                $out .= \View::make('partials.'.$sideClass)->with('content', $content);
-
-                $sideClass = 'card-back';
+                $content .= $this->$method($item);
               }
-              $out .= '</div>';
+            }
+            $front = \View::make('partials.card-front')->with('content', $content);
+
+            $content = "";
+            foreach( $sides[1]['content'] as $item )
+            {
+              $method = 'from'.Ucfirst($item['type']);
+              if( method_exists( $this, $method ) )
+              {
+                $content .= $this->$method($item);
+              }
+            }
+            $back = \View::make('partials.card-back')->with('content', $content);
+
+            $out .= \View::make('partials.card')->with('cardsides', [
+              'front' => variable($front),
+              'back' => variable($back)
+            ]);
+
+
+            // $out .= '<div class="card column-4">';
+            //   $sideClass = 'card-front';
+            //   foreach( $sides as $side)
+            //   {
+            //     $content = "";
+            //     foreach( $side['content'] as $item )
+            //     {
+            //       $method = 'from'.Ucfirst($item['type']);
+            //       if( method_exists( $this, $method ) )
+            //       {
+            //         $content .= $this->$method($item);
+            //       }
+            //     }
+            //     $out .= \View::make('partials.'.$sideClass)->with('content', $content);
+            //
+            //     $sideClass = 'card-back';
+            //   }
+            //   $out .= '</div>';
             }
           }
 
@@ -185,7 +213,7 @@ class BlockViewService {
             $out .= "<div class='stream-emptyState js-emptyState'>".$el['variables']['emptyState']."</div>";
           }
 
-          return $out.'</div>';
+          return $out.'</div><div class="card-overlay"></div>';
         }
       }
     }
