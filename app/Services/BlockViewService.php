@@ -30,7 +30,7 @@ class BlockViewService {
     // markdown content
     if( isset($el['content']) )
     {
-      $out .= '<div class="block-content-copy">'.shiftHeaders(MarkdownExtra::defaultTransform($el['content']),$lvl).'</div>';
+      $out .= '<div class="block-content-copy">'.$this->shiftHeaders(MarkdownExtra::defaultTransform($el['content']),$lvl).'</div>';
     }
 
     return $out.'</div>';
@@ -120,7 +120,7 @@ class BlockViewService {
               foreach( $content['content'] as $c )
               {
                 if($c['type'] == 'default'){
-                  $text = "NOT DONE ".shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+                  $text = "NOT DONE ".$this->shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
                   break;
                 }
               }
@@ -142,7 +142,7 @@ class BlockViewService {
               foreach( $content['content'] as $c )
               {
                 if($c['type'] == 'block'){
-                  $text = shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+                  $text = $this->shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
                   break;
                 }
               }
@@ -216,6 +216,17 @@ class BlockViewService {
           return $out.'</div><div class="card-overlay"></div>';
         }
       }
+    }
+
+    function shiftHeaders($text,$level = 1)
+    {
+      return preg_replace_callback(
+      "!(</?h)([1-6])(>|\\s)!i",
+      function ($treffer) use($level)
+      {
+        return $treffer[2]+$level >=6 ? $treffer[1]."6".$treffer[3]: $treffer[1].($treffer[2]+$level).$treffer[3];
+      },
+      $text);
     }
 
 }

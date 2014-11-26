@@ -41,7 +41,7 @@
 	-webkit-transition: width 0s ease .5s, opacity .4s ease;
 	transition: width 0s ease .5s, opacity .4s ease;
 }
-.navigation--footer a:hover:before{
+.large .navigation--footer a:hover:before{
 	opacity: 1;
 	width: 100%;
 	width: -webkit-calc(100% - 40px);
@@ -104,10 +104,12 @@
 /* ----------------------
 		Main Navigation List
 */
+.main-navigation-list{
+	margin-right: 25px;
+}
 .main-navigation-list, .main-navigation-list > ul{
 	position: relative;
 	float: right;
-	margin-right: 25px;
 }
 .main-navigation-list:after{
 	z-index: 1;
@@ -156,7 +158,7 @@
 .main-navigation-list li > ul ul{
 	width: auto;
 }
-.main-navigation-list > ul > li:hover > ul{
+.large .main-navigation-list > ul > li:hover > ul{
 	display: block;
 }
 .main-navigation-list a{

@@ -38,7 +38,7 @@
 [class^=link]{
   text-decoration: underline;
 }
-[class^=link]:hover{
+.large [class^=link]:hover{
   text-decoration: none;
 }
 

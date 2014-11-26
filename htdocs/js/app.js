@@ -7,7 +7,7 @@ var support = {
 };
 
 require.config({
-	baseUrl: "/copra/public/js/bower_components",
+	baseUrl: "/copra/htdocs/js/bower_components",
   paths: {
       // the left side is the module ID,
       // the right side is the path to
@@ -22,7 +22,7 @@ require.config({
 });
 
 
-require(["jquery", "onMediaQuery/js/onmediaquery"], function($){
+require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 
 	// ---------------------------
 	// Navigation Highlight

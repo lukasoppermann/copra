@@ -109,7 +109,7 @@
 	bottom: -7px;
 	left: 0;
 }
-.banner .block-content-copy h1{
+.banner .block-content-copy h1, .banner .block-content-copy h2{
 	font-size: 64px;
 	font-weight: 200;
 	padding: 0 20px 0 0;
@@ -138,9 +138,44 @@
 	content: "➞";
 	padding-left: 5px;
 }
-.banner .block-content-copy a:hover{
+.large .banner .block-content-copy a:hover{
 	background: rgba(165,30,40,1);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+/* ----------------------
+General Content
+
+@Note:
+*/
+.page-title{
+	padding-top: 140px;
+	text-align: left;
+}
+.page-title h1{
+	font-size: 300%;
+	margin-bottom: 60px;
+}
+
+.block-content-copy a{
+	color: rgb(225,70,75);
+	text-decoration: underline;
+}
+.large .block-content-copy a:hover{
+	text-decoration: none;
+}
+.full-width-copy .block-content-copy {
+	padding: 0 10px;
+}
+.block-content-copy p{
+	margin-bottom: 10px;
+}
+.block-content-copy h3{
+	font-weight: 600;
+	text-align: left;
+	color: rgb(90,170,150);
+	margin-bottom: 15px;
+	margin-top: 30px;
+	padding: 0;
 }
 /* ----------------------
 		Section
@@ -258,7 +293,7 @@
 	-webkit-transition: background .5s ease, box-shadow .5s ease;
 					transition: background .5s ease, box-shadow .5s ease;
 }
-.red-section .user-features a:hover{
+.large .red-section .user-features a:hover{
 	background: rgba(165,30,40,1);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
@@ -377,12 +412,13 @@
 	height: 40px;
 	font-size: 32px;
 }
-.card .close:hover{
+.large .card .close:hover{
 	color: rgb(255,255,255);
 }
 .card .block-content-copy{
 	padding: 10px 20px 0 20px;
 }
+
 .card .last-card-content{
 	margin-bottom: 75px;
 }
@@ -410,7 +446,7 @@
 	content: "\2192";
 	padding-left: 10px;
 }
-.card .action-bar a:hover{
+.large .card .action-bar a:hover{
 	background-color: rgb(225,70,75);
 	color: rgb(255,255,255);
 }
@@ -535,6 +571,6 @@
 	color: rgb(255,255,255);
 	text-decoration: underline;
 }
-.contact-box a:hover{
+.large .contact-box a:hover{
 	text-decoration: none;
 }

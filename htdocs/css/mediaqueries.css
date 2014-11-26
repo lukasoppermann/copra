@@ -22,7 +22,7 @@ body:after {
     display: none;
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 400px) {
     html {
         font-family: "small";
     }
@@ -31,7 +31,7 @@ body:after {
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 400px) {
     html {
         font-family: "medium";
     }
@@ -40,7 +40,7 @@ body:after {
     }
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 800px) {
     html {
         font-family: "large";
     }

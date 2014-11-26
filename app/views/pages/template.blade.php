@@ -74,15 +74,5 @@
 // @TODO: make default block work again by using it from BlockViewService
 
 // change headlien in markdown
-function shiftHeaders($text,$level = 1)
-{
-	return preg_replace_callback(
-		"!(</?h)([1-6])(>|\\s)!i",
-		function ($treffer) use($level)
-		{
-			return $treffer[2]+$level >=6 ? $treffer[1]."6".$treffer[3]: $treffer[1].($treffer[2]+$level).$treffer[3];
-		},
-		$text);
-}
 
 ?>

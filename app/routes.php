@@ -10,6 +10,10 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/', function() {
+	echo 'HERE! (delete me!)';
+	return 'Returning a simple string without any View rendering.';
+});
 // disable cache for dev
 Route::group(array('before' => array('cache.fetch'), 'after' => array('cache.put')), function()
 {
