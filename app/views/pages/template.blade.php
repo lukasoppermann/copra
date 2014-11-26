@@ -62,7 +62,7 @@
 
 	?>
 
-	<ul class="js-section-menu section-menu">{{$output_sections_menu}}</ul>
+	<ul class="js-section-menu section-menu">{{variable($output_sections_menu)}}</ul>
 	{{$output_sections}}
 
 
