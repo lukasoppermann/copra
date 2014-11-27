@@ -21,144 +21,144 @@ class FsContentTableSeeder extends Seeder {
 				'published' => 1,
 				'language' => 'de',
 				'data' => '[
-				  {
-				      "class": "section-01",
-				      "content": [
-				          {
-				              "type": "block",
-				              "column": 12,
-				              "media": [
-				                  {
-				                      "src": "banner.jpg",
-				                      "description": "Some optional text"
-				                  }
-				              ],
-				              "content": "# Kliniken in ganz Deutschland.\\nDurch das Copra PMS wird die Arbeite in vielen Kliniken erleichtert.",
-				              "class": "banner js-banner"
-				          }
-				      ]
-				  },
-				  {
-				      "class": "space-bottom-wide",
-				      "link": "Vision",
-				      "content": [
-				          {
-				              "type": "block",
-				              "column": 12,
-				              "content": "#Vision\\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
-				              "class": "space-bottom-wide"
-				          },
-				          {
-				              "type": "block",
-				              "column": 4,
-				              "media":[
-												{"src": "icon-connected.svg"}
-											],
-											"content": "##Vernetzt\\nCopra ermöglicht eine leichte Anbindung an viele Drittsysteme, Geräte, Exportschnittstellen und Apps.",
-				              "class": "centered-content padded-column"
-				          },
-				          {
-				              "type": "block",
-				              "column": 4,
-											"media":[
-												{"src": "icon-verfuegbarkeit.svg"}
-											],
-				              "content": "##99% verfügbar\\nEgal ob unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
-				              "class": "centered-content padded-column"
-				          },
-				          {
-				              "type": "block",
-				              "column": 4,
-											"media":[
-												{"src": "icon-customize.svg"}
-											],
-				              "content": "##Customizable\\nPerfekte Integration in Ihre Prozesse und individuelle Anpassung auf die Vorzüge eines Hauses.",
-				              "class": "centered-content padded-column"
-				          }
-				      ]
-				  },
-				  {
-				      "class": "red-section",
-				      "link": "Anwendungsgebiete",
-				      "content": [
-				          {
-				              "type": "block",
-				              "column": 3,
+						{
+							"class": "section-01",
+							"content": [
+								{
+									"type": "block",
+									"column": 12,
+									"media": [
+										{
+											"src": "banner.jpg",
+											"description": "Seit mehr als 20 Jahren am Markt"
+										}
+									],
+									"content": "# Seit mehr als 20 Jahren am Markt\nIm medizinischen Bereich entwickelt und in konstanter kundennaher Weiterentwicklung ist COPRA das PDMS der Wahl.",
+									"class": "banner js-banner"
+								}
+								]
+							},
+							{
+								"class": "space-bottom-wide",
+								"link": "Vision",
+								"content": [
+									{
+										"type": "block",
+										"column": 12,
+										"content": "#Vision\nDas Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
+										"class": "space-bottom-wide"
+									},
+									{
+										"type": "block",
+										"column": 4,
+										"media":[
+											{"src": "icon-connected.svg"}
+										],
+										"content": "##Vernetzt\nCOPRA ist durch flexible Schnittstelle optimal in die Infrastruktur der Klinik eingebunden.",
+										"class": "centered-content padded-column"
+									},
+									{
+										"type": "block",
+										"column": 4,
+										"media":[
+											{"src": "icon-verfuegbarkeit.svg"}
+										],
+										"content": "##99,8% verfügbar\nOb unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
+										"class": "centered-content padded-column"
+									},
+									{
+										"type": "block",
+										"column": 4,
+										"media":[
+										{"src": "icon-customize.svg"}
+										],
+										"content": "##Anpassbar\nPerfekte Integration in Ihre Prozesse und individuelle Anpassung auf die Vorzüge eines Hauses.",
+										"class": "centered-content padded-column"
+									}
+									]
+								},
+								{
+									"class": "red-section",
+									"link": "Anwendungsgebiete",
+									"content": [
+									{
+										"type": "block",
+										"column": 3,
+										"media": [
+										{"src": "icon-doctor.svg"}
+										],
+										"content": "##Ärzte\n- Übersicht aller relevanten Daten\n- Befunde des Patienten\n- Ärztliche Anordnungen\n- Informationen zu früheren Aufenthalten\n\n[Produktdetails](/produkt)",
+										"class": "user-features"
+									},
+									{
+										"type": "block",
+										"column": 3,
+										"media": [
+										{"src": "icon-nurse.svg"}
+										],
+										"content": "##Pflege\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"class": "user-features"
+									},
+									{
+										"type": "block",
+										"column": 3,
+										"media": [
+										{"src": "icon-controlling.svg"}
+										],
+										"content": "##Controlling\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"class": "user-features"
+									},
+									{
+										"type": "block",
+										"column": 3,
+										"media": [
+										{"src": "icon-it.svg"}
+										],
+										"content": "##IT\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"class": "user-features"
+									}
+									]
+								},
+								{
+									"class": "section-04 section--gray",
+									"link": "Neuigkeiten",
+									"content": [
+									{
+										"type": "subsection",
+										"column": 7,
+										"content": [
+										{
+											"type": "block",
 											"media": [
-												{"src": "icon-doctor.svg"}
+											{"src": "copra-features-teaser.jpg"}
 											],
-				              "content": "##Ärzte\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				              "class": "user-features"
-				          },
-				          {
-				              "type": "block",
-				              "column": 3,
-				              "media": [
-												{"src": "icon-nurse.svg"}
-											],
-				              "content": "##Pflege\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				              "class": "user-features"
-				          },
-				          {
-				              "type": "block",
-				              "column": 3,
-				              "media": [
-												{"src": "icon-controlling.svg"}
-											],
-				              "content": "##Controlling\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				              "class": "user-features"
-				          },
-				          {
-				              "type": "block",
-				              "column": 3,
+											"content": "##Vorteile des Copra Systems\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+											"class": "teaser-card teaser-card--image-right"
+										},
+										{
+											"type": "block",
 											"media": [
-												{"src": "icon-it.svg"}
+											{"src": "copra-features-teaser.jpg"}
 											],
-				              "content": "##IT\\n- Fachbezogene Unterstützung des Verodnungsworkflows\\n- Integrierte Interaktionschecks\\n- Plausibilitätsprüfung\\n- Flexibles Berichtswesen\\n- Offlineverfügbarkeit des Systems\\n\\n[Produktdetails](http://http://www/copra/public/produkt)",
-				              "class": "user-features"
-				          }
-				      ]
-				  },
-				  {
-				      "class": "section-04 section--gray",
-				      "link": "Neuigkeiten",
-				      "content": [
-				          {
-				              "type": "subsection",
-				              "column": 7,
-				              "content": [
-				                  {
-				                      "type": "block",
-															"media": [
-				                      	{"src": "copra-features-teaser.jpg"}
-															],
-				                      "content": "##Vorteile des Copra Systems\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
-				                      "class": "teaser-card teaser-card--image-right"
-				                  },
-				                  {
-				                      "type": "block",
-				                      "media": [
-																{"src": "copra-features-teaser.jpg"}
-															],
-				                      "content": "##Integrationsprozess\\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
-				                      "class": "teaser-card"
-				                  }
-				              ]
-				          },
-				          {
-				              "type": "subsection",
-				              "column": 5,
-				              "content": [
-				                  {
-				                      "type": "stream",
-				                      "class": "news",
-															"stream": "news",
-															"mode": "preview"
-				                  }
-				              ]
-				          }
-				      ]
-				  }
+											"content": "##Integrationsprozess\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+											"class": "teaser-card"
+										}
+										]
+									},
+									{
+										"type": "subsection",
+										"column": 5,
+										"content": [
+										{
+											"type": "stream",
+											"class": "news",
+											"stream": "news",
+											"mode": "preview"
+										}
+										]
+									}
+									]
+								}
 				]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
@@ -170,7 +170,7 @@ class FsContentTableSeeder extends Seeder {
 				'article_id' => 2,
 				'menu_label' => 'Produkt',
 				'link' => 'produkt',
-				'published' => 2,
+				'published' => 1,
 				'language' => 'de',
 				'data' => '{"1":{"class":"section-01","content":{"1":{"type":"image","column":3,"src":"imagefile.png","description":"Some optional text","class":"optional-classes"},"2":{"type":"text","column":2,"content":"#Headline content is in markdown","class":"optional-classes"},"3":{"type":"text","column":2,"content":"This is real **markdown** copy.","class":"optional-classes"}}}}',
 				'created_at' => date("Y-m-d h:i:s"),
@@ -355,8 +355,8 @@ class FsContentTableSeeder extends Seeder {
 			),
 			4 =>
 			array (
-				'id' => 6,
-				'article_id' => 6,
+				'id' => 5,
+				'article_id' => 5,
 				'menu_label' => 'Kontakt',
 				'link' => 'kontakt',
 				'published' => 1,
@@ -405,26 +405,67 @@ class FsContentTableSeeder extends Seeder {
 			),
 			5 =>
 			array (
-				'id' => 7,
-				'article_id' => 7,
-				'menu_label' => 'Sub',
-				'link' => 'home/sub',
+				'id' => 6,
+				'article_id' => 6,
+				'menu_label' => 'impressum',
+				'link' => 'impressum',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Headline content is in markdown","class": "optional-classes"}}}}',
+				'data' => '{
+					"1": {
+						"class": "section-01",
+						"content": {
+							"0": {
+								"type": "block",
+								"column": 12,
+								"content": "#Impressum",
+								"class": "page-title"
+							},
+							"1": {
+								"type": "block",
+								"column": 7,
+								"content": "<h3>COPRA System GmbH</h3> <p>Berlin Berliner Straße 112a<br /> 13189 Berlin<br /> Tel.: +49 30 80 20 2033–0<br /> E-Mail: <a href=\"mailto: info@copra-system.de\">info@copra-system.de</a><br /> </p> <p>Geschäftsführer: Martin Jekov</p>  <p>Amtsgericht Charlottenburg HRB 151375 B</p>  <h3>Verlinkte Seiten</h3> <p>Das Landgericht Hamburg hat mit seinem Urteil vom 12. Mai 1998 - 312 O 85/98 - “Haftung für Links” entschieden, dass die Betreiber einer Webseite durch die Anbringung eines Links die Inhalte der gelinkten Seite ggf. mit zu verantworten haben. Dies kann nur dadurch verhindert werden, dass sie sich ausdrücklich von diesen Inhalten distanzieren. Deshalb diese Erklärung: Hiermit distanzieren sich die o.g. Betreiber der Webseite der COPRA System GmbH ausdrücklich von allen Inhalten aller gelinkten Seiten auf dieser Webseite und machen sich diese Inhalte nicht zu eigen. Diese Erklärung gilt für alle auf dieser Webseite angebrachten Links. Für die Inhalte der mit dieser Homepage verlinkten Webseiten übernehmen die Betreiber keinerlei Verantwortung. Für den Inhalt sind ausschließlich die betreffenden Betreiber bzw. Autoren verantwortlich. Rechtswidrige Inhalte sind nicht bekannt. Falls Sie einen solchen Link finden, bitten wir um eine kurze Benachrichtigung, damit die Verlinkung entfernt werden kann. Wir übernehmen keine Haftung für die Erfüllung von Urheberrechtsbestimmungen auf einer von uns verlinkten Seite und auch keinerlei Verantwortung für weitere dort gesetzte Links. Alle in den Texten genannten oder abgebildeten Warenzeichen sind Warenzeichen der jeweiligen Inhaber und sind gesetzlich geschützt!</p>",
+								"class": "space-bottom-wide full-width-copy append-1"
+							}
+						}
+					}
+				}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
 			),
 			6 =>
 			array (
-				'id' => 8,
-				'article_id' => 8,
-				'menu_label' => '',
-				'link' => '',
+				'id' => 7,
+				'article_id' => 7,
+				'menu_label' => 'Datenschutzrichtlinien',
+				'link' => 'datenschutzrichtlinien',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag eins\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '{
+					"1": {
+						"class": "section-01",
+						"content": [
+							{
+								"type": "block",
+								"column": 12,
+								"content": "#Datenschutzrichtlinien",
+								"class": "page-title"
+							},
+							{
+								"type": "block",
+								"column": 8,
+								"content": "###Datenschutz\\nDie Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.\\n\\nWir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.\\n\\nDer Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.\\n###Datenschutzerklärung für die Nutzung von Google Analytics\\nDiese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt.\\n\\nNur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.\\n\\nSie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: [http://tools.google.com/dlpage/gaoptout?hl=de](http://tools.google.com/dlpage/gaoptout?hl=de).",
+								"class": "append-2 space-bottom-wide"
+							},{
+								"type": "block",
+								"column": 4,
+								"content": "####Copra System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
+								"class": "contact-box"
+							}
+						]
+					}
+				}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
