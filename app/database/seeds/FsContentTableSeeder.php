@@ -96,7 +96,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-nurse.svg"}
 										],
-										"content": "##Pflege\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##Pflege\n- Ärztliche Anweisungen\n- Jederzeit verfügbar\n- Automatische Datenübernahme\n- Pflegerische Leistungen\n\n[Produktdetails](http://http://www/copra/public/produkt)",
 										"class": "user-features"
 									},
 									{
@@ -105,7 +105,8 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-controlling.svg"}
 										],
-										"content": "##Controlling\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##Controlling\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\n- Controllingbericht\n- Vollständigkeitsprüfungen
+										• Freigabe der Dokumentation\n\n[Produktdetails](http://http://www/copra/public/produkt)",
 										"class": "user-features"
 									},
 									{
@@ -114,7 +115,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-it.svg"}
 										],
-										"content": "##IT\n- Fachbezogene Unterstützung des Verodnungsworkflows\n- Integrierte Interaktionschecks\n- Plausibilitätsprüfung\n- Flexibles Berichtswesen\n- Offlineverfügbarkeit des Systems\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##IT\n- Skalierbar\n- Komplett virtualisierbar\n- Jederzeit verfügbar\n- Microsoft SQL, .NET\n\n[Produktdetails](http://http://www/copra/public/produkt)",
 										"class": "user-features"
 									}
 									]
@@ -172,10 +173,38 @@ class FsContentTableSeeder extends Seeder {
 				'link' => 'produkt',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"1":{"type":"image","column":3,"src":"imagefile.png","description":"Some optional text","class":"optional-classes"},"2":{"type":"text","column":2,"content":"#Headline content is in markdown","class":"optional-classes"},"3":{"type":"text","column":2,"content":"This is real **markdown** copy.","class":"optional-classes"}}}}',
+				'data' => '[
+					{
+						"class": "section-01",
+						"content": [
+							{
+								"type": "block",
+								"column": 12,
+								"media": [
+									{
+										"src": "banner.jpg",
+										"description": "Das PDMS aus Deutschland"
+									}
+								],
+								"content": "#Das PDMS aus Deutschland\\nIn Zusammenarbeit mit Universitätskliniken und Kunden agil entwickelt",
+								"class": "banner js-banner"
+							}
+						]
+					},
+					{
+						"class": "section-02",
+						"content": [
+							{
+								"type": "block",
+								"column": 12,
+								"content": "##Ärzte\\nÄrzte erhalten durch die elektronische Patientenakte im COPRA eine Übersicht aller relevanten Daten der Behandlung eines Patienten innerhalb eines Programms. Damit werden Kontextwechsel und wiederholte Anmeldungen an verschiedenen Systemen auf ein Minimum reduziert.",
+								"class": ""
+							}
+						]
+					}
+				]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
-
 			),
 			2 =>
 			array (
@@ -198,7 +227,7 @@ class FsContentTableSeeder extends Seeder {
 															"description": "Some optional text"
 													}
 											],
-											"content": "# Wir arbeiten an der Zukunft\\nCopra entwickelt das PDMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+											"content": "#Wir arbeiten an der Zukunft\\nCOPRA entwickelt das PDMS von morgen",
 											"class": "banner js-banner"
 									}
 							]
@@ -370,10 +399,10 @@ class FsContentTableSeeder extends Seeder {
 												"media": [
 														{
 																"src": "banner.jpg",
-																"description": "Some optional text"
+																"description": "Kontakt"
 														}
 												],
-												"content": "#Wir arbeiten an der Zukunft\\nCopra entwickelt das PDMS von morgen, mit innovative Ideen und neuen Ansätzen.",
+												"content": "#Kontakt",
 												"class": "banner js-banner"
 										}
 								]
@@ -383,7 +412,7 @@ class FsContentTableSeeder extends Seeder {
 						"content":[{
 							"type": "block",
 							"column": 12,
-							"content": "##Kontaktieren Sie uns",
+							"content": "##So erreichen Sie uns",
 							"class": "align-left"
 							},{
 								"type": "block",

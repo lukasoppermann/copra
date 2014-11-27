@@ -11,7 +11,7 @@
 |
 */
 // disable cache for dev
-Route::group(array('before' => array('cache.fetch'), 'after' => array('cache.put')), function()
+Route::group(array(/*'before' => array('cache.fetch'), 'after' => array('cache.put')*/), function()
 {
 	Route::any('/{path?}', "PageController@index")->where('path', '.+');
 
