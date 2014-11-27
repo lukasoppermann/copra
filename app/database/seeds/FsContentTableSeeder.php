@@ -45,7 +45,7 @@ class FsContentTableSeeder extends Seeder {
 									{
 										"type": "block",
 										"column": 12,
-										"content": "#Vision\nDas Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
+										"content": "#Vision\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
 										"class": "space-bottom-wide"
 									},
 									{
@@ -105,8 +105,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-controlling.svg"}
 										],
-										"content": "##Controlling\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\n- Controllingbericht\n- Vollständigkeitsprüfungen
-										• Freigabe der Dokumentation\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##Controlling\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n[Produktdetails](http://http://www/copra/public/produkt)",
 										"class": "user-features"
 									},
 									{
