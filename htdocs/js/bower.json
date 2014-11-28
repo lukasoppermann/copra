@@ -1,11 +1,11 @@
 {
-  "name": "Copra",
+  "name": "COPRA",
   "version": "0.0.1",
   "homepage": "https://github.com/lukasoppermann/copra",
   "authors": [
     "Lukas Oppermann <lukas@vea.re>"
   ],
-  "description": "Redesign for Copra",
+  "description": "Redesign for COPRA",
   "main": "main.js",
   "license": "MIT",
   "private": true,

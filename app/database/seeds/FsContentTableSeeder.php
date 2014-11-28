@@ -132,7 +132,7 @@ class FsContentTableSeeder extends Seeder {
 											"media": [
 											{"src": "copra-features-teaser.jpg"}
 											],
-											"content": "##Vorteile des Copra Systems\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+											"content": "##Vorteile des COPRA Systems\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
 											"class": "teaser-card teaser-card--image-right"
 										},
 										{
@@ -195,9 +195,38 @@ class FsContentTableSeeder extends Seeder {
 						"content": [
 							{
 								"type": "block",
-								"column": 12,
+								"column": 4,
+								"media": [
+									{
+										"src": "icon-doctor.svg",
+										"description": "Das PDMS aus Deutschland"
+									}
+								],
+								"content": "### Weitere Themen\\n- Prämedikation\\n- (Vollständigkeit/Plausibiltät)\\n- Statistiken, Recherchemöglichkeiten, Patientenübergreifende Recherche\\n- Offlineverfügbar\\n- Dokumentation von Medikamentengaben im OP mit zwei Klicks\\n- Standardisierte Therapiepläne (Templates)\\n- Fluidmanagement/Bilanzen",
+								"class": "circle-icon rounded-block rounded-block--red"
+							},
+							{
+								"type": "block",
+								"column": 7,
 								"content": "##Ärzte\\nÄrzte erhalten durch die elektronische Patientenakte im COPRA eine Übersicht aller relevanten Daten der Behandlung eines Patienten innerhalb eines Programms. Damit werden Kontextwechsel und wiederholte Anmeldungen an verschiedenen Systemen auf ein Minimum reduziert.\\n\\nAls integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten im COPRA eingesehen werden. So können Laborwerte kurz nach Feststellung der Ergebnisse bereits im COPRA eingesehen und mit anderen Werten der Behandlung in Kontext gesetzt werden. Eine Beauftragung von Befunden ist auch möglich. Alle Befunde, die zu einem Stationsaufenthalt im COPRA dokumentiert werden, sind zum Abschluss des Falls mit der COPRA-Akte archiviert.\\n\\nNeben dem lesenden Zugriff auf alle relevanten Daten zu einer Behandlung werden über COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen eingetragen und kommuniziert. Durch die für die Pflege getrennte Ansicht werden Anordnungen erst ab einem bestimmten Status sichtbar. Somit kann ein Therapieplan mit mehreren Medikamenten geplant und anschließend mit einem Klick für die Pflege sichtbar gemacht werden.\\n\\nDurch die “Lebensakte” des Patienten im COPRA sind alle Eingriffe des Patienten rückwirkend einzusehen. Auch über einen Zeitraum von 10 Jahren. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Fall vor mehreren Jahren.\\n\\n(Themen, die nicht genannt wurden: Prämedikation (Vollständigkeit/Plausibiltät), Statistiken, Recherchemöglichkeiten, Patientenübergreifende Recherche, Offlineverfügbar, Dokumentation von Medikamentengaben im OP mit zwei Klicks, Standardisierte Therapiepläne (Templates), Fluidmanagement/Bilanzen)",
+								"class": "prepend-1 prominent-headline prominent-headline--red"
+							},
+							{
+								"type": "block",
+								"column": 8,
+								"content": "##Pflege\\nAlle ärztlichen Anweisung zur Behandlung eines Patienten werden an zentraler Stelle aufgeführt. Somit ist im COPRA zu jeder Zeit erkennbar, welche Maßnahmen am Patienten noch offen und welche bereits erledigt wurden (Arbeitslisten). Aktivitäten, die auf Zuruf durchgeführt wurden und einer Anordnung des Arztes bedürfen werden zum Zeitpunkt der Dokumentation dem Arzt zur Nachverordnung angezeigt.\\n\\nDie bettseitige elektronische Patientenakte ist unabhängig vom Kliniknetzwerk jederzeit für die Dokumentation verfügbar. Somit können alle Aktivitäten ohne Unterbrechung durch externe Einflüsse direkt am Bettplatz oder auf dem mobilen Visitenwagen dokumentiert werden.\\n\\nDie automatische Übernahme von Gerätewerten aller am Patienten angeschlossenen Geräte erspart das manuelle Dokumentieren der Medikamentengaben durch Perfusoren oder die Aufzeichnung der Vitalparameterkurven. Die Werte müssen einmal durch das Personal geprüft und mit einem Klick validiert werden.\\n\\nAlle pflegerischen Leistungen können im COPRA dokumentiert und zur Abrechnung exportiert werden. Somit werden keine abrechnungsrelevanten Leistungen mehr übersehen.",
 								"class": ""
+							},
+							{
+								"type": "block",
+								"column": 4,
+								"media": [
+									{
+										"src": "icon-nurse.svg",
+										"description": "Das PDMS aus Deutschland"
+									}
+								],
+								"class": "circle-icon"
 							}
 						]
 					}
@@ -421,7 +450,7 @@ class FsContentTableSeeder extends Seeder {
 							},{
 									"type": "block",
 									"column": 4,
-									"content": "####Copra System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
+									"content": "####COPRA System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
 									"class": "contact-box"
 							}
 						]
@@ -488,7 +517,7 @@ class FsContentTableSeeder extends Seeder {
 							},{
 								"type": "block",
 								"column": 4,
-								"content": "####Copra System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
+								"content": "####COPRA System GmbH  \\n<span class=\"label\">Tel.:</span> +49 30 80 20 20 335  \\n<span class=\"label\">Fax:</span> +49 30 80 20 20 333  \\n<span class=\"label\">Email:</span> <mailto:vertrieb@copra-system.de>   \\n  \\n<span class=\"label\">Adresse:</span>  \\nBerliner Straße 112a  \\n13189 Berlin",
 								"class": "contact-box"
 							}
 						]

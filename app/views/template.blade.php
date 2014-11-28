@@ -9,7 +9,7 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
 	<link rel="stylesheet" href="{{asset('/css/'.Config::get('app.appcss'))}}" type="text/css" media="screen" charset="utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
-	<title>{{variable($title,"Copra PDMS (Patienten-Daten-Management-System)")}} | Copra Systems GmbH</title>
+	<title>{{variable($title,"COPRA PDMS (Patienten-Daten-Management-System)")}} | COPRA Systems GmbH</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1,maximum-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 </head>

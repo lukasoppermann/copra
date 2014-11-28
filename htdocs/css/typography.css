@@ -37,3 +37,14 @@ blockquote{
 	font-size: 32px;
 	line-height: 130%;
 }
+
+.prominent-headline h2{
+	padding: 0;
+	margin-bottom: 10px;
+	font-size: 200%;
+	font-weight: 400;
+	text-align: left;
+}
+.prominent-headline--red h2{
+	color: rgb(225,70,75);
+}

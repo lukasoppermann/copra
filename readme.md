@@ -1,6 +1,6 @@
-# Copra
+# COPRA
 
-Redesign of Copra website
+Redesign of COPRA website
 
 ## Colors
 - red: rgb(225,70,75)
