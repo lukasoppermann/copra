@@ -205,7 +205,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Das PDMS aus Deutschland"
 									}
 								],
-								"content": "### Weitere Themen\\n- Prämedikation\\n- (Vollständigkeit/Plausibiltät)\\n- Statistiken, Recherchemöglichkeiten, Patientenübergreifende Recherche\\n- Offlineverfügbar\\n- Dokumentation von Medikamentengaben im OP mit zwei Klicks\\n- Standardisierte Therapiepläne (Templates)\\n- Fluidmanagement/Bilanzen",
+								"content": "###Das wichtigste im Überblick\\n- Übersicht aller relevanten Daten\n- Befunde des Patienten\n- Ärztliche Anordnungen\n- Informationen zu früheren Aufenthalten\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
