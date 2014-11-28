@@ -311,3 +311,46 @@ Circle-icon
 .rounded-block--red .block-content-copy h3{
   color: rgb(255,255,255);
 }
+/* ----------------------
+  Teaser
+*/
+.prominent-teaser{
+  margin: 0 25px;
+}
+.prominent-teaser .block-content-copy{
+  padding: 20px;
+  color: rgb(255,255,255);
+  margin-bottom: 50px;
+}
+.prominent-teaser p:last-child{
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.prominent-teaser .block-content-copy a{
+  float: right;
+  color: rgb(255,255,255);
+}
+.prominent-teaser--turquoise{
+  background: rgb(90,170,150);
+}
+.prominent-teaser--turquoise:before{
+  display: block;
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.05);
+}
+.prominent-teaser--turquoise:after{
+  display: block;
+  content: "";
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.05);
+}

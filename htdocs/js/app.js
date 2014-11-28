@@ -9,14 +9,6 @@ var support = {
 require.config({
 	baseUrl: "/copra/htdocs/js/bower_components",
   paths: {
-      // the left side is the module ID,
-      // the right side is the path to
-      // the jQuery file, relative to baseUrl.
-      // Also, the path should NOT include
-      // the '.js' file extension. This example
-      // is using jQuery 1.9.0 located at
-      // js/lib/jquery-1.9.0.js, relative to
-      // the HTML page.
       "jquery": "jquery/dist/jquery"
   }
 });
@@ -66,7 +58,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		// ---------------------------
 		// Section smooth scrolling
 		//
-		$('a', '.js-section-menu-link').click(function(e){
+		$('a[href*="#"]', '.js-section-menu-link').click(function(e){
 			e.preventDefault();
 
 		    $('html, body').animate({
@@ -79,7 +71,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		// ---------------------------
 		// Scroll state
 		//
-		if((document && document.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
+		if((document && document.documentElement.scrollTop  || document.body && document.body.scrollTop  || 0 ) > 100 ){
 			$(".main-navigation").addClass('is-scrolled');
 		}else{
 			$(".main-navigation").removeClass('is-scrolled');
@@ -88,7 +80,7 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		$(window).on('scroll', function(f){
 			clearTimeout(f);
 			f = setTimeout(function(){
-				if((document && document.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
+				if((document && document.documentElement.scrollTop  || document.body && document.body.scrollTop  || 0) > 100 ){
 					$(".main-navigation").addClass('is-scrolled');
 				}else{
 					$(".main-navigation").removeClass('is-scrolled');
@@ -99,12 +91,14 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		// ---------------------------
 		// Scroll state
 		//
+		var scrollTop = 0;
 		$(window).on('scroll', function(f){
-			if($('.js-banner') !== undefined && ( document && document.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
+			if($('.js-banner') !== undefined && ( document && document.documentElement.scrollTop  || document.body && document.body.scrollTop  || 0) < 500){
 				clearTimeout(f);
 				f = setTimeout(function(){
-					$('.js-banner img').css('top',-parseInt((document.body.scrollTop/100)*50)+'px');
-					$('.js-banner .block-content-copy').css('top',-parseInt((document.body.scrollTop/100)*25)+'px');
+					scrollTop = document.body.scrollTop === 0 ? document.documentElement.scrollTop : document.body.scrollTop;
+					$('.js-banner img').css('top',-parseInt((scrollTop/100)*50)+'px');
+					$('.js-banner .block-content-copy').css('top',-parseInt((scrollTop/100)*25)+'px');
 				},10);
 			}
 		});

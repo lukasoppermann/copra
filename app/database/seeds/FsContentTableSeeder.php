@@ -39,6 +39,17 @@ class FsContentTableSeeder extends Seeder {
 								]
 							},
 							{
+								"class": "",
+								"content": [
+									{
+										"type": "block",
+										"column": 12,
+										"content": "COPRA stellt auf der DIVI14 aus. Treffen Sie uns in Hamburg vom 03. - 05.12.2014 [Alle Informationen zur Messe](#neuigkeiten)",
+										"class": "prominent-teaser prominent-teaser--turquoise"
+									}
+								]
+							},
+							{
 								"class": "space-bottom-wide",
 								"link": "Vision",
 								"content": [
@@ -130,18 +141,10 @@ class FsContentTableSeeder extends Seeder {
 										{
 											"type": "block",
 											"media": [
-											{"src": "copra-features-teaser.jpg"}
+											{"src": "copra-divi14.jpg"}
 											],
-											"content": "##Vorteile des COPRA Systems\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
+											"content": "##COPRA auf der Divi14\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 											"class": "teaser-card teaser-card--image-right"
-										},
-										{
-											"type": "block",
-											"media": [
-											{"src": "copra-features-teaser.jpg"}
-											],
-											"content": "##Integrationsprozess\nDer große Vorteil einer computergestützten Dokumentation besteht darin, dass Funktionen genutzt werden, die in einer handschriftlichen Dokumentation zu viel Aufwand bedeuten oder schlicht unmöglich wären.",
-											"class": "teaser-card"
 										}
 										]
 									},
