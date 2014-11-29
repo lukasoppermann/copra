@@ -195,6 +195,7 @@ class FsContentTableSeeder extends Seeder {
 					},
 					{
 						"class": "section-02",
+						"link": "Ärzte",
 						"content": [
 							{
 								"type": "block",
@@ -202,7 +203,7 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "icon-doctor.svg",
-										"description": "Das PDMS aus Deutschland"
+										"description": "Vorteile für Ärzte"
 									}
 								],
 								"content": "###Das wichtigste im Überblick\\n- Übersicht aller relevanten Daten\n- Befunde des Patienten\n- Ärztliche Anordnungen\n- Informationen zu früheren Aufenthalten\n\n",
@@ -213,12 +214,18 @@ class FsContentTableSeeder extends Seeder {
 								"column": 7,
 								"content": "##Ärzte\\nÄrzte erhalten durch die elektronische Patientenakte im COPRA eine Übersicht aller relevanten Daten der Behandlung eines Patienten innerhalb eines Programms. Damit werden Kontextwechsel und wiederholte Anmeldungen an verschiedenen Systemen auf ein Minimum reduziert.\\n\\nAls integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten im COPRA eingesehen werden. So können Laborwerte kurz nach Feststellung der Ergebnisse bereits im COPRA eingesehen und mit anderen Werten der Behandlung in Kontext gesetzt werden. Eine Beauftragung von Befunden ist auch möglich. Alle Befunde, die zu einem Stationsaufenthalt im COPRA dokumentiert werden, sind zum Abschluss des Falls mit der COPRA-Akte archiviert.\\n\\nNeben dem lesenden Zugriff auf alle relevanten Daten zu einer Behandlung werden über COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen eingetragen und kommuniziert. Durch die für die Pflege getrennte Ansicht werden Anordnungen erst ab einem bestimmten Status sichtbar. Somit kann ein Therapieplan mit mehreren Medikamenten geplant und anschließend mit einem Klick für die Pflege sichtbar gemacht werden.\\n\\nDurch die “Lebensakte” des Patienten im COPRA sind alle Eingriffe des Patienten rückwirkend einzusehen. Auch über einen Zeitraum von 10 Jahren. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Fall vor mehreren Jahren.\\n\\n(Themen, die nicht genannt wurden: Prämedikation (Vollständigkeit/Plausibiltät), Statistiken, Recherchemöglichkeiten, Patientenübergreifende Recherche, Offlineverfügbar, Dokumentation von Medikamentengaben im OP mit zwei Klicks, Standardisierte Therapiepläne (Templates), Fluidmanagement/Bilanzen)",
 								"class": "prepend-1 prominent-headline prominent-headline--red"
-							},
+							}
+						]
+					},
+					{
+						"class": "spacing-top",
+						"link": "Pflege",
+						"content": [
 							{
 								"type": "block",
 								"column": 8,
 								"content": "##Pflege\\nAlle ärztlichen Anweisung zur Behandlung eines Patienten werden an zentraler Stelle aufgeführt. Somit ist im COPRA zu jeder Zeit erkennbar, welche Maßnahmen am Patienten noch offen und welche bereits erledigt wurden (Arbeitslisten). Aktivitäten, die auf Zuruf durchgeführt wurden und einer Anordnung des Arztes bedürfen werden zum Zeitpunkt der Dokumentation dem Arzt zur Nachverordnung angezeigt.\\n\\nDie bettseitige elektronische Patientenakte ist unabhängig vom Kliniknetzwerk jederzeit für die Dokumentation verfügbar. Somit können alle Aktivitäten ohne Unterbrechung durch externe Einflüsse direkt am Bettplatz oder auf dem mobilen Visitenwagen dokumentiert werden.\\n\\nDie automatische Übernahme von Gerätewerten aller am Patienten angeschlossenen Geräte erspart das manuelle Dokumentieren der Medikamentengaben durch Perfusoren oder die Aufzeichnung der Vitalparameterkurven. Die Werte müssen einmal durch das Personal geprüft und mit einem Klick validiert werden.\\n\\nAlle pflegerischen Leistungen können im COPRA dokumentiert und zur Abrechnung exportiert werden. Somit werden keine abrechnungsrelevanten Leistungen mehr übersehen.",
-								"class": ""
+								"class": "append-1 prominent-headline prominent-headline--red"
 							},
 							{
 								"type": "block",
@@ -226,13 +233,62 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "icon-nurse.svg",
-										"description": "Das PDMS aus Deutschland"
+										"description": "Vorteile für die Pflege"
 									}
 								],
-								"class": "circle-icon"
+								"content": "###Das wichtigste im Überblick\\n- Ärztliche Anweisungen\\n- Jederzeit verfügbar\\n- Automatische Datenübernahme\\n- Pflegerische Leistungen\n\n",
+								"class": "circle-icon rounded-block rounded-block--red"
 							}
 						]
-					}
+					},
+					{
+						"class": "spacing-top",
+						"link": "Controlling",
+						"content": [
+							{
+								"type": "block",
+								"column": 4,
+								"media": [
+									{
+										"src": "icon-controlling.svg",
+										"description": "Vorteile für das Controlling"
+									}
+								],
+								"content": "###Das wichtigste im Überblick\\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\\n- Controllingbericht\\n- Vollständigkeitsprüfungen\\n- Freigabe der Dokumentation\n\n",
+								"class": "circle-icon rounded-block rounded-block--red"
+							},
+							{
+								"type": "block",
+								"column": 7,
+								"content": "##Controlling\\nAlle im COPRA dokumentierten Aktivitäten können für die Abrechnung gesammelt und exportiert werden. So können erlösrelevanten Therapieverfahren und Maßnahmen durch das Controlling ohne das manuelle Durchsehen der Akten ausgeleitet werden. Neben der Ausleitung können auch Übersichten zu hochpreisigen Verfahren und Materialien erstellt werden (Controllingbericht). Um zu gewährleisten, dass lückenlose Daten für die Abrechnung zu jeder Behandlung vorliegen, wird beim Abschluss eines Stationsaufenthalts eine Vollständigkeitsprüfung durchgeführt. Auch während der Behandlung weist COPRA auf eventuell zu dokumentierende Inhalte hin. Eine Vollständigkeitsprüfung kann bei jeder Freigabestufe der Dokumentation durchgeführt werden. So werden je Kontext verschiedene Inhalte beim Fachabteilungs- und Fallabschluss geprüft.\\n\\nCOPRA unterstützt damit die Dokumentation abrechnungsrelevanter Leistungen von der vollständigen Eingabe, Vollständigkeitsprüfung, Überleitung bis zum automatisierten Export.",
+								"class": "prepend-1 prominent-headline prominent-headline--red"
+							}
+							]
+						},
+						{
+							"class": "spacing-top spacing-bottom",
+							"link": "IT",
+							"content": [
+								{
+									"type": "block",
+									"column": 8,
+									"content": "##IT\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. So kann die Installation von COPRA mit der Inbetriebnahme weiterer Stationen auf die neuen Performancebedürfnisse angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Dadurch hat die hausinterne IT einen großen Freiheitsgrad zur Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann somit frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenhaltung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung durch wenige Schritte erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie dem SQL-Server und das .NET-Framework von Microsoft auf.",
+									"class": "append-1 prominent-headline prominent-headline--red"
+								},
+								{
+									"type": "block",
+									"column": 4,
+									"media": [
+										{
+											"src": "icon-it.svg",
+											"description": "Vorteile für die IT"
+										}
+									],
+									"content": "###Das wichtigste im Überblick\\n- Skalierbar\\n- Komplett virtualisierbar\\n- Jederzeit verfügbar\\n- Microsoft SQL, .NET\n\n",
+									"class": "circle-icon rounded-block rounded-block--red"
+								}
+								]
+							}
 				]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),

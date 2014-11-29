@@ -4,6 +4,9 @@
 .spacing-bottom{
   margin-bottom: 50px;
 }
+.spacing-top{
+  padding-top: 50px;
+}
 .padding-bottom{
   padding-bottom: 50px;
 }
@@ -13,7 +16,9 @@
 .padding-top-small{
   padding-top: 25px;
 }
-
+.padding-top{
+  padding-top: 50px;
+}
 .inner-section-padding-bottom .inner-section{
   padding-bottom: 50px;
 }
