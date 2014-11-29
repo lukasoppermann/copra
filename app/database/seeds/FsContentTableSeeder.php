@@ -44,7 +44,7 @@ class FsContentTableSeeder extends Seeder {
 									{
 										"type": "block",
 										"column": 12,
-										"content": "COPRA stellt auf der DIVI14 aus. Treffen Sie uns in Hamburg vom 03. - 05.12.2014 [Alle Informationen zur Messe](#neuigkeiten)",
+										"content": "[Besuchen Sie uns auf der DIVI 2014 in Hamburg vom 03.-05.12.2014. <span class=\"align-right\">Halle H, C46 (Gegenüber vom ADAC-Hubschrauber)</span>](#neuigkeiten)",
 										"class": "prominent-teaser prominent-teaser--turquoise"
 									}
 								]
@@ -143,8 +143,8 @@ class FsContentTableSeeder extends Seeder {
 											"media": [
 											{"src": "copra-divi14.jpg"}
 											],
-											"content": "##COPRA auf der Divi14\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-											"class": "teaser-card teaser-card--image-right"
+											"content": "##Besuchen Sie uns auf der DIVI 2014 vom 03. - 05. Dezember 2014\nCCH - Congress Center Hamburg\\n\\nIndustrieausstellung - Halle H\nBereich C - Stand C46\n\n<strong>Gegenüber vom ADAC-Hubschrauber</strong>",
+											"class": "teaser-card teaser-card--image-right teaser-card--image-fit-width"
 										}
 										]
 									},

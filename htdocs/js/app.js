@@ -281,9 +281,17 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		var queries = [{
 			context: ['small','medium','large'],
 			match: function(size) {
+				if( size == 'large' )
+				{
+					size = size+' hover';
+				}
 				$('body').addClass(size);
 			},
 			unmatch: function(size) {
+				if( size == 'large' )
+				{
+					size = size+' hover';
+				}
 				$('body').removeClass(size);
 			}
     }
