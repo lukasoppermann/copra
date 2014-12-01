@@ -30,10 +30,10 @@ class FsContentTableSeeder extends Seeder {
 									"media": [
 										{
 											"src": "banner.jpg",
-											"description": "Seit mehr als 20 Jahren am Markt"
+											"description": "COPRA bietet, was Kliniken brauchen"
 										}
 									],
-									"content": "# Seit mehr als 20 Jahren am Markt\nIm medizinischen Bereich entwickelt und in konstanter kundennaher Weiterentwicklung ist COPRA das PDMS der Wahl.",
+									"content": "#COPRA bietet, was Kliniken brauchen\nDie innovative Lösung für die vollständige Dokumentation von Behandlung und Pflege.",
 									"class": "banner js-banner"
 								}
 								]
@@ -56,7 +56,7 @@ class FsContentTableSeeder extends Seeder {
 									{
 										"type": "block",
 										"column": 12,
-										"content": "#Vision\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
+										"content": "#Vision\n>Die Behandlung im Mittelpunkt",
 										"class": "space-bottom-wide append-2 prepend-2"
 									},
 									{
@@ -65,7 +65,7 @@ class FsContentTableSeeder extends Seeder {
 										"media":[
 											{"src": "icon-connected.svg"}
 										],
-										"content": "##Vernetzt\nCOPRA ist durch flexible Schnittstelle optimal in die Infrastruktur der Klinik eingebunden.",
+										"content": "##Intelligente Vernetzung\nCOPRA ist durch eine flexible Schnittstelle optimal in die Infrastruktur Ihrer Klinik eingebunden.",
 										"class": "centered-content padded-column"
 									},
 									{
@@ -74,7 +74,7 @@ class FsContentTableSeeder extends Seeder {
 										"media":[
 											{"src": "icon-verfuegbarkeit.svg"}
 										],
-										"content": "##99,8% verfügbar\nOb unterbrochenes Netzwerk, kaputter Server oder das Gerät ohne Netzverbindung transportiert wird - für die Dokumentation steht COPRA jederzeit bereit.",
+										"content": "##Absolute Sicherheit\nCOPRA steht jederzeit für die Dokumentation bereit, ein ausgeklügeltes Sicherungssystem sorgt dafür, dass COPRA in 99,8 % der Fälle verfügbar bleibt.",
 										"class": "centered-content padded-column"
 									},
 									{
@@ -83,7 +83,7 @@ class FsContentTableSeeder extends Seeder {
 										"media":[
 										{"src": "icon-customize.svg"}
 										],
-										"content": "##Anpassbar\nPerfekte Integration in Ihre Prozesse und individuelle Anpassung auf die Vorzüge eines Hauses.",
+										"content": "##Perfekte Integration\nCOPRA ist für den Klinikalltag optimiert. Individuelle Anpassungen können in COPRA leicht vorgenommen werden.",
 										"class": "centered-content padded-column"
 									}
 									]
@@ -98,7 +98,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-doctor.svg"}
 										],
-										"content": "##Ärzte\n- Übersicht aller relevanten Daten\n- Befunde des Patienten\n- Ärztliche Anordnungen\n- Informationen zu früheren Aufenthalten\n\n[Produktdetails](/produkt)",
+										"content": "##Ärzte\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen Die\n- Krankengeschichte auf Abruf\n\n[Produktdetails](/produkt#aerzte)",
 										"class": "user-features"
 									},
 									{
@@ -107,7 +107,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-nurse.svg"}
 										],
-										"content": "##Pflege\n- Ärztliche Anweisungen\n- Jederzeit verfügbar\n- Automatische Datenübernahme\n- Pflegerische Leistungen\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##Pflege\n- Ärztliche Anweisungen zentral dargestellt\n- Jederzeit verfügbare Informationen\n- Automatische Datenübernahme\n- Dokumentation der pflegerischen Leistungen\n\n[Produktdetails](/produkt#pflege)",
 										"class": "user-features"
 									},
 									{
@@ -116,7 +116,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-controlling.svg"}
 										],
-										"content": "##Controlling\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##Controlling\n- Überblick über alle Behandlungsschritte\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n[Produktdetails](/produkt#controlling)",
 										"class": "user-features"
 									},
 									{
@@ -125,7 +125,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-it.svg"}
 										],
-										"content": "##IT\n- Skalierbar\n- Komplett virtualisierbar\n- Jederzeit verfügbar\n- Microsoft SQL, .NET\n\n[Produktdetails](http://http://www/copra/public/produkt)",
+										"content": "##IT\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das.NET-Framework von Microsoft\n\n[Produktdetails](/produkt#itabteilung)",
 										"class": "user-features"
 									}
 									]
@@ -185,10 +185,10 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "banner.jpg",
-										"description": "Das PDMS aus Deutschland"
+										"description": "Qualität und Service aus Deutschland"
 									}
 								],
-								"content": "#Das PDMS aus Deutschland\\nIn Zusammenarbeit mit Universitätskliniken und Kunden agil entwickelt",
+								"content": "#Qualität und Service aus Deutschland\\nEntwickelt in enger Zusammenarbeit mit Krankenhäusern und Universitätskliniken",
 								"class": "banner js-banner"
 							}
 						]
@@ -206,13 +206,13 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für Ärzte"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Übersicht aller relevanten Daten\n- Befunde des Patienten\n- Ärztliche Anordnungen\n- Informationen zu früheren Aufenthalten\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen Die\n- Krankengeschichte auf Abruf\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
 								"type": "block",
 								"column": 7,
-								"content": "##Ärzte\\nÄrzte erhalten durch die elektronische Patientenakte im COPRA eine Übersicht aller relevanten Daten der Behandlung eines Patienten innerhalb eines Programms. Damit werden Kontextwechsel und wiederholte Anmeldungen an verschiedenen Systemen auf ein Minimum reduziert.\\n\\nAls integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten im COPRA eingesehen werden. So können Laborwerte kurz nach Feststellung der Ergebnisse bereits im COPRA eingesehen und mit anderen Werten der Behandlung in Kontext gesetzt werden. Eine Beauftragung von Befunden ist auch möglich. Alle Befunde, die zu einem Stationsaufenthalt im COPRA dokumentiert werden, sind zum Abschluss des Falls mit der COPRA-Akte archiviert.\\n\\nNeben dem lesenden Zugriff auf alle relevanten Daten zu einer Behandlung werden über COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen eingetragen und kommuniziert. Durch die für die Pflege getrennte Ansicht werden Anordnungen erst ab einem bestimmten Status sichtbar. Somit kann ein Therapieplan mit mehreren Medikamenten geplant und anschließend mit einem Klick für die Pflege sichtbar gemacht werden.\\n\\nDurch die “Lebensakte” des Patienten im COPRA sind alle Eingriffe des Patienten rückwirkend einzusehen. Auch über einen Zeitraum von 10 Jahren. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Fall vor mehreren Jahren.\\n\\n(Themen, die nicht genannt wurden: Prämedikation (Vollständigkeit/Plausibiltät), Statistiken, Recherchemöglichkeiten, Patientenübergreifende Recherche, Offlineverfügbar, Dokumentation von Medikamentengaben im OP mit zwei Klicks, Standardisierte Therapiepläne (Templates), Fluidmanagement/Bilanzen)",
+								"content": "##Ärzte\\nCOPRA bietet Ärzten eine Übersicht aller relevanten Behandlungsdaten innerhalb eines Programms.\\n\\nCOPRA vereinfacht notwendige Dokumentationen und macht sie für das gesamte medizinische Personal transparent. Kontextwechsel und wiederholte Anmeldungen an verschiedene Systeme werden auf ein absolutes Minimum reduziert. Als integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten in COPRA eingesehen werden. Laborwerte werden in Copra angezeigt und können durch den Anwender mit weiteren Patientendaten in Relation gesetzt werden. COPRA ermöglicht darüber hinaus die einfache Beauftragung von Befunden. Sämtliche Befunde, die bei einem Stationsaufenthalt in COPRA dokumentiert wurden, werden am Ende der Behandlung durch COPRA bereitgestellt.\\n\\nNeben dem Überblick über alle relevanten Daten einer Behandlung werden mit COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen dokumentiert und freigeschaltet. Dabei werden die Ansichten für Pfleger und Ärzte getrennt dargestellt. Ärztliche Anordnungen werden erst ab Freigabe sichtbar. So kann ein Therapieplan mit mehreren Medikamenten zunächst geplant und anschließend mit einem Klick für die Pflege bereitgestellt.\\n\\nDurch die “Lebensakte” eines Patienten in COPRA wird der gesamte Behandlungsverlauf, auch über einen Zeitraum von 10 Jahren hinweg, ersichtlich. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Vorfall vor mehreren Jahren.\\n\\nDie Darstellung und Auswahl der Informationen, die in der Patientenakte dargestellt werden, richten sich nach den individuellen Ansprüchen der medizinischen Fachgebiete und Berufsgruppen.\\n\\nCOPRA6 ist auf kurze Antwortzeiten optimiert und lässt den Arzt nicht warten.",
 								"class": "prepend-1 prominent-headline prominent-headline--red"
 							}
 						]
@@ -224,7 +224,7 @@ class FsContentTableSeeder extends Seeder {
 							{
 								"type": "block",
 								"column": 8,
-								"content": "##Pflege\\nAlle ärztlichen Anweisung zur Behandlung eines Patienten werden an zentraler Stelle aufgeführt. Somit ist im COPRA zu jeder Zeit erkennbar, welche Maßnahmen am Patienten noch offen und welche bereits erledigt wurden (Arbeitslisten). Aktivitäten, die auf Zuruf durchgeführt wurden und einer Anordnung des Arztes bedürfen werden zum Zeitpunkt der Dokumentation dem Arzt zur Nachverordnung angezeigt.\\n\\nDie bettseitige elektronische Patientenakte ist unabhängig vom Kliniknetzwerk jederzeit für die Dokumentation verfügbar. Somit können alle Aktivitäten ohne Unterbrechung durch externe Einflüsse direkt am Bettplatz oder auf dem mobilen Visitenwagen dokumentiert werden.\\n\\nDie automatische Übernahme von Gerätewerten aller am Patienten angeschlossenen Geräte erspart das manuelle Dokumentieren der Medikamentengaben durch Perfusoren oder die Aufzeichnung der Vitalparameterkurven. Die Werte müssen einmal durch das Personal geprüft und mit einem Klick validiert werden.\\n\\nAlle pflegerischen Leistungen können im COPRA dokumentiert und zur Abrechnung exportiert werden. Somit werden keine abrechnungsrelevanten Leistungen mehr übersehen.",
+								"content": "##Pflege\\nAlle ärztlichen Anweisungen zur Behandlung eines Patienten werden an zentraler Stelle aufgeführt. In COPRA ist immer erkennbar, welche Behandlungsschritte bereits erfolgt sind und welche nicht (Arbeitslisten). Aktivitäten, die auf Zuruf durchgeführt wurden und der Anordnung eines Arztes bedürfen, werden zum Zeitpunkt der Dokumentation dem Arzt zur Nachverordnung angezeigt.\\n\\nDie bettseitige elektronische Patientenakte ist unabhängig von der Erreichbarkeit des Kliniknetzwerks jederzeit für die Dokumentation verfügbar. Somit werden alle Maßnahmen jederzeit am Bettplatz oder auf dem mobilen Visitenwagen dokumentiert.\\n\\nDie automatische Übernahme von Gerätewerten aller am Patienten angeschlossenen Geräte erspart das manuelle Dokumentieren der Medikamentengaben durch Perfusoren oder die Aufzeichnung der Vitalparameterkurven. Die Werte müssen lediglich einmal durch das Personal geprüft und mit einem Klick bestätigt werden.\\n\\nUm alle abrechnungsrelevanten Daten zu erfassen, werden sämtliche pflegerischen Leistungen in COPRA dokumentiert und am Ende der Behandlung exportiert.",
 								"class": "append-1 prominent-headline prominent-headline--red"
 							},
 							{
@@ -236,7 +236,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für die Pflege"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Ärztliche Anweisungen\\n- Jederzeit verfügbar\\n- Automatische Datenübernahme\\n- Pflegerische Leistungen\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Ärztliche Anweisungen zentral dargestellt\n- Jederzeit verfügbare Informationen\n- Automatische Datenübernahme\n- Dokumentation der pflegerischen Leistungen\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							}
 						]
@@ -254,13 +254,13 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für das Controlling"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Ausleitung von erlösrelevanten Therapieverfahren und Maßnahmen\\n- Controllingbericht\\n- Vollständigkeitsprüfungen\\n- Freigabe der Dokumentation\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Überblick über alle Behandlungsschritte\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
 								"type": "block",
 								"column": 7,
-								"content": "##Controlling\\nAlle im COPRA dokumentierten Aktivitäten können für die Abrechnung gesammelt und exportiert werden. So können erlösrelevanten Therapieverfahren und Maßnahmen durch das Controlling ohne das manuelle Durchsehen der Akten ausgeleitet werden. Neben der Ausleitung können auch Übersichten zu hochpreisigen Verfahren und Materialien erstellt werden (Controllingbericht). Um zu gewährleisten, dass lückenlose Daten für die Abrechnung zu jeder Behandlung vorliegen, wird beim Abschluss eines Stationsaufenthalts eine Vollständigkeitsprüfung durchgeführt. Auch während der Behandlung weist COPRA auf eventuell zu dokumentierende Inhalte hin. Eine Vollständigkeitsprüfung kann bei jeder Freigabestufe der Dokumentation durchgeführt werden. So werden je Kontext verschiedene Inhalte beim Fachabteilungs- und Fallabschluss geprüft.\\n\\nCOPRA unterstützt damit die Dokumentation abrechnungsrelevanter Leistungen von der vollständigen Eingabe, Vollständigkeitsprüfung, Überleitung bis zum automatisierten Export.",
+								"content": "##Controlling\\nDie in COPRA dokumentierten Aktivitäten werden für die Abrechnung gesammelt und exportiert. Dadurch können erlösrelevante Therapieverfahren und Maßnahmen ohne das manuelle Durchsehen der Akten durch das Controlling einfach ermittelt werden. Darüber hinaus werden Übersichten zu hochpreisigen Verfahren und Materialien erstellt (Controllingbericht). Um die lückenlose Dokumentation jeder Behandlung zu gewährleisten, wird beim Abschluss eines Stationsaufenthalts eine Vollständigkeitsprüfung durchgeführt. Auch während der Behandlung weist COPRA auf eventuell noch zu dokumentierende Inhalte hin. Eine Vollständigkeitsprüfung kann bei jeder Freigabestufe der Dokumentation durchgeführt werden. So werden je nach Anlass verschiedene Inhalte beim Fachabteilungs- und Fallabschluss geprüft.\\n\\nCOPRA unterstützt damit die Dokumentation abrechnungsrelevanter Leistungen von der vollständigen Eingabe, Vollständigkeitsprüfung, Überleitung bis zum automatisierten Export.",
 								"class": "prepend-1 prominent-headline prominent-headline--red"
 							}
 							]
@@ -272,7 +272,7 @@ class FsContentTableSeeder extends Seeder {
 								{
 									"type": "block",
 									"column": 8,
-									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. So kann die Installation von COPRA mit der Inbetriebnahme weiterer Stationen auf die neuen Performancebedürfnisse angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Dadurch hat die hausinterne IT einen großen Freiheitsgrad zur Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann somit frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenhaltung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung durch wenige Schritte erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie dem SQL-Server und das .NET-Framework von Microsoft auf.",
+									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. COPRA kann mit der Inbetriebnahme weiterer Stationen oder Bereiche einfach auf die neuen Anforderungen angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Die hausinterne IT erhält wichtige Freiheiten bei der Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenspeicherung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA- Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung in wenigen Schritten erledigt.\\n\\nCOPRA setzt auf etablierten Technologien wie dem SQL-Server und das .NET- Framework von Microsoft auf.",
 									"class": "append-1 prominent-headline prominent-headline--red"
 								},
 								{
@@ -284,7 +284,7 @@ class FsContentTableSeeder extends Seeder {
 											"description": "Vorteile für die IT"
 										}
 									],
-									"content": "###Das wichtigste im Überblick\\n- Skalierbar\\n- Komplett virtualisierbar\\n- Jederzeit verfügbar\\n- Microsoft SQL, .NET\n\n",
+									"content": "###Das wichtigste im Überblick\\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das.NET-Framework von Microsoft\n\n",
 									"class": "circle-icon rounded-block rounded-block--red"
 								}
 								]

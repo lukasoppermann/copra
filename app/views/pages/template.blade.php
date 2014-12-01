@@ -15,7 +15,7 @@
 	{
 		if( isset($section['link']) )
 		{
-			$section_link = strtolower(preg_replace("/[^a-zA-Z0-9]+/", "", $section['link']));
+			$section_link = strtolower(preg_replace("/[^a-zA-Z0-9-]+/", "", str_replace(['Ä','ä','Ü','ü','Ö','ö','ß'],['ae','ae','ue','ue','oe','oe','ss'],$section['link'])));
 			$output_sections_menu .= "<li class='js-section-menu-link section-menu-link'><a href='#$section_link'>".$section['link']."</a></li>";
 			$section_link_data = "id='$section_link' name='$section_link' ";
 		}
