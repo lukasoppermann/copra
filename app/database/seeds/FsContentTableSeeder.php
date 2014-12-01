@@ -497,7 +497,7 @@ class FsContentTableSeeder extends Seeder {
 							},{
 								"type": "block",
 								"column": 8,
-								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne an unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.",
+								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.",
 								"class": "append-2"
 							},{
 									"type": "block",
