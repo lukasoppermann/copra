@@ -98,7 +98,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-doctor.svg"}
 										],
-										"content": "##Ärzte\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Krankengeschichte auf Abruf\n\n[Produktdetails](/produkt#aerzte)",
+										"content": "##Ärzte\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Die Krankengeschichte auf Abruf\n\n[Produktdetails](/produkt#aerzte)",
 										"class": "user-features"
 									},
 									{
@@ -206,7 +206,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für Ärzte"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Krankengeschichte auf Abruf\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Die Krankengeschichte auf Abruf\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
