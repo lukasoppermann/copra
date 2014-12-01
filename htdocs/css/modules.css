@@ -334,7 +334,6 @@ Circle-icon
   position: realtive;
   display: block;
   width: -webkit-calc(100% - 50px);
-  width: -moz-calc(100% - 50px);
   width: calc(100% - 50px);
 }
 .prominent-teaser .block-content-copy{
