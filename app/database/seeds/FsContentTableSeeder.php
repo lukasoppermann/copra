@@ -587,7 +587,17 @@ class FsContentTableSeeder extends Seeder {
 				'link' => '',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '[
+					{
+						"content":[
+							{
+								"type": "block",
+								"column": 2,
+								"content": "#Clinical Documentation Challenge (CDC)\\nCOPRA nimmt an der diesjährigen CDC auf der DIVI14 am 04.12.2014 in Hamburg teil. Das Thema ist Medizincontrolling. Es nehmen 5 weitere PDMS-Hersteller an dem Wettbewerb teil."
+							}
+							]
+						}
+						]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 
@@ -600,10 +610,19 @@ class FsContentTableSeeder extends Seeder {
 				'link' => '',
 				'published' => 1,
 				'language' => 'de',
-				'data' => '{"1":{"class":"section-01","content":{"0":{"type": "image","column": 3,"src": "imagefile.png","description": "Some optional text","class": "optional-classes"},"2":{"type": "block","column": 2,"content": "#Newseintrag zwei\\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","class": "optional-classes"}}}}',
+				'data' => '[
+					{
+						"content":[
+							{
+								"type": "block",
+								"column": 2,
+								"content": "#Neues Corporate Design\\nCOPRA bekommt ein neues Corporate Design und tritt zur DIVI14 erstmalig im neuen Aussehen auf."
+							}
+						]
+					}
+				]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
-
 			)
 		));
 	}
