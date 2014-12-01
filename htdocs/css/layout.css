@@ -216,8 +216,8 @@ General Content
 	padding-top: 50px;
 	background-color: rgb(255,255,255);
 	background-image: -webkit-linear-gradient(top, rgb(255,255,255), rgb(250,250,250));
+	background-image: -moz-linear-gradient( top, rgb(255,255,255), rgb(250,250,250));
 	background-image: linear-gradient( top, rgb(255,255,255), rgb(250,250,250));
-	background-image: -webkit-linear-gradient( top, rgb(255,255,255), rgb(250,250,250));
 }
 
 
@@ -528,8 +528,8 @@ General Content
 	width: 1px;
 	height: 100%;
 	background-image: -webkit-linear-gradient(top, rgba(165,30,40,0), rgba(165,30,40,0.25));
+	background-image: -moz-linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 	background-image: linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
-	background-image: -webkit-linear-gradient( top, rgba(165,30,40,0), rgba(165,30,40,0.25));
 }
 .card .card-back .def-item.item-umfang, .card .card-back .def-item.item-inbetriebnahme{
 	width: 50%;
