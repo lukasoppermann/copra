@@ -33,7 +33,7 @@ class FsContentTableSeeder extends Seeder {
 											"description": "COPRA bietet, was Kliniken brauchen"
 										}
 									],
-									"content": "#COPRA bietet, was Kliniken brauchen\nDie innovative Lösung für die vollständige Dokumentation von Behandlung und Pflege.",
+									"content": "#COPRA bietet, was Kliniken brauchen\nDas innovative PDMS",
 									"class": "banner js-banner"
 								}
 								]
@@ -98,7 +98,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-doctor.svg"}
 										],
-										"content": "##Ärzte\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen Die\n- Krankengeschichte auf Abruf\n\n[Produktdetails](/produkt#aerzte)",
+										"content": "##Ärzte\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Krankengeschichte auf Abruf\n\n[Produktdetails](/produkt#aerzte)",
 										"class": "user-features"
 									},
 									{
@@ -116,7 +116,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-controlling.svg"}
 										],
-										"content": "##Controlling\n- Überblick über alle Behandlungsschritte\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n[Produktdetails](/produkt#controlling)",
+										"content": "##Controlling\n- Überblick über alle Behandlungsschritte\n- Controllingberichte\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n[Produktdetails](/produkt#controlling)",
 										"class": "user-features"
 									},
 									{
@@ -125,7 +125,7 @@ class FsContentTableSeeder extends Seeder {
 										"media": [
 										{"src": "icon-it.svg"}
 										],
-										"content": "##IT\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das.NET-Framework von Microsoft\n\n[Produktdetails](/produkt#itabteilung)",
+										"content": "##IT\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das .NET-Framework von Microsoft\n\n[Produktdetails](/produkt#itabteilung)",
 										"class": "user-features"
 									}
 									]
@@ -206,7 +206,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für Ärzte"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen Die\n- Krankengeschichte auf Abruf\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Übersicht über alle relevanten Daten\n- Sämtliche Befunde auf einen Blick\n- Schnelle Eingabe ärztlicher Anordnungen\n- Krankengeschichte auf Abruf\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
@@ -254,7 +254,7 @@ class FsContentTableSeeder extends Seeder {
 										"description": "Vorteile für das Controlling"
 									}
 								],
-								"content": "###Das wichtigste im Überblick\\n- Überblick über alle Behandlungsschritte\n- Controllingbericht\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n",
+								"content": "###Das wichtigste im Überblick\\n- Überblick über alle Behandlungsschritte\n- Controllingberichte\n- Vollständigkeitsprüfungen\n- Freigabe der Dokumentation\n\n",
 								"class": "circle-icon rounded-block rounded-block--red"
 							},
 							{
@@ -284,7 +284,7 @@ class FsContentTableSeeder extends Seeder {
 											"description": "Vorteile für die IT"
 										}
 									],
-									"content": "###Das wichtigste im Überblick\\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das.NET-Framework von Microsoft\n\n",
+									"content": "###Das wichtigste im Überblick\\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das .NET-Framework von Microsoft\n\n",
 									"class": "circle-icon rounded-block rounded-block--red"
 								}
 								]
