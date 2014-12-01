@@ -109,8 +109,17 @@
 	bottom: -7px;
 	left: 0;
 }
-.banner .block-content-copy h1, .banner .block-content-copy h2{
+.banner .block-content-copy h1{
+	font-align: left;
 	font-size: 64px;
+	font-weight: 200;
+	padding: 0 20px 0 0;
+	color: rgb(255,255,255);
+	margin: 0 0 10px;
+}
+.banner .block-content-copy h2{
+	font-align: left;
+	font-size: 54px;
 	font-weight: 200;
 	padding: 0 20px 0 0;
 	color: rgb(255,255,255);

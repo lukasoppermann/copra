@@ -57,7 +57,7 @@ class FsContentTableSeeder extends Seeder {
 										"type": "block",
 										"column": 12,
 										"content": "#Vision\n>Das Logbuch für jeden Patientenaufenthalt und ein neuer Helfer im behandelnden Team.",
-										"class": "space-bottom-wide"
+										"class": "space-bottom-wide append-2 prepend-2"
 									},
 									{
 										"type": "block",
@@ -267,12 +267,12 @@ class FsContentTableSeeder extends Seeder {
 						},
 						{
 							"class": "spacing-top spacing-bottom",
-							"link": "IT",
+							"link": "IT-Abteilung",
 							"content": [
 								{
 									"type": "block",
 									"column": 8,
-									"content": "##IT\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. So kann die Installation von COPRA mit der Inbetriebnahme weiterer Stationen auf die neuen Performancebedürfnisse angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Dadurch hat die hausinterne IT einen großen Freiheitsgrad zur Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann somit frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenhaltung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung durch wenige Schritte erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie dem SQL-Server und das .NET-Framework von Microsoft auf.",
+									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. So kann die Installation von COPRA mit der Inbetriebnahme weiterer Stationen auf die neuen Performancebedürfnisse angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Dadurch hat die hausinterne IT einen großen Freiheitsgrad zur Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann somit frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenhaltung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung durch wenige Schritte erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie dem SQL-Server und das .NET-Framework von Microsoft auf.",
 									"class": "append-1 prominent-headline prominent-headline--red"
 								},
 								{
@@ -311,10 +311,10 @@ class FsContentTableSeeder extends Seeder {
 											"media": [
 													{
 															"src": "banner.jpg",
-															"description": "Some optional text"
+															"description": "Das PDMS, dem Ärzte und Pfleger vertrauen"
 													}
 											],
-											"content": "#Wir arbeiten an der Zukunft\\nCOPRA entwickelt das PDMS von morgen",
+											"content": "##Das PDMS, dem Ärzte und Pfleger vertrauen",
 											"class": "banner js-banner"
 									}
 							]
@@ -325,8 +325,8 @@ class FsContentTableSeeder extends Seeder {
 					"content": [
 						{
 							"type": "subsection",
-							"column": 4,
-							"class":"padded-column-small",
+							"column": 5,
+							"class":"padded-column-small prepend-1",
 							"content": [
 								{
 									"type": "block",
@@ -336,14 +336,14 @@ class FsContentTableSeeder extends Seeder {
 											"class": "media--noResize"
 										}
 									],
-									"content": "##Starke Kundenorientierung\\nFeatures werden in sehr enger Zusammenarbeit mit dem Kunden abgestimmt.\\n\\nDurch jährliche Anwendertreffen ist eine aktive COPRA-Community entstanden, die sich über die verschiedenen Lösungsansätze im stark individualisierbarem COPRA austauschen.",
+									"content": "##Starke Kundenorientierung\\nCOPRA ist dafür bekannt, in enger Abstimmung mit seinen Kunden sein Produkt beständig weiterzuentwickeln. Wir verstehen uns als Partner von Kliniken, Ärzten und Pflegepersonal. Anwender sind für uns Experten, die aus ihrer täglichen Arbeit heraus und durch ihre Erfahrungen mit der Praxis unser Programm täglich optimieren helfen.\\n\\nUnser Support ist in unser Unternehmen integriert. Als Unternehmen aus Deutschland verstehen wir die Vorgaben und Richtlinien der deutschen Medizinlandschaft ebenso gut wie die Sprache unserer Kunden. Gerade im Hinblick auf Support und Schulungen ein wichtiges Argument.\\n\\nDurch unsere jährlichen Anwendertreffen ist eine aktive COPRA-Community entstanden, die sich regelmäßig über die verschiedenen Lösungsansätze im stark individualisierbarem COPRA lebhaft austauscht.",
 									"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						},
 						{
 							"type": "subsection",
-							"column": 4,
+							"column": 5,
 							"class":"padded-column-small",
 							"content": [
 								{
@@ -354,30 +354,13 @@ class FsContentTableSeeder extends Seeder {
 												"class": "media--noResize"
 												}
 										],
-										"content": "##Innovation\\nEin Großteil unserer Kunden sind Universitätskliniken, die am Puls der Zeit mit großem Forschungsinteresse neue Ideen entwickeln und ausprobieren wollen.\\n\\nWir holen uns Experten für die Bereiche, die eine intensive und kontinuierliche Entwicklung erleben oder stark spezialisiert sind. Z.B. Softwarearchitektur-Pattern, UI/UX Design, Fachmodule (Neonatologie)",
-										"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
-								}
-							]
-						},
-						{
-							"type": "subsection",
-							"column": 4,
-							"class":"padded-column-small",
-							"content": [
-								{
-										"type": "block",
-										"media":[
-											{
-												"src": "icon-hospital.svg",
-												"class": "media--noResize"
-											}
-										],
-										"content": "##Spezialisierte Software für einen spezialisierten Bereich\\n**Offlineverfügbarkeit** – Weil das System in kritischen Situationen immer verfügbar sein muss.\\n\\n**Kompatibel** – Ein großes Arsenal an Treibern und hoch integrierte Anbindungen von Drittsystemen bedeutet, COPRA spricht die Sprache des Einsatzbereichs.",
+										"content": "##Innovation\\nEin Großteil unserer Kunden sind Universitätskliniken, die am Puls der Zeit mit großem Forschungsinteresse neue Ideen entwickeln und ausprobieren wollen.\\n\\nFür bestimmte, besonders spezialisierte oder dynamische Bereiche arbeiten wir mit ausgewiesenen Experten zusammen. Eine Vielzahl von Treibern und hoch integrierten Anbindungen von Drittsystemen stellt sicher, dass COPRA die Sprache des jeweiligen Einsatzbereichs spricht.\\n\\nDa von der Funktionstüchtigkeit die Qualität von Behandlung und Pflege abhängen kann, versteht es sich für uns von selbst, dass COPRA auch im Offlinemodus verfügbar ist.",
 										"class": "padded-column padding-top-small teaser-card teaser-card--image-top teaser-card--quiet teaser-card--fadeBottom"
 								}
 							]
 						}
-				]},
+					]
+				},
 				"3":{
 					"class": "section section--white-to-gray padding-bottom-wide",
 					"link": "Firmengeschichte",
@@ -387,14 +370,40 @@ class FsContentTableSeeder extends Seeder {
 							"content": "#Firmengeschichte"
 						},
 						{
+							"type": "block",
+							"column": 12,
+							"content": ">> Die Firma COPRA System GmbH mit Sitz in Berlin gehört seit 1993 zu den führenden Anbietern von PDMS-Systemen in Deutschland.",
+							"class":"spacing-bottom-small prepend-2 append-2"
+						},
+						{
+							"type": "block",
+							"column": 6,
+							"content": "Mit über 20 hochspezialisierten Mitarbeitern steht die COPRA System GmbH für den schnellen, flexiblen Kontakt zwischen Klinik-Mitarbeitern und Software-Dienstleister. Unsere Entwicklungsabteilung ist direkt an unseren Support angegliedert und unterstützt unsere Kunden aus Kliniken und medizinischen Einrichtungen von unserem Standort in Berlin aus. Die beständige Weiterentwicklung der Software seit mittlerweile mehr als 20 Jahren spricht für sich. Mit der Version COPRA6 im Jahr 2007 haben wir einen echten Meilenstein in der Entwicklung elektronischer Patientendokumentationen erreicht.\\n\\n",
+							"class": "spacing-bottom prepend-1 append-1"
+						},
+						{
+							"type": "block",
+							"column": 6,
+							"content": "Durch die Verbundenheit mit unseren Anwendern gelingt es seit Jahren immer wieder aufs Neue, die komplexen Anforderungen an ein innovatives PDMS durch COPRA zu erfüllen.\\n\\nDabei geht es neben der Weiterentwicklung der Software auch um hohe Nutzerfreundlichkeit und die Priorisierung von Inhalten, um die tägliche Anwendung so unkompliziert wie möglich zu gestalten.\\n\\nCOPRA weiterzuentwickeln und gemeinsam mit unseren Kunden frühzeitig auf Veränderungen zu reagieren ist unser Bestreben, auch und vor allem im Sinn der Patienten und der Sicherstellung der herausragenden Qualität von medizinischer Behandlung und Pflege im deutschsprachigen Raums.",
+							"class": "prepend-1 append-1 spacing-bottom"
+						},
+						{
 						"type": "array",
 						"column": 12,
 						"class": "timeline",
 						"content": [
-							"####Stand heute  \nWir investieren viel in Innovationen.",
-							"####Headline  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern",
-							"####COPRA5-Meilensteine  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern",
-							"####Gegründet in 1993  \nEntwicklung des Produkts in enger Zusammenarbeit mit den Anwendern"
+							"####2013  \nVerlegung des Firmensitzes nach Berlin",
+							"####2007  \nCOPRA6",
+							"####2005  \nErste Inbetriebnahme in Österreich",
+							"####2002  \nCOPRA5\\n\\nInbetriebnahme einer mehrsprachigen Version von COPRA in Luxemburg\\n\\nCOPRA wird auf einer Normalstation in Betrieb genommen",
+							"####2001  \nGründung der Niederlassung in Berlin",
+							"####1999  \nCOPRA wird auf einer Kinderintensivstation in Betrieb genommen",
+							"####1998  \nCOPRA4",
+							"####1997  \nErste Inbetriebnahme in der Schweiz",
+							"####1996  \nCOPRA3\\n\\nErste Pumpenanbindung zur automatischen Medikamentendokumentation in COPRA",
+							"####1994  \nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nCOPRA2\\n\\nGründung in Sasbachwalden",
+							"####1993  \nCOPRA1",
+							"####1992  \nBeginn der Entwicklung in Leipzig"
 						]
 					}]
 				},
@@ -499,12 +508,12 @@ class FsContentTableSeeder extends Seeder {
 						"content":[{
 							"type": "block",
 							"column": 12,
-							"content": "##So erreichen Sie uns",
+							"content": "##Wir freuen uns auf Ihre Nachricht!",
 							"class": "align-left"
 							},{
 								"type": "block",
 								"column": 8,
-								"content": "Haben Sie Interesse an mehr Informationen oder möchten Sie einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen, so rufen Sie uns bitte an oder senden Sie uns eine Email.",
+								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne an unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.",
 								"class": "append-2"
 							},{
 									"type": "block",

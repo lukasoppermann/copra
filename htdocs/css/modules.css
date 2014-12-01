@@ -29,8 +29,12 @@
   text-align: center;
   font-size: 30px;
   font-weight: 200;
-  width: 60%;
+  width: 100%;
   margin: 0 auto 10px;
+}
+.block-content-copy blockquote blockquote{
+  font-size: 24px;
+  color: rgb(90,170,150);
 }
 .block-content-copy blockquote p{
   font-size: inherit;
@@ -177,6 +181,12 @@
 .timeline .item h4{
   margin: 0;
   color: rgb(225,70,75);
+}
+.timeline .item p{
+  margin-bottom: 7px;
+}
+.timeline .item p:last-child{
+  margin-bottom: 0;
 }
 .timeline .item:after, .timeline .item:before{
   content: "";
