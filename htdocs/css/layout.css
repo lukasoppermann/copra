@@ -345,6 +345,7 @@ General Content
 .card{
 	padding: 20px;
 	z-index: 1;
+	-webkit-transition: z-index .5s ease;
 	transition: z-index .5s ease;
 }
 .card-overlay{
