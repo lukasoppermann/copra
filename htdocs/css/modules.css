@@ -126,7 +126,6 @@
   width: calc(100% + 4px);
   width: -webkit-calc(100% + 4px);
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), rgb(255,255,255) 50%);
-  background-image: -moz-linear-gradient( top, rgba(255,255,255,0), rgb(255,255,255) 50%);
   background-image: linear-gradient( top, rgba(255,255,255,0), rgb(255,255,255) 50%);
 }
 /* ----------------------
@@ -159,7 +158,6 @@
   left: 50%;
   margin-left: -3px;
   background-image: -webkit-linear-gradient(top, rgba(225,70,75,0), rgb(225,70,75) 10%);
-  background-image: -moz-linear-gradient( top, rgba(225,70,75,0), rgb(225,70,75) 10%);
   background-image: linear-gradient( top, rgba(225,70,75,0), rgb(225,70,75) 10%);
   border-radius: 6px;
 }
