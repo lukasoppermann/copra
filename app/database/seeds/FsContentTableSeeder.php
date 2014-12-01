@@ -33,7 +33,7 @@ class FsContentTableSeeder extends Seeder {
 											"description": "COPRA bietet, was Kliniken brauchen"
 										}
 									],
-									"content": "#COPRA bietet, was Kliniken brauchen\nDas innovative PDMS",
+									"content": "#COPRA bietet, was Kliniken brauchen\nDas innovative PDMS für die vollständige Dokumentation von Behandlung und Pflege.",
 									"class": "banner js-banner"
 								}
 								]
@@ -272,7 +272,7 @@ class FsContentTableSeeder extends Seeder {
 								{
 									"type": "block",
 									"column": 8,
-									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. COPRA kann mit der Inbetriebnahme weiterer Stationen oder Bereiche einfach auf die neuen Anforderungen angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Die hausinterne IT erhält wichtige Freiheiten bei der Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenspeicherung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA- Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung in wenigen Schritten erledigt.\\n\\nCOPRA setzt auf etablierten Technologien wie dem SQL-Server und das .NET- Framework von Microsoft auf.",
+									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. COPRA kann mit der Inbetriebnahme weiterer Stationen oder Bereiche einfach auf die neuen Anforderungen angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Die hausinterne IT erhält wichtige Freiheiten bei der Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenspeicherung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung in wenigen Schritten erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie Microsoft SQL Server und .NET Framework.",
 									"class": "append-1 prominent-headline prominent-headline--red"
 								},
 								{
@@ -385,7 +385,7 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "block",
 							"column": 6,
-							"content": "Durch die Verbundenheit mit unseren Anwendern gelingt es seit Jahren immer wieder aufs Neue, die komplexen Anforderungen an ein innovatives PDMS durch COPRA zu erfüllen.\\n\\nDabei geht es neben der Weiterentwicklung der Software auch um hohe Nutzerfreundlichkeit und die Priorisierung von Inhalten, um die tägliche Anwendung so unkompliziert wie möglich zu gestalten.\\n\\nCOPRA weiterzuentwickeln und gemeinsam mit unseren Kunden frühzeitig auf Veränderungen zu reagieren ist unser Bestreben, auch und vor allem im Sinn der Patienten und der Sicherstellung der herausragenden Qualität von medizinischer Behandlung und Pflege im deutschsprachigen Raums.",
+							"content": "Durch die Verbundenheit mit unseren Anwendern gelingt es seit Jahren immer wieder aufs Neue, die komplexen Anforderungen an ein innovatives PDMS durch COPRA zu erfüllen.\\n\\nDabei geht es neben der Weiterentwicklung der Software auch um hohe Nutzerfreundlichkeit und die Priorisierung von Inhalten, um die tägliche Anwendung so unkompliziert wie möglich zu gestalten.\\n\\nCOPRA weiterzuentwickeln und gemeinsam mit unseren Kunden frühzeitig auf Veränderungen zu reagieren ist unser Bestreben, auch und vor allem im Sinn der Patienten und der Sicherstellung der herausragenden Qualität von medizinischer Behandlung und Pflege im deutschsprachigen Raum.",
 							"class": "prepend-1 append-1 spacing-bottom"
 						},
 						{
