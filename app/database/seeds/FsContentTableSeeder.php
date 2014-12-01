@@ -184,7 +184,7 @@ class FsContentTableSeeder extends Seeder {
 								"column": 12,
 								"media": [
 									{
-										"src": "banner.jpg",
+										"src": "product.jpg",
 										"description": "Qualität und Service aus Deutschland"
 									}
 								],
@@ -310,7 +310,7 @@ class FsContentTableSeeder extends Seeder {
 											"column": 12,
 											"media": [
 													{
-															"src": "banner.jpg",
+															"src": "company.jpg",
 															"description": "Das PDMS, dem Ärzte und Pfleger vertrauen"
 													}
 											],
@@ -364,7 +364,8 @@ class FsContentTableSeeder extends Seeder {
 				"3":{
 					"class": "section section--white-to-gray padding-bottom-wide",
 					"link": "Firmengeschichte",
-					"content": [{
+					"content": [
+						{
 							"type": "block",
 							"column": 12,
 							"content": "#Firmengeschichte"
@@ -388,46 +389,29 @@ class FsContentTableSeeder extends Seeder {
 							"class": "prepend-1 append-1 spacing-bottom"
 						},
 						{
-						"type": "array",
-						"column": 12,
-						"class": "timeline",
-						"content": [
-							"####2013  \nVerlegung des Firmensitzes nach Berlin",
-							"####2007  \nCOPRA6",
-							"####2005  \nErste Inbetriebnahme in Österreich",
-							"####2002  \nCOPRA5\\n\\nInbetriebnahme einer mehrsprachigen Version von COPRA in Luxemburg\\n\\nCOPRA wird auf einer Normalstation in Betrieb genommen",
-							"####2001  \nGründung der Niederlassung in Berlin",
-							"####1999  \nCOPRA wird auf einer Kinderintensivstation in Betrieb genommen",
-							"####1998  \nCOPRA4",
-							"####1997  \nErste Inbetriebnahme in der Schweiz",
-							"####1996  \nCOPRA3\\n\\nErste Pumpenanbindung zur automatischen Medikamentendokumentation in COPRA",
-							"####1994  \nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nCOPRA2\\n\\nGründung in Sasbachwalden",
-							"####1993  \nCOPRA1",
-							"####1992  \nBeginn der Entwicklung in Leipzig"
-						]
-					}]
-				},
-				"4":{
-					"link": "Über die Firma",
-					"class": "section--gray",
-					"content": [
-						{
-							"type":"default",
-							"class":"teaser-card teaser-card--halfed prepend-1",
-							"column": 11,
-							"media":[
-								{
-									"src": "copra-features-teaser.jpg"
-								}
-							],
-							"content": "##So arbeiten wir\\nArbeit nach Scrum und Kanban, Nutzung kreativer Methoden wie Design Thinking. Beteiligung an lokalen und nationalen User-Groups im Bereich der Softwareentwicklung. Get expert knowledge where we don\'t have it (oder Firmenwert?) -> regelmäßige Schulungen, Beratung durch Firmen wie GrossWeber, Datenbankspezialisten, UI/UX Designer"
+							"type": "array",
+							"column": 12,
+							"class": "timeline",
+							"content": [
+								"####2013  \nVerlegung des Firmensitzes nach Berlin",
+								"####2007  \nCOPRA6",
+								"####2005  \nErste Inbetriebnahme in Österreich",
+								"####2002  \nCOPRA5\\n\\nInbetriebnahme einer mehrsprachigen Version von COPRA in Luxemburg\\n\\nCOPRA wird auf einer Normalstation in Betrieb genommen",
+								"####2001  \nGründung der Niederlassung in Berlin",
+								"####1999  \nCOPRA wird auf einer Kinderintensivstation in Betrieb genommen",
+								"####1998  \nCOPRA4",
+								"####1997  \nErste Inbetriebnahme in der Schweiz",
+								"####1996  \nCOPRA3\\n\\nErste Pumpenanbindung zur automatischen Medikamentendokumentation in COPRA",
+								"####1994  \nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nCOPRA2\\n\\nGründung in Sasbachwalden",
+								"####1993  \nCOPRA1",
+								"####1992  \nBeginn der Entwicklung in Leipzig"
+							]
 						}
 					]
 				}
 				}',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => '2014-07-28 12:26:06',
-
 			),
 			3 =>
 			array (
@@ -447,7 +431,7 @@ class FsContentTableSeeder extends Seeder {
 								"column": 12,
 								"media": [
 									{
-										"src": "banner.jpg",
+										"src": "refrences.jpg",
 										"description": "Some optional text"
 									}
 								],
@@ -494,7 +478,7 @@ class FsContentTableSeeder extends Seeder {
 												"column": 12,
 												"media": [
 														{
-																"src": "banner.jpg",
+																"src": "contact.jpg",
 																"description": "Kontakt"
 														}
 												],
