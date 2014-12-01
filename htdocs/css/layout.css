@@ -339,6 +339,13 @@ General Content
 	border-left: 4px solid rgb(225,70,75);
 }
 
+.news .post-preview-image{
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+.news .post-preview-image img{
+	max-width: 100%;
+}
 /* ----------------------
 		Module: Cards
 */

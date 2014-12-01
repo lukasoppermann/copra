@@ -581,6 +581,34 @@ class FsContentTableSeeder extends Seeder {
 			),
 			7 =>
 			array (
+			'id' => 8,
+			'article_id' => 8,
+			'menu_label' => '',
+			'link' => '',
+			'published' => 1,
+			'language' => 'de',
+			'data' => '[
+				{
+					"content":[
+						{
+							"type": "block",
+							"column": 2,
+							"media": [
+								{
+									"src": "hirslanden-klinik.jpg",
+									"description": "Erste Hirslanden Klinik startet mit COPRA"
+								}
+							],
+							"content": "#Erste Hirslanden Klinik startet mit COPRA\\nDie Hirslanden Klinik Aarau startete im 3. Quartal 2014 mit COPRA auf der Intensivstation (IPS) und auf der Anästhesie (OP) als Pilot für die gesamte Gruppe."
+						}
+						]
+					}
+					]',
+					'created_at' => date("Y-m-d h:i:s"),
+					'updated_at' => date("Y-m-d h:i:s"),
+			),
+			8 =>
+			array (
 				'id' => 9,
 				'article_id' => 9,
 				'menu_label' => '',
@@ -600,9 +628,8 @@ class FsContentTableSeeder extends Seeder {
 						]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
-
 			),
-			8 =>
+			9 =>
 			array (
 				'id' => 10,
 				'article_id' => 10,

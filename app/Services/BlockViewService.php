@@ -136,19 +136,23 @@ class BlockViewService {
 
             $p = $p['content'][Config::get('app.locale')];
             $text = null;
-
+            $image = null;
             foreach( $p['data'] as $content )
             {
               foreach( $content['content'] as $c )
               {
                 if($c['type'] == 'block'){
+                  if( isset($c['media']) && isset($c['media'][0]))
+                  {
+                    $image = '<div class="post-preview-image"><img src="media/'.$c['media'][0]['src'].'" alt="'.$c['media'][0]['description'].'"></div>';
+                  }
                   $text = $this->shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
                   break;
                 }
               }
             }
 
-            $out.= "<div class='post-preview'>".$text."</div>";
+            $out.= "<div class='post-preview'>".$image.$text."</div>";
           }
         }
         // cards
