@@ -402,7 +402,7 @@ class FsContentTableSeeder extends Seeder {
 								"####1998  \nCOPRA4",
 								"####1997  \nErste Inbetriebnahme in der Schweiz",
 								"####1996  \nCOPRA3\\n\\nErste Pumpenanbindung zur automatischen Medikamentendokumentation in COPRA",
-								"####1994  \nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nCOPRA2\\n\\nGründung in Sasbachwalden",
+								"####1994  \nCOPRA2\\n\\nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nGründung in Sasbachwalden",
 								"####1993  \nCOPRA1",
 								"####1992  \nBeginn der Entwicklung in Leipzig"
 							]
