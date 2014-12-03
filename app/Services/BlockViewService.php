@@ -30,7 +30,8 @@ class BlockViewService {
     // markdown content
     if( isset($el['content']) )
     {
-      $out .= '<div class="block-content-copy">'.$this->shiftHeaders(MarkdownExtra::defaultTransform($el['content']),$lvl).'</div>';
+      $out .= '<div class="block-content-copy">'.$this->shiftHeaders(MarkdownExtra::defaultTransform(str_replace(
+      ['ü','Ü'],['&uuml;','&Uuml;'],$el['content'])),$lvl).'</div>';
     }
 
     return $out.'</div>';
