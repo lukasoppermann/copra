@@ -185,10 +185,10 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "product.jpg",
-										"description": "Qualität und Service aus Deutschland"
+										"description": "Qualit&#228;t und Service aus Deutschland"
 									}
 								],
-								"content": "#Qualität und Service aus Deutschland\\nEntwickelt in enger Zusammenarbeit mit Krankenhäusern und Universitätskliniken",
+								"content": "#Qualit&#228;t und Service aus Deutschland\\nEntwickelt in enger Zusammenarbeit mit Krankenhäusern und Universitätskliniken",
 								"class": "banner js-banner"
 							}
 						]
