@@ -74,7 +74,7 @@ class FsContentTableSeeder extends Seeder {
 										"media":[
 											{"src": "icon-verfuegbarkeit.svg"}
 										],
-										"content": "##Absolute Sicherheit\nCOPRA steht jederzeit für die Dokumentation bereit, ein ausgeklügeltes Sicherungssystem sorgt dafür, dass COPRA in 99,8 % der Fälle verfügbar bleibt.",
+										"content": "##Absolute Sicherheit\nCOPRA steht jederzeit für die Dokumentation bereit. Ein ausgeklügeltes Sicherungssystem sorgt dafür, dass COPRA immer verfügbar bleibt.",
 										"class": "centered-content padded-column"
 									},
 									{
@@ -212,7 +212,7 @@ class FsContentTableSeeder extends Seeder {
 							{
 								"type": "block",
 								"column": 7,
-								"content": "##Ärzte\\nCOPRA bietet Ärzten eine Übersicht aller relevanten Behandlungsdaten innerhalb eines Programms.\\n\\nCOPRA vereinfacht notwendige Dokumentationen und macht sie für das gesamte medizinische Personal transparent. Kontextwechsel und wiederholte Anmeldungen an verschiedene Systeme werden auf ein absolutes Minimum reduziert. Als integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten in COPRA eingesehen werden. Laborwerte werden in Copra angezeigt und können durch den Anwender mit weiteren Patientendaten in Relation gesetzt werden. COPRA ermöglicht darüber hinaus die einfache Beauftragung von Befunden. Sämtliche Befunde, die bei einem Stationsaufenthalt in COPRA dokumentiert wurden, werden am Ende der Behandlung durch COPRA bereitgestellt.\\n\\nNeben dem Überblick über alle relevanten Daten einer Behandlung werden mit COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen dokumentiert und freigeschaltet. Dabei werden die Ansichten für Pfleger und Ärzte getrennt dargestellt. Ärztliche Anordnungen werden erst ab Freigabe sichtbar. So kann ein Therapieplan mit mehreren Medikamenten zunächst geplant und anschließend mit einem Klick für die Pflege bereitgestellt.\\n\\nDurch die “Lebensakte” eines Patienten in COPRA wird der gesamte Behandlungsverlauf, auch über einen Zeitraum von 10 Jahren hinweg, ersichtlich. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Vorfall vor mehreren Jahren.\\n\\nDie Darstellung und Auswahl der Informationen, die in der Patientenakte dargestellt werden, richten sich nach den individuellen Ansprüchen der medizinischen Fachgebiete und Berufsgruppen.\\n\\nCOPRA6 ist auf kurze Antwortzeiten optimiert und lässt den Arzt nicht warten.",
+								"content": "##Ärzte\\nCOPRA bietet Ärzten eine Übersicht aller relevanten Behandlungsdaten innerhalb eines Programms.\\n\\nCOPRA vereinfacht notwendige Dokumentationen und macht sie für das gesamte medizinische Personal transparent. Kontextwechsel und wiederholte Anmeldungen an verschiedene Systeme werden auf ein absolutes Minimum reduziert. Als integrierter Bestandteil der Softwarelandschaft in einem Klinikum können alle Befunde des Patienten in COPRA eingesehen werden. Laborwerte werden in Copra angezeigt und können durch den Anwender mit weiteren Patientendaten in Relation gesetzt werden. COPRA ermöglicht darüber hinaus die einfache Beauftragung von Befunden. Sämtliche Befunde, die bei einem Stationsaufenthalt in COPRA dokumentiert wurden, werden am Ende der Behandlung durch COPRA bereitgestellt.\\n\\nNeben dem Überblick über alle relevanten Daten einer Behandlung werden mit COPRA auch ärztliche Anordnungen, wie zum Beispiel Medikamentenverordnungen dokumentiert und freigeschaltet. Dabei werden die Ansichten für Pfleger und Ärzte getrennt dargestellt. Ärztliche Anordnungen werden erst ab Freigabe sichtbar. So kann ein Therapieplan mit mehreren Medikamenten zunächst geplant und anschließend mit einem Klick für die Pflege bereitgestellt werden.\\n\\nDurch die “Lebensakte” eines Patienten in COPRA wird der gesamte Behandlungsverlauf, auch über einen Zeitraum von 10 Jahren hinweg, ersichtlich. Beginnend mit den Informationen des letzten Stationsaufenthalts, bis hin zu einem Vorfall vor mehreren Jahren.\\n\\nDie Darstellung und Auswahl der Informationen, die in der Patientenakte dargestellt werden, richten sich nach den individuellen Ansprüchen der medizinischen Fachgebiete und Berufsgruppen.\\n\\nCOPRA6 ist auf kurze Antwortzeiten optimiert und lässt den Arzt nicht warten.",
 								"class": "prepend-1 prominent-headline prominent-headline--red"
 							}
 						]
@@ -314,7 +314,7 @@ class FsContentTableSeeder extends Seeder {
 															"description": "Das PDMS, dem Ärzte und Pfleger vertrauen"
 													}
 											],
-											"content": "##Das PDMS, dem Ärzte und Pfleger vertrauen",
+											"content": "##Das PDMS, dem &#196;rzte und Pfleger vertrauen",
 											"class": "banner js-banner"
 									}
 							]
@@ -403,8 +403,7 @@ class FsContentTableSeeder extends Seeder {
 								"####1997  \nErste Inbetriebnahme in der Schweiz",
 								"####1996  \nCOPRA3\\n\\nErste Pumpenanbindung zur automatischen Medikamentendokumentation in COPRA",
 								"####1994  \nCOPRA2\\n\\nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nGründung in Sasbachwalden",
-								"####1993  \nCOPRA1",
-								"####1992  \nBeginn der Entwicklung in Leipzig"
+								"####1993  \nCOPRA1\n\nBeginn der Entwicklung in Leipzig"
 							]
 						}
 					]

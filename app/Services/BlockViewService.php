@@ -30,8 +30,8 @@ class BlockViewService {
     // markdown content
     if( isset($el['content']) )
     {
-      $out .= '<div class="block-content-copy">'.$this->shiftHeaders(MarkdownExtra::defaultTransform(str_replace(
-      ['ä','Ä','ü','Ü'],['&auml;','U','&uuml;','&Uuml;'],$el['content'])),$lvl).'</div>';
+      $out .= '<div class="block-content-copy">'.str_replace(
+      ['ä','Ä','ü','Ü'],['&auml;','&#196;','&uuml;','&Uuml;'],$this->shiftHeaders(MarkdownExtra::defaultTransform($el['content']),$lvl)).'</div>';
     }
 
     return $out.'</div>';
@@ -121,7 +121,8 @@ class BlockViewService {
               foreach( $content['content'] as $c )
               {
                 if($c['type'] == 'default'){
-                  $text = "NOT DONE ".$this->shiftHeaders(MarkdownExtra::defaultTransform($c['content']),2);
+                  $text = "NOT DONE ".$this->shiftHeaders(MarkdownExtra::defaultTransform(str_replace(
+                  ['ä','Ä','ü','Ü'],['&auml;','&#196;','&uuml;','&Uuml;'],$c['content'])),2);
                   break;
                 }
               }
