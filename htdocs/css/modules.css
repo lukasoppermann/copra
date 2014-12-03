@@ -11,7 +11,7 @@
 */
 .block-content-copy h1{
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(100,100,100);
   display: table;
   padding: 10px 10px;
@@ -20,7 +20,7 @@
 }
 .block-content-copy h2{
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(100,100,100);
   padding: 10px 10px;
 }
@@ -28,7 +28,7 @@
 .block-content-copy blockquote{
   text-align: center;
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 300;
   width: 100%;
   margin: 0 auto 10px;
 }
@@ -103,14 +103,14 @@
   display: none;
 }
 .teaser-card h2{
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   color: rgb(90,170,150);
   margin-bottom: 15px;
   padding: 0;
 }
 .teaser-card.teaser-card--quiet h2{
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(100,100,100);
 }
 .teaser-card.teaser-card--fadeBottom:before{
@@ -275,7 +275,7 @@
   color: rgb(225,70,75);
 }
 .stream-emptyState{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
   color: rgb(200,200,200);
   text-align: center;
