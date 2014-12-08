@@ -39,17 +39,6 @@ class FsContentTableSeeder extends Seeder {
 								]
 							},
 							{
-								"class": "",
-								"content": [
-									{
-										"type": "block",
-										"column": 12,
-										"content": "[Besuchen Sie uns auf der DIVI 2014 in Hamburg vom 03.-05.12.2014. <span class=\"align-right\">Halle H, C46 (Gegenüber vom ADAC-Hubschrauber)</span>](#neuigkeiten)",
-										"class": "prominent-teaser prominent-teaser--turquoise"
-									}
-								]
-							},
-							{
 								"class": "space-bottom-wide",
 								"link": "Vision",
 								"content": [
@@ -138,14 +127,6 @@ class FsContentTableSeeder extends Seeder {
 										"type": "subsection",
 										"column": 7,
 										"content": [
-										{
-											"type": "block",
-											"media": [
-											{"src": "copra-divi14.jpg"}
-											],
-											"content": "##Besuchen Sie uns auf der DIVI 2014 vom 03. - 05. Dezember 2014\nCCH - Congress Center Hamburg\\n\\nIndustrieausstellung - Halle H\nBereich C - Stand C46\n\n<strong>Gegenüber vom ADAC-Hubschrauber</strong>",
-											"class": "teaser-card teaser-card--image-right teaser-card--image-fit-width"
-										}
 										]
 									},
 									{
@@ -311,10 +292,10 @@ class FsContentTableSeeder extends Seeder {
 											"media": [
 													{
 															"src": "company.jpg",
-															"description": "Das PDMS, dem Ärzte und Pfleger vertrauen"
+															"description": "Das PDMS, dem Medizin und Pflege vertrauen."
 													}
 											],
-											"content": "##Das PDMS, dem &#196;rzte und Pfleger vertrauen",
+											"content": "##Das PDMS, dem Medizin und Pflege vertrauen.",
 											"class": "banner js-banner"
 									}
 							]
