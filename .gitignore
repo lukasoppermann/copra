@@ -34,7 +34,6 @@ database.php
 ############
 vendor/
 workbench/
-app/config/packages
 composer.lock
 CONTRIBUTING.md
 bootstrap/compiled.php
