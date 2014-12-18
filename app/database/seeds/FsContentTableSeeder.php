@@ -601,7 +601,7 @@ class FsContentTableSeeder extends Seeder {
 							{
 								"type": "block",
 								"column": 2,
-								"content": "#Clinical Documentation Challenge (CDC)\\nCOPRA nimmt an der diesj&#228;hrigen CDC auf der DIVI14 am 04.12.2014 in Hamburg teil. Das Thema ist Medizincontrolling. Es nehmen 5 weitere PDMS-Hersteller an dem Wettbewerb teil."
+								"content": "#Clinical Documentation Challenge (CDC)\\nCOPRA nahm erfolgreich an der diesjährigen CDC auf der DIVI14 in Hamburg teil. Das Thema war Medizincontrolling. Es nahmen 5 weitere PDMS-Hersteller an dem Wettbewerb teil."
 							}
 							]
 						}
