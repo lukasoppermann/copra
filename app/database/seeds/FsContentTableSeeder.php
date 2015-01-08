@@ -477,7 +477,7 @@ class FsContentTableSeeder extends Seeder {
 							},{
 								"type": "block",
 								"column": 8,
-								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.\\n\\n<h3>Daten für eine Konferenzeinwahl</h3>\\n####Per Konferenzsystem:\\n n373051@lifesizecloud.com (beste Möglichkeit)\\n\\n**Per Software** (Videokonferenz vom PC/Laptop): https://manage.lifesizecloud.com/#/download\\n\\n**Als Gast anmelden, Adresse:**  373051@lifesizecloud.com\\n\\n**Per Telefon:** Deutschland +49 69/89914890 Einwahlnummer: 373051#",
+								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.\\n\\n<h3>Daten für eine Konferenzeinwahl</h3>\\n####Per Konferenzsystem:\\n n373051@lifesizecloud.com (beste Möglichkeit)\\n\\n####Per Software\\n\\n**Videokonferenz vom PC/Laptop:** https://manage.lifesizecloud.com/#/download\\n\\n**Als Gast anmelden, Adresse:**  373051@lifesizecloud.com\\n\\n####Per Telefon:\\nDeutschland +49 69/89914890 Einwahlnummer: 373051#",
 								"class": "append-2"
 							},{
 									"type": "block",
