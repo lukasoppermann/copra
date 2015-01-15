@@ -349,7 +349,8 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "block",
 							"column": 12,
-							"content": "##Firmengeschichte"
+							"content": "##Firmengeschichte",
+							"class":"underlined-title-h2"
 						},
 						{
 							"type": "block",
