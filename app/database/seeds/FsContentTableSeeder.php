@@ -354,7 +354,7 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "block",
 							"column": 12,
-							"content": ">> Die Firma COPRA System GmbH mit Sitz in Berlin gehört seit 1993 zu den führenden Anbietern von PDMS-Systemen in Deutschland.",
+							"content": ">> Die Firma COPRA System GmbH mit Sitz in Berlin gehört seit 1993 zu den führenden Anbietern von PDMS-Systemen in Deutschland. ",
 							"class":"spacing-bottom-small prepend-2 append-2"
 						},
 						{
