@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="author" content="Lukas Oppermann – vea.re" />
-	<meta name="description" content="{{Config::get('data.description', 'The portfolio of freelance designer Lukas Oppermann, interface design, print design, branding & information graphics')}}" />
+	<meta name="description" content="{{Config::get('data.description', 'COPRA PDMS')}}" />
 	<meta name="robots" content="index,follow" />
 	<meta name="language" content="de" />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
