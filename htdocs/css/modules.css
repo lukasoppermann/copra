@@ -9,8 +9,10 @@
 
     @Note:
 */
-.block-content-copy h1{
+.block-content-copy h1, .underlined-title-h2 .block-content-copy h2{
   text-align: center;
+  font-size: 32px;
+  line-height: 120%;
   font-weight: 200;
   color: rgb(100,100,100);
   display: table;

@@ -46,7 +46,7 @@ class FsContentTableSeeder extends Seeder {
 										"type": "block",
 										"column": 12,
 										"content": "##Vision\n>Die Behandlung im Mittelpunkt",
-										"class": "space-bottom-wide append-2 prepend-2"
+										"class": "space-bottom-wide append-2 prepend-2 underlined-title-h2"
 									},
 									{
 										"type": "block",
@@ -349,7 +349,7 @@ class FsContentTableSeeder extends Seeder {
 						{
 							"type": "block",
 							"column": 12,
-							"content": "#Firmengeschichte"
+							"content": "##Firmengeschichte"
 						},
 						{
 							"type": "block",
