@@ -10,7 +10,6 @@
 		@Note: Use in elements to keep inside main width
 */
 .main-width{
-	min-width: 960px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -111,7 +110,7 @@
 	left: 0;
 }
 .banner .block-content-copy h1{
-	font-align: left;
+	text-align: left;
 	font-size: 64px;
 	font-weight: 200;
 	padding: 0 20px 0 0;
@@ -119,7 +118,7 @@
 	margin: 0 0 10px;
 }
 .banner .block-content-copy h2{
-	font-align: left;
+	text-align: left;
 	font-size: 54px;
 	font-weight: 200;
 	padding: 0 20px 0 0;
@@ -157,6 +156,30 @@
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+@media screen and (max-width: 600px) {
+	.banner .block-content-image{
+		height: 350px;
+	}
+	.banner .block-content-image img{
+		left: 0;
+		width: 100%;
+	}
+	.banner .block-content-copy{
+		margin: -60px 0 50px 0;
+	}
+	.banner .block-content-copy h1{
+		font-size: 32px;
+		padding: 0 20px 0 0;
+	}
+	.banner .block-content-copy h2{
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.banner .block-content-image{
+		height: 250px;
+	}
 }
 /* ----------------------
 General Content
@@ -202,7 +225,8 @@ General Content
 	width: 100%;
 }
 .inner-section{
-	min-width: 1000px;
+	/*min-width: 1000px;*/
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -257,8 +281,11 @@ General Content
 	color: rgb(255,255,255);
 	padding: 10px 20px;
 }
-
-
+@media screen and (max-width: 600px) {
+	.section-menu{
+		display: none;
+	}
+}
 /* ----------------------
 		Centered content module
 
@@ -352,6 +379,11 @@ General Content
 	background: rgba(165,30,40,0.5);
 	z-index: 1;
 }
+@media screen and (max-width: 600px) {
+	.red-section .user-features{
+		padding-top: 40px;
+	}
+}
 /* ----------------------
 		Module: News post-preview
 */
@@ -367,6 +399,14 @@ General Content
 }
 .news .post-preview-image img{
 	max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.news .post-preview{
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
 }
 /* ----------------------
 		Module: Cards

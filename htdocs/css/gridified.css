@@ -89,3 +89,13 @@
 .append-9 { margin-right: 77.483444%; }
 .append-10 { margin-right: 86.092715%; }
 .append-11 { margin-right: 94.701987%; }
+
+@media screen and (max-width: 600px) {
+  [class*="push-"], [class*="pull-"], [class*="append-"], [class*="prepend-"]{
+    margin: 0;
+    left: auto;
+  }
+  [class*="column"]{
+    width: 100%;
+  }
+}
