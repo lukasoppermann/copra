@@ -138,6 +138,12 @@ class FsContentTableSeeder extends Seeder {
 													}
 												],
 												"content": "Besuchen Sie uns auf dem 36. Internationalen Symposium für Anästhesie, Intensivtherapie, Notfallmedizin und Schmerztherapie vom 24.01.-30.01.2015 in St. Anton am Arlberg, Österreich."
+											},
+											{
+												"type": "block",
+												"column": 2,
+												"class": "teaser-card teaser-card--full-text",
+												"content": "###Anwendertage 2015\\nDie jährlichen COPRA-Anwendertage finden das nächste Mal am 11. und 12. Juni am gewohnt einladenden Veranstaltungsort am Dämeritzseehotel bei Berlin statt.\\n\\nFür Anmeldungen wenden Sie sich bitte an unsere [Kontaktadresse](/kontakt)"
 											}
 										]
 									},
@@ -490,7 +496,7 @@ class FsContentTableSeeder extends Seeder {
 							},{
 								"type": "block",
 								"column": 8,
-								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.\\n\\n<h3>Daten für eine Konferenzeinwahl</h3>\\n####Per Konferenzsystem:\\n 373051@lifesizecloud.com (beste Möglichkeit)\\n\\n####Per Software\\n\\n**Videokonferenz vom PC/Laptop:** [https://manage.lifesizecloud.com/#/download](https://manage.lifesizecloud.com/#/download)\\n\\n**Als Gast anmelden, Adresse:**  373051@lifesizecloud.com\\n\\n####Per Telefon:\\nDeutschland +49 69/89914890 Einwahlnummer: 373051#",
+								"content": "Sie haben Interesse an weiteren Informationen oder möchten einen Präsentationstermin mit uns vereinbaren, um die Bedienung und die Möglichkeiten unseres Patienten-Daten-Management-Systems COPRA kennenzulernen? Rufen Sie uns gerne unverbindlich an oder schreiben Sie uns. Unsere Mitarbeiter stehen Ihnen mit Rat und Tat zur Seite.\\n\\n<h3>Daten für eine Konferenzeinwahl</h3>\\n####Per Konferenzsystem:\\n 373051@lifesizecloud.com (beste Möglichkeit)\\n\\n####Per Software\\n\\n**Videokonferenz vom PC/Laptop:** [https://manage.lifesizecloud.com/#/download](https://manage.lifesizecloud.com/#/download)\\n\\n**Als Gast anmelden, Adresse:**  373051@lifesizecloud.com\\n\\n####Per Telefon:\\nDeutschland +49 69/89914890 Einwahlnummer: 373051#\\n\\nInternationale Einwahlen: [https://manage.lifesizecloud.com/#/numbers](https://manage.lifesizecloud.com/#/numbers)",
 								"class": "append-2"
 							},{
 									"type": "block",

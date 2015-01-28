@@ -38,6 +38,7 @@ composer.lock
 CONTRIBUTING.md
 bootstrap/compiled.php
 .env.local.php
+.env.php
 
 # Packages #
 ############
