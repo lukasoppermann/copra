@@ -3,6 +3,7 @@
     <li><a href="{{url('kontakt')}}">Kontakt</a></li>
     <li><a href="{{url('kontakt')}}">Karriere</a></li>
     <li><a href="{{url('impressum')}}">Impressum</a></li>
+    <li><a href="{{url('files')}}">Kunden-Login</a></li>
   </ul>
 
   <div class="legal">
