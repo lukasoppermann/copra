@@ -7,7 +7,7 @@
   </ul>
 
   <div class="legal">
-    <p class="copyright">Copyright 2014<span class="separator--dot">•</span>COPRA System GmbH<span class="separator--dot">•</span>All Rights Reserved</p>
+    <p class="copyright">Copyright {{date("Y")}}<span class="separator--dot">•</span>COPRA System GmbH<span class="separator--dot">•</span>All Rights Reserved</p>
     <a class="link--quiet" href="{{url('datenschutzrichtlinien')}}">Datenschutzrichtlinien</a>
   </div>
 
