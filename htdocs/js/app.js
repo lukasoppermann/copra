@@ -16,6 +16,10 @@ require.config({
 
 require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 
+
+	$('.js-mobile-menu-icon').on('click', function(){
+		$('.js-main-navigation-list').toggleClass('is-toggled');
+	});
 	// ---------------------------
 	// Navigation Highlight
 	//

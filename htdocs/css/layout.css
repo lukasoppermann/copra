@@ -175,6 +175,9 @@
 	.banner .block-content-copy h2{
 		font-size: 22px;
 	}
+	.block-content-copy{
+		padding: 10px 20px;
+	}
 }
 @media screen and (max-width: 400px) {
 	.banner .block-content-image{

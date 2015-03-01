@@ -65,7 +65,8 @@ if($navItems['success'] === true)
 
 			<div class="logo-shadow"></div>
 		</a>
-		<div class="main-navigation-list">{{ $navigation }}</div>
+		<div class="mobile-menu-icon"><div class="menu-icon js-mobile-menu-icon">Menu</div></div>
+		<div class="main-navigation-list js-main-navigation-list">{{ $navigation }}</div>
 
 	</div>
 

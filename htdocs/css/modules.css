@@ -391,6 +391,12 @@ Circle-icon
 .rounded-block--red .block-content-copy h3{
   color: rgb(255,255,255);
 }
+@media screen and (max-width: 750px) {
+  .rounded-block{
+    border-radius: 0;
+    margin-bottom: 25px;
+  }
+}
 /* ----------------------
   Teaser
 */
