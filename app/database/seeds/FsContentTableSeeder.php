@@ -133,11 +133,11 @@ class FsContentTableSeeder extends Seeder {
 												"class": "teaser-card teaser-card--image-right teaser-card--image-fit-width",
 												"media": [
 													{
-														"src": "st-anton-2015.png",
-														"description": "36. Internationalen Symposium für Anästhesie, Intensivtherapie, Notfallmedizin und Schmerztherapie"
+														"src": "conhit-2015.png",
+														"description": "Besuchen Sie uns auf der conhIT 2015 - Connecting Healthcare IT vom 14.04.-16.04.2015 in in Berlin."
 													}
 												],
-												"content": "Besuchen Sie uns auf dem 36. Internationalen Symposium für Anästhesie, Intensivtherapie, Notfallmedizin und Schmerztherapie vom 24.01.-30.01.2015 in St. Anton am Arlberg, Österreich."
+												"content": "###conhIT 2015\\nBesuchen Sie uns auf der conhIT 2015 - Connecting Healthcare IT vom 14.04.-16.04.2015 in in Berlin. Unseren Stand finden Sie in der Halle 4.2 / B-112, Messegelände Berlin, Messedamm 22 14055 Berlin."
 											},
 											{
 												"type": "block",
