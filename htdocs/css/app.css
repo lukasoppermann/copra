@@ -24,3 +24,6 @@
 
 /* Misc */
 @import url("misc.css");
+
+/* Modules */
+@import url("media-box.css");
