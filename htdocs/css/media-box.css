@@ -1,9 +1,13 @@
 .media-box{
-
+  display: block;
+  position: relative;
+}
+.media-box .block-content-copy{
+  float: left;
 }
 .media-box .block-content-image{
   width: 100%;
 }
-.media-box--image-top{
-  
+.media-box--image-bottom .block-content-image{
+  float: right;
 }
