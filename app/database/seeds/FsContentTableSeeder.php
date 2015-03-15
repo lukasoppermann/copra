@@ -538,8 +538,7 @@ class FsContentTableSeeder extends Seeder {
 							"2": {
 								"type": "block",
 								"column": 4,
-								"content": "###TÜV-Zertifiziert",
-								"class": "offset-left-1 media-box media-box--image-bottom",
+								"class": "prepend-1 media-box media-box--image-bottom",
 								"media": [
 										{
 												"src": "tuev-zertifikat.jpg",
