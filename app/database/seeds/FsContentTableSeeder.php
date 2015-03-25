@@ -661,6 +661,34 @@ class FsContentTableSeeder extends Seeder {
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 			),
+			101 =>
+			array (
+				'id' => 101,
+				'article_id' => 101,
+				'menu_label' => '',
+				'link' => '',
+				'published' => 1,
+				'language' => 'de',
+				'data' => '[
+					{
+						"content":[
+							{
+								"type": "block",
+								"column": 2,
+								"media": [
+									{
+										"src": "uniklinik-heidelberg.jpg",
+										"description": "UniversitätsKlinikum Heidelberg auf COPRA6 umgestiegen"
+									}
+								],
+								"content": "#UniversitätsKlinikum Heidelberg ist auf COPRA6 umgestiegen\\nZwischen dem 16. und 18. März 2015 wurden alle 70 Betten der Intensivstationen des Zentrums Chirurgie am UniversitätsKlinikum Heidelberg auf COPRA6 umgestellt und mit Fluidmanagement erfolgreich in Betrieb genommen."
+							}
+						]
+					}
+				]',
+				'created_at' => date("Y-m-d h:i:s"),
+				'updated_at' => date("Y-m-d h:i:s"),
+			),
 			100 =>
 			array (
 				'id' => 100,
