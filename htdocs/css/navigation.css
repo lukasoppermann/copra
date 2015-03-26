@@ -226,7 +226,15 @@
 		display: block;
 	}
 	#Logo_White_Gradient{
+		-webkit-transform-origin: 88px 36px;
+		-moz-transform-origin: 88px 36px;
+		-ms-transform-origin: 88px 36px;
+		-o-transform-origin: 88px 36px;
 		transform-origin: 88px 36px;
+		-webkit-transform: scale(1.8);
+		-moz-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		-o-transform: scale(1.8);
 		transform: scale(1.8);
 	}
 	#Logo_White_Gradient path{
@@ -242,6 +250,8 @@
 		position: relative;
 		float: right;
 		width: 100%;
+		-webkit-box-shadow: 1px 0 2px rgba(0,0,0,0.25);
+		-moz-box-shadow: 1px 0 2px rgba(0,0,0,0.25);
 		box-shadow: 1px 0 2px rgba(0,0,0,0.25);
 		z-index: 20;
 		background: rgb(255,255,255);
@@ -259,17 +269,28 @@
 		color: rgb(225,70,75);
 	}
 	.main-navigation-list{
+		-webkit-transform: translate3d(0,-100%,0);
+		-moz-transform: translate3d(0,-100%,0);
+		-o-transform: translate3d(0,-100%,0);
 		transform: translate3d(0,-100%,0);
 		background: rgb(255,255,255);
 		float: left;
 		position: relative;
 		margin: 0;
 		width: 100%;
+		-webkit-box-shadow: 1px 0 2px rgba(0,0,0,0.25);
+		-moz-box-shadow: 1px 0 2px rgba(0,0,0,0.25);
 		box-shadow: 1px 0 2px rgba(0,0,0,0.25);
 		z-index: 10;
+		-webkit-transition: -webkit-transform .5s ease;
+		-moz-transition: -moz-transform .5s ease;
+		-o-transition: -o-transform .5s ease;
 		transition: transform .5s ease;
 	}
 	.main-navigation-list.is-toggled{
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
 	.main-navigation-list ul{
