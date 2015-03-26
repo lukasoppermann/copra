@@ -73,7 +73,7 @@ class FsStreamTableSeeder extends Seeder {
 				'id' => 8,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 2,
+				'position' => 3,
 				'article_id' => 8,
 			),
 			8 =>
@@ -81,7 +81,7 @@ class FsStreamTableSeeder extends Seeder {
 				'id' => 9,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 3,
+				'position' => 4,
 				'article_id' => 9,
 			),
 			9 =>
@@ -91,6 +91,14 @@ class FsStreamTableSeeder extends Seeder {
 				'parent_id' => 0,
 				'position' => 1,
 				'article_id' => 101,
+			),
+			10 =>
+			array (
+				'id' => 102,
+				'stream' => 'news',
+				'parent_id' => 0,
+				'position' => 2,
+				'article_id' => 102,
 			)
 		));
 	}

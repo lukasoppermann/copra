@@ -689,6 +689,34 @@ class FsContentTableSeeder extends Seeder {
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
 			),
+			102 =>
+			array (
+				'id' => 102,
+				'article_id' => 102,
+				'menu_label' => '',
+				'link' => '',
+				'published' => 1,
+				'language' => 'de',
+				'data' => '[
+					{
+						"content":[
+							{
+								"type": "block",
+								"column": 2,
+								"media": [
+									{
+										"src": "unimed-rostock.jpg",
+										"description": "Universitätsmedizin Rostock auf COPRA6 umgestiegen"
+									}
+								],
+								"content": "#Universitätsmedizin Rostock ist auf COPRA6 umgestiegen\\nDie Universitätsmedizin Rostock hat am 16. März 2015 das PDMS COPRA6 im Zentrum für Nervenheilkunde auf der Intensivstation, der Stroke Unit und der neurologischen Notaufnahme erfolgreich in Betrieb genommen.\\n\\nDamit wird COPRA6 an der Universitätsmedizin Rostock auf allen Intensivstationen, dem interdisziplinären Schockraum und im kompletten Zentral-OP inklusive Prämedikation und Aufwachraum eingesetzt."
+							}
+						]
+					}
+				]',
+				'created_at' => date("Y-m-d h:i:s"),
+				'updated_at' => date("Y-m-d h:i:s"),
+			),
 			100 =>
 			array (
 				'id' => 100,
