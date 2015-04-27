@@ -133,11 +133,11 @@ class FsContentTableSeeder extends Seeder {
 												"class": "teaser-card teaser-card--image-right teaser-card--image-fit-width",
 												"media": [
 													{
-														"src": "conhit-2015.png",
-														"description": "Besuchen Sie uns auf der conhIT 2015 - Connecting Healthcare IT vom 14.04.-16.04.2015 in in Berlin."
+														"src": "dac-2015.png",
+														"description": "Deutsche Anästhesiecongress 2015"
 													}
 												],
-												"content": "###conhIT 2015\\nBesuchen Sie uns auf der conhIT 2015 - Connecting Healthcare IT vom 14.04.-16.04.2015 in in Berlin. Unseren Stand finden Sie in der Halle 4.2 / B-112, Messegelände Berlin, Messedamm 22 14055 Berlin."
+												"content": "###Deutsche Anästhesiecongress 2015\\nBesuchen Sie uns auf dem Deutsche Anästhesiecongress 2015 - vom 07.05.-09.05.2015. Unseren Stand hat die Standnummer 1-110."
 											},
 											{
 												"type": "block",
@@ -706,10 +706,10 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "unimed-rostock.jpg",
-										"description": "Universitätsmedizin Rostock startet mit COPRA6 in der neurologischen ITS"
+										"description": "Universitätsmedizin Rostock startet mit COPRA6 auf der neurologischen ITS"
 									}
 								],
-								"content": "#Universitätsmedizin Rostock startet mit COPRA6 in der neurologischen ITS\\nDie Universitätsmedizin Rostock hat am 16. März 2015 das PDMS COPRA6 im Zentrum für Nervenheilkunde auf der Intensivstation, der Stroke Unit und der neurologischen Notaufnahme erfolgreich in Betrieb genommen.\\n\\nDamit wird COPRA6 an der Universitätsmedizin Rostock auf allen Intensivstationen, dem interdisziplinären Schockraum und im kompletten Zentral-OP inklusive Prämedikation und Aufwachraum eingesetzt."
+								"content": "#Universitätsmedizin Rostock startet mit COPRA6 auf der neurologischen ITS\\nDie Universitätsmedizin Rostock hat am 16. März 2015 das PDMS COPRA6 im Zentrum für Nervenheilkunde auf der Intensivstation, der Stroke Unit und der neurologischen Notaufnahme erfolgreich in Betrieb genommen.\\n\\nDamit wird COPRA6 an der Universitätsmedizin Rostock auf allen Intensivstationen, dem interdisziplinären Schockraum und im kompletten Zentral-OP inklusive Prämedikation und Aufwachraum eingesetzt."
 							}
 						]
 					}
