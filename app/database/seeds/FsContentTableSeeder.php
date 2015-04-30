@@ -137,7 +137,7 @@ class FsContentTableSeeder extends Seeder {
 														"description": "Deutsche Anästhesiecongress 2015"
 													}
 												],
-												"content": "###Deutsche Anästhesiecongress 2015\\nBesuchen Sie uns auf dem Deutsche Anästhesiecongress 2015 - vom 07.05.-09.05.2015. Unseren Stand hat die Standnummer 1-110."
+												"content": "###Deutsche Anästhesiecongress 2015\\nBesuchen Sie uns auf dem Deutsche Anästhesiecongress 2015 - vom 07.05.-09.05.2015. Unser Stand hat die Standnummer 1-110."
 											},
 											{
 												"type": "block",
