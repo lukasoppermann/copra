@@ -130,18 +130,6 @@ class FsContentTableSeeder extends Seeder {
 											{
 												"type": "block",
 												"column": 2,
-												"class": "teaser-card teaser-card--image-right teaser-card--image-fit-width",
-												"media": [
-													{
-														"src": "dac-2015.png",
-														"description": "Deutsche Anästhesiecongress 2015"
-													}
-												],
-												"content": "###Deutsche Anästhesiecongress 2015\\nBesuchen Sie uns auf dem Deutsche Anästhesiecongress 2015 - vom 07.05.-09.05.2015. Unser Stand hat die Standnummer 1-110."
-											},
-											{
-												"type": "block",
-												"column": 2,
 												"class": "teaser-card teaser-card--full-text",
 												"content": "###Anwendertage 2015\\nDie jährlichen COPRA-Anwendertage finden das nächste Mal am 11. und 12. Juni am gewohnt einladenden Veranstaltungsort am DämeritzSeehotel bei Berlin statt.\\n\\nFür Anmeldungen wenden Sie sich bitte an unsere [Kontaktadresse](/kontakt)"
 											}
