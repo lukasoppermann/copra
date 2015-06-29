@@ -125,18 +125,6 @@ class FsContentTableSeeder extends Seeder {
 									"content": [
 									{
 										"type": "subsection",
-										"column": 7,
-										"content":[
-											{
-												"type": "block",
-												"column": 2,
-												"class": "teaser-card teaser-card--full-text",
-												"content": "###Anwendertage 2015\\nDie jährlichen COPRA-Anwendertage finden das nächste Mal am 11. und 12. Juni am gewohnt einladenden Veranstaltungsort am DämeritzSeehotel bei Berlin statt.\\n\\nFür Anmeldungen wenden Sie sich bitte an unsere [Kontaktadresse](/kontakt)"
-											}
-										]
-									},
-									{
-										"type": "subsection",
 										"column": 5,
 										"content": [
 										{
