@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('lukass-mbp.fritz.box','Lukass-MacBook-Pro.local','lukass-macbook-pro.fritz.box', 'lukass-mbp-2.fritz.box','Lukass-MacBook-Pro-2.local','homestead')
+	'local' => array('lukass-mbp.fritz.box','Lukass-MacBook-Pro.local','lukass-macbook-pro.fritz.box', 'lukass-mbp-2.fritz.box','Lukass-MacBook-Pro-2.local','homestead','127.0.0.1')
 
 ));
 /*

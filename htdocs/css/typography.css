@@ -54,3 +54,9 @@ blockquote{
 .prominent-headline--red h2{
 	color: rgb(225,70,75);
 }
+.headline--align-left, .block-content-copy .headline--align-left{
+	text-align: left;
+}
+.red-section .user-features .headline--align-left{
+	margin-left: 20px;
+}

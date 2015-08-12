@@ -8,7 +8,7 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
 	<link rel="shortcut icon" href="{{asset('layout/favicon.png')}}">
 	<link rel="icon" href="{{asset('layout/favicon.png')}}" type="image/x-icon">
-	<link rel="stylesheet" href="{{asset('/css/'.Config::get('app.appcss'))}}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{asset('/css/app.min.css')}}" type="text/css" media="screen">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
 	<title>{{variable($title,"COPRA PDMS (Patienten-Daten-Management-System)")}} | COPRA Systems GmbH</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1,maximum-scale=1">
