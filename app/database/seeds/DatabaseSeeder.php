@@ -14,15 +14,21 @@ class DatabaseSeeder extends Seeder {
 		// --------------------------
 		// Content Seeding
 		//
-		// this seeder truncates DB !
+		// truncate
+		\DB::table('fs_content')->truncate();
+		// main
 		$this->call('FsContentTableSeeder');
+		$this->call('FsNews');
+		$this->call('FsKarriere');
 		// additional seeders
 		$this->call('ReferencesContentTableSeeder');
 
 		// --------------------------
 		// Stream Seeding
 		//
-		// this seeder truncates DB !
+		// truncate
+		\DB::table('fs_stream')->truncate();
+		// main
 		$this->call('FsStreamTableSeeder');
 		// additional seeders only add data
 		$this->call('ReferencesStreamTableSeeder');
@@ -30,10 +36,17 @@ class DatabaseSeeder extends Seeder {
 		// --------------------------
 		// Tags Seeding
 		//
-		// this seeder truncates DB !
+		// truncate
+		\DB::table('fs_tags')->truncate();
+		// main
 		$this->call('FsTagsTableSeeder');
 		// additional seeders only add data
 		$this->call('FsContentTagsTableSeeder');
+		// --------------------------
+		// Jobs Seeding
+		//
+		// truncate
+		$this->call('FsJobs');
 	}
 
 }

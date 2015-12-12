@@ -16,7 +16,6 @@ class PageController extends BaseController {
 		}
 		else
 		{
-			Log::error($api);
 			App::abort(404);
 		}
 	}

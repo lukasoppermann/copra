@@ -1,8 +1,5 @@
 {
-  "name": "myGrunt",
-  "description": "My grunt setup to use for my projects",
-  "repository": "repo",
-  "readme": "readme.md",
+  "name": "Copra",
   "dirs": {
     "tasks": "./grunt-tasks/",
     "task-options": "./grunt-tasks/options/",
@@ -31,12 +28,7 @@
   "tasks": {
     "default": [
       "svgstore",
-      "autoprefixer",
-      "imagemin",
       "jshint:all"
-    ],
-    "build": [
-      "command:build"
     ],
     "make-build": [
       "default",
@@ -48,19 +40,14 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-config": "^0.13.0",
-    "load-grunt-tasks": "^0.6.0",
     "amdclean": "^2.2.4",
-    "grunt-autoprefixer": "~0.7.3",
-    "grunt-contrib-command": "^0.1.6",
-    "grunt-contrib-csslint": "^0.2.0",
-    "grunt-contrib-imagemin": "~0.7.0",
+    "grunt": "~0.4.2",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-release-branch": "^0.2.0",
     "grunt-svgstore": ">0.2.6",
+    "load-grunt-config": "^0.13.0",
+    "load-grunt-tasks": "^0.6.0",
     "rjs": "*"
   }
 }

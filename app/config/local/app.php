@@ -14,7 +14,6 @@ return array(
 		'media' => 'media'
 	],
 	'appjs' => 'app.js',
-	'appcss' => 'app.css',
 	'media' => [
 		'images' => ['jpg','gif','jpeg','png','svg']
 	],
@@ -85,8 +84,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Formandsystem\Api\ApiServiceProvider',
 		'Formandsystem\Utilities\UtilitiesServiceProvider',
-		'Libraries\Extensions\Html\HtmlServiceProvider'
-		//'Orangehill\Iseed\IseedServiceProvider' // delete when publishing
+		'Libraries\Extensions\Html\HtmlServiceProvider',
 	),
 
 	/*

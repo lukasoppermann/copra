@@ -13,8 +13,6 @@ class FsTagsTableSeeder extends Seeder {
 	{
 		$fake = Faker::create();
 
-		\DB::table('fs_tags')->truncate();
-
 		foreach(range(1,10) as $index)
 		{
 			$items[] = [

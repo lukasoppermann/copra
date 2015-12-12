@@ -7,7 +7,7 @@ var support = {
 };
 
 require.config({
-	baseUrl: "/copra/htdocs/js/bower_components",
+	baseUrl: "/js/bower_components",
   paths: {
       "jquery": "jquery/dist/jquery"
   }

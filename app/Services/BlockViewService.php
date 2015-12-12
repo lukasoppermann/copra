@@ -95,19 +95,21 @@ class BlockViewService {
         //
         $out = '<div class="'.($el['class'] ?:'').'">';
 
-        $out .= "<div class='searchable-optionsGroup'>";
-        // add search
-        if( isset($el['variables']) && isset($el['variables']['search']) && $el['variables']['search'] == "true" )
+        if( isset($el['variables']) )
         {
-          $out .= '<input class="js-searchable-searchBox searchable-searchBox" placeholder="Suche">';
+          $out .= "<div class='searchable-optionsGroup'>";
+          // add search
+          if( isset($el['variables']['search']) && $el['variables']['search'] == "true" )
+          {
+            $out .= '<input class="js-searchable-searchBox searchable-searchBox" placeholder="Suche">';
+          }
+          // add count
+          if( isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
+          {
+            $out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream['data'])." Ergebnisse</div>";
+          }
+          $out .= "</div>";
         }
-        // add count
-        if( isset($el['variables']) && isset($el['variables']['itemCount']) && $el['variables']['itemCount'] == "true" )
-        {
-          $out .= "<div class='stream-itemCount js-searchable-itemCount'>".count($stream['data'])." Ergebnisse</div>";
-        }
-        $out .= "</div>";
-
 
         if( !isset($el['mode']) || $el['mode'] == 'default' )
         {

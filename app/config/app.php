@@ -14,7 +14,6 @@ return array(
 		'media' => 'media'
 	],
 	'appjs' => 'app.min.js',
-	'appcss' => 'app.min.css',
 	'media' => [
 		'images' => ['jpg','gif','jpeg','png','svg']
 	],
@@ -30,7 +29,7 @@ return array(
 	|
 	*/
 
-	'debug' => $_ENV['APP_DEBUG'],
+	'debug' => false, // $_ENV['APP_DEBUG']
 
 	/*
 	|--------------------------------------------------------------------------
