@@ -62,7 +62,7 @@ class FsStreamTableSeeder extends Seeder {
 			),
 			array (
 				'id' => 8,
-				'stream' => 'news',
+				'stream' => 'news-right',
 				'parent_id' => 0,
 				'position' => 3,
 				'article_id' => 8,
@@ -71,22 +71,43 @@ class FsStreamTableSeeder extends Seeder {
 				'id' => 9,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 4,
+				'position' => 6,
 				'article_id' => 9,
 			),
 			array (
 				'id' => 10,
-				'stream' => 'news',
+				'stream' => 'news-right',
 				'parent_id' => 0,
 				'position' => 1,
 				'article_id' => 101,
 			),
 			array (
 				'id' => 102,
-				'stream' => 'news',
+				'stream' => 'news-right',
 				'parent_id' => 0,
 				'position' => 2,
 				'article_id' => 102,
+			)
+			,array (
+				'id' => 103,
+				'stream' => 'news',
+				'parent_id' => 0,
+				'position' => 3,
+				'article_id' => 103,
+			)
+			,array (
+				'id' => 104,
+				'stream' => 'news',
+				'parent_id' => 0,
+				'position' => 2,
+				'article_id' => 104,
+			)
+			,array (
+				'id' => 105,
+				'stream' => 'news',
+				'parent_id' => 0,
+				'position' => 1,
+				'article_id' => 105,
 			)
 		));
 	}

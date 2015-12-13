@@ -123,12 +123,24 @@ class FsContentTableSeeder extends Seeder {
 									"content": [
 									{
 										"type": "subsection",
-										"column": 5,
+										"column": 6,
 										"content": [
 										{
 											"type": "stream",
 											"class": "news",
 											"stream": "news",
+											"mode": "preview"
+										}
+										]
+									},
+									{
+										"type": "subsection",
+										"column": 6,
+										"content": [
+										{
+											"type": "stream",
+											"class": "news",
+											"stream": "news-right",
 											"mode": "preview"
 										}
 										]
