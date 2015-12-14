@@ -250,30 +250,53 @@ class FsContentTableSeeder extends Seeder {
 							}
 							]
 						},
-						{
-							"class": "spacing-top spacing-bottom",
-							"link": "IT-Abteilung",
-							"content": [
-								{
-									"type": "block",
-									"column": 8,
-									"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. COPRA kann mit der Inbetriebnahme weiterer Stationen oder Bereiche einfach auf die neuen Anforderungen angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Die hausinterne IT erhält wichtige Freiheiten bei der Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenspeicherung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung in wenigen Schritten erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie Microsoft SQL Server und .NET Framework.",
-									"class": "append-1 prominent-headline prominent-headline--red"
-								},
-								{
-									"type": "block",
-									"column": 4,
-									"media": [
-										{
-											"src": "icon-it.svg",
-											"description": "Vorteile für die IT"
-										}
-									],
-									"content": "###Das wichtigste im Überblick\\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das .NET-Framework von Microsoft\n\n",
-									"class": "circle-icon rounded-block rounded-block--red"
-								}
-								]
+					{
+						"class": "spacing-top",
+						"link": "IT-Abteilung",
+						"content": [
+							{
+								"type": "block",
+								"column": 8,
+								"content": "##IT-Abteilung\\nDurch die Möglichkeit, Dienste für den Betrieb von COPRA auf verschiedenen Servern zu verteilen, ist COPRA beliebig skalierbar. COPRA kann mit der Inbetriebnahme weiterer Stationen oder Bereiche einfach auf die neuen Anforderungen angepasst werden.\\n\\nCOPRA ist komplett virtualisierbar. Die hausinterne IT erhält wichtige Freiheiten bei der Gestaltung der Infrastruktur. Auch das Ausfallkonzept kann frei gewählt werden. COPRA unterstützt dabei durch Empfehlungen und Angaben zu erwarteten Eigenschaften des Systems.\\n\\nDurch die lokale Datenspeicherung der COPRA-Clients sind die Stationen, die mit COPRA arbeiten durch einen temporären Ausfall der Verbindungen zu den COPRA-Diensten und der zentralen Datenbank nicht betroffen. Wartungsarbeiten werden dadurch erheblich erleichtert. Systemaktualisierungen sind dank einer integrierten Softwareverteilung in wenigen Schritten erledigt.\\n\\nCOPRA setzt auf etablierte Technologien wie Microsoft SQL Server und .NET Framework.",
+								"class": "append-1 prominent-headline prominent-headline--red"
+							},
+							{
+								"type": "block",
+								"column": 4,
+								"media": [
+									{
+										"src": "icon-it.svg",
+										"description": "Vorteile für die IT"
+									}
+								],
+								"content": "###Das wichtigste im Überblick\\n- Hohe Skalierbarkeit\n- Vollständig virtualisierbar\n- Jederzeit verfügbar\n- Bewährte Technologien, wie der SQL-Server und das .NET-Framework von Microsoft\n\n",
+								"class": "circle-icon rounded-block rounded-block--red"
 							}
+							]
+					}
+					,
+					{
+						"class": "spacing-top spacing-bottom",
+						"content": [
+							{
+								"type": "block",
+								"column": 4,
+								"media": [
+									{
+										"src": "TUV_Q117.jpg",
+										"description": "Medizinprodukt der Klasse IIa"
+									}
+								],
+								"content": ""
+							},
+							{
+								"type": "block",
+								"column": 7,
+								"content": "##Medizinprodukt der Klasse IIa\\nSeit September liegt nun COPRA6 auch als Medizinprodukt vor. Der TÜV Austria als benannte Stelle hat uns bestätigt, dass die Version COPRA6 RM1.0 den Anforderungen nach Anhang II (Abschnitt 3) der Richtlinie 93/42/EWG über Medizinprodukte entspricht. Daraufhin haben wir für COPRA6 RM1.0 im September die Konformität als Medizinprodukt der Klasse IIa erklärt.",
+								"class":"prepend-1 prominent-headline prominent-headline--red"
+							}
+						]
+					}
 				]',
 				'created_at' => date("Y-m-d h:i:s"),
 				'updated_at' => date("Y-m-d h:i:s"),
@@ -391,6 +414,28 @@ class FsContentTableSeeder extends Seeder {
 								"####1994  \nCOPRA2\\n\\nErste Inbetriebnahme für den Routinebetrieb auf Intensivstation\\n\\nGründung in Sasbachwalden",
 								"####1993  \nCOPRA1\n\nBeginn der Entwicklung in Leipzig"
 							]
+						}
+					]
+				},
+				"4":{
+					"class": "spacing-top section--gray padding-bottom",
+					"content": [
+						{
+							"type": "block",
+							"column": 4,
+							"media": [
+								{
+									"src": "TUV_E209.jpg",
+									"description": "Qualitätsmanagementsystem Medizinprodukte"
+								}
+							],
+							"content": ""
+						},
+						{
+							"type": "block",
+							"column": 7,
+							"content": "##Qualitätsmanagementsystem Medizinprodukte\\nSeit September 2014 ist das Qualitätsmanagementsystem der COPRA System GmbH nach der DIN EN ISO 13485:2012 „Qualitätsmanagementsystem Medizinprodukte“ zertifiziert. Diese Zertifizierung ist Voraussetzung, um ein Medizinprodukt der Klasse IIa herzustellen und in den Verkehr bringen zu können.",
+							"class":"prepend-1 prominent-headline prominent-headline--red"
 						}
 					]
 				}

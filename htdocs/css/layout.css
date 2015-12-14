@@ -417,6 +417,9 @@ General Content
 /* ----------------------
 		Module: Cards
 */
+.block-content-image img{
+	width: 100%;
+}
 .card{
 	padding: 20px;
 	z-index: 1;
