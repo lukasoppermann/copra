@@ -417,9 +417,16 @@ General Content
 /* ----------------------
 		Module: Cards
 */
-/*.block-content-image img{
+.block-content-image .image-fit{
 	width: 100%;
-}*/
+	max-width: 100%;
+}
+.block-content-image .image--small{
+	max-width: 200px;
+}
+.block-content-image .image--right{
+	float: right;
+}
 .card{
 	padding: 20px;
 	z-index: 1;

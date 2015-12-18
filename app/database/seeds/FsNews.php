@@ -197,8 +197,10 @@ class FsNews extends Seeder {
 						{
 							"type": "block",
 							"column": 2,
-							"media": [
-							],
+							"media": [{
+								"src": "symposium-intensivmedizin-und-intensivpflege.png",
+								"description": "COPRA auf dem Symposium Intensivmedizin und Intensivpflege"
+							}],
 							"content": "#COPRA auf dem Symposium Intensivmedizin und Intensivpflege\nVom 24.-26. Februar 2016 finden Sie uns am Stand Z4 im Übergang zwischen Halle 4 und dem CCB auf dem Symposium Intensivmedizin und Intensivpflege in Bremen"
 						}
 					]

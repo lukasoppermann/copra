@@ -280,20 +280,22 @@ class FsContentTableSeeder extends Seeder {
 						"content": [
 							{
 								"type": "block",
-								"column": 4,
+								"column": 3,
 								"media": [
 									{
 										"src": "TUV_Q117.jpg",
-										"description": "Medizinprodukt der Klasse IIa"
+										"description": "Medizinprodukt der Klasse IIa",
+										"class":"image-fit image--small image--right"
 									}
 								],
-								"content": ""
+								"content": "",
+								"class":"prepend-2"
 							},
 							{
 								"type": "block",
-								"column": 7,
-								"content": "##Medizinprodukt der Klasse IIa\\nSeit September liegt nun COPRA6 auch als Medizinprodukt vor. Der TÜV Austria als benannte Stelle hat uns bestätigt, dass die Version COPRA6 RM1.0 den Anforderungen nach Anhang II (Abschnitt 3) der Richtlinie 93/42/EWG über Medizinprodukte entspricht. Daraufhin haben wir für COPRA6 RM1.0 im September die Konformität als Medizinprodukt der Klasse IIa erklärt.",
-								"class":"prepend-1 prominent-headline prominent-headline--red"
+								"column": 9,
+								"content": "##Medizinprodukt der Klasse IIa\\nIm September 2015 hat der TÜV Austria als benannte Stelle bestätigt, dass die Version COPRA6 RM1.0 den Anforderungen nach Anhang II (Abschnitt 3) der Richtlinie 93/42/EWG über Medizinprodukte entspricht. Daraufhin haben wir für COPRA6 RM1.0 die Konformität als Medizinprodukt der Klasse IIa erklärt.",
+								"class":"prepend-1 append-2 prominent-headline prominent-headline--red"
 							}
 						]
 					}
@@ -422,20 +424,22 @@ class FsContentTableSeeder extends Seeder {
 					"content": [
 						{
 							"type": "block",
-							"column": 4,
+							"column": 3,
 							"media": [
 								{
 									"src": "TUV_E209.jpg",
-									"description": "Qualitätsmanagementsystem Medizinprodukte"
+									"description": "Qualitätsmanagementsystem Medizinprodukte",
+									"class":"image-fit image--small image--right"
 								}
 							],
-							"content": ""
+							"content": "",
+							"class":"prepend-2"
 						},
 						{
 							"type": "block",
-							"column": 7,
-							"content": "##Qualitätsmanagementsystem Medizinprodukte\\nSeit September 2014 ist das Qualitätsmanagementsystem der COPRA System GmbH nach der DIN EN ISO 13485:2012 „Qualitätsmanagementsystem Medizinprodukte“ zertifiziert. Diese Zertifizierung ist Voraussetzung, um ein Medizinprodukt der Klasse IIa herzustellen und in den Verkehr bringen zu können.",
-							"class":"prepend-1 prominent-headline prominent-headline--red"
+							"column": 9,
+							"content": "##Qualitätsmanagementsystem Medizinprodukte\\nSeit September 2014 ist das Qualitätsmanagementsystem der COPRA System GmbH nach der DIN EN ISO 13485:2012 „Medizinprodukte – Qualitätssicherungssysteme – Anforderungen an regulatorische Zwecke“ zertifiziert.\nEin nach dieser Norm zertifiziertes Qualitätsmanagementsystem ist Voraussetzung für die Herstellung und Installation von Medizinprodukten der Klasse IIa.",
+							"class":"prepend-1 append-2 prominent-headline prominent-headline--red"
 						}
 					]
 				}
@@ -462,7 +466,7 @@ class FsContentTableSeeder extends Seeder {
 								"media": [
 									{
 										"src": "refrences.jpg",
-										"description": "Some optional text"
+										"description": ""
 									}
 								],
 								"content": "#Unsere Kunden",
