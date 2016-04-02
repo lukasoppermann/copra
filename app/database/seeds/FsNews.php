@@ -232,6 +232,32 @@ class FsNews extends Seeder {
 		  'created_at' => date("Y-m-d h:i:s"),
 		  'updated_at' => date("Y-m-d h:i:s"),
 		),
+	  array (
+		  'id' => 106,
+		  'article_id' => 106,
+		  'menu_label' => '',
+		  'link' => '',
+		  'published' => 1,
+		  'language' => 'de',
+		  'data' => '[
+			  {
+				  "content":[
+					  {
+						  "type": "block",
+						  "column": 2,
+						  "media": [{
+							  "src": "conhit-2016.png",
+							  "description": "COPRA auf der conhIT in Berlin"
+						  }],
+						  "content": "#COPRA auf der conhIT in Berlin\nVom 18. bis 21. April 2016 finden Sie uns in der Messe Berlin in Halle 4.2 am Stand C-113 auf der conhIT in Berlin. Wir freuen uns auf Ihren Besuch."
+					  }
+				  ]
+			  }
+		  ]',
+		  'created_at' => date("Y-m-d h:i:s"),
+		  'updated_at' => date("Y-m-d h:i:s"),
+		),
+	// end
       )
     );
   }

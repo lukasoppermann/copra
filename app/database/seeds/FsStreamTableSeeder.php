@@ -92,22 +92,29 @@ class FsStreamTableSeeder extends Seeder {
 				'id' => 103,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 3,
+				'position' => 4,
 				'article_id' => 103,
 			)
 			,array (
 				'id' => 104,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 2,
+				'position' => 3,
 				'article_id' => 104,
 			)
 			,array (
 				'id' => 105,
 				'stream' => 'news',
 				'parent_id' => 0,
-				'position' => 1,
+				'position' => 2,
 				'article_id' => 105,
+			)
+			,array (
+				'id' => 106,
+				'stream' => 'news',
+				'parent_id' => 0,
+				'position' => 1,
+				'article_id' => 106,
 			)
 		));
 	}
