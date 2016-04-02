@@ -61,6 +61,13 @@ class FsStreamTableSeeder extends Seeder {
 				'article_id' => 201,
 			),
 			array (
+				'id' => 202,
+				'stream' => 'footer-navi',
+				'parent_id' => 0,
+				'position' => 4,
+				'article_id' => 7,
+			),
+			array (
 				'id' => 8,
 				'stream' => 'news-right',
 				'parent_id' => 0,
