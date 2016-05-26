@@ -92,7 +92,7 @@ class FsJobs extends Seeder {
   								"column": 2,
   								"media": [
   								],
-  								"content": "#Teamleiter/-in Softwareentwicklung C&num; in Berlin\\n##Deine Herausforderungen:\\n- Gemeinsam mit dem Produktmanagement gestaltest du die technische und strategische Entwicklung unseres Dokumentationssystems COPRA\\n- Als Ansprechpartner auf Augenhöhe bist du dafür verantwortlich, die Mitglieder deines interdisziplinären Teams, bestehend aus Softwareentwicklung, Qualitätssicherung und technischer Redaktion zu fördern und ein angenehmes und produktives Arbeitsumfeld sicherzustellen\\n- Als Prozessverantwortlicher steuerst du Ablauf und Einhaltung eines ISO 13485 konformen Softwareentwicklungsprozesses\\n##Deine Stärken:\\n- Du hast ein abgeschlossenes Studium im Fachbereich Informatik oder eine vergleichbare Qualifikation\\n- Du kannst Erfahrungen in der fachlichen und disziplinarischen Leitung von Entwicklungsteams vorweisen\\n- Du verfügst über mehrjährige Berufspraxis in der Entwicklung von verteilten Applikationen mit dem .Net Framework\\n- Du bist aufgeschlossen und verstehst es zu überzeugen und zielgruppenorientiert zu kommunizieren\\n- Du bist überzeugt von agilen Methoden und testgetriebener Programmierung\\n- Eine Zertifizierung zum SCRUM-Master rundet dein Profil ab\\n##Deine Perspektiven:\\n- Dich erwartet ein sympathisches und hochmotiviertes Team, welches einen respekt- und vertrauensvollen Umgang pflegt\\n- Wir laden dich dazu ein das Arbeitsumfeld für dich und deine Mitarbeiter deinen Vorstellungen entsprechend mitzugestalten\\n- Wir unterstützen deine eigenständige und kontinuierliche Weiterbildung beispielsweise die Teilnahme an Fachvorträgen, Community Events und Schulungen\\n- Wir bieten eine unbefristete Anstellung, ein attraktives Gehalt und viel Raum für individuelle Entwicklung\\n##Kontakt\\nHaben wir dein Interesse geweckt? Dann sende uns deine aussagekräftige, digitale Bewerbung an <a href=\"mailto:karriere@copra-system.de\">karriere@copra-system.de</a>."
+  								"content": "#Teamleiter/-in Softwareentwicklung C&num; in Berlin\\n##Deine Herausforderungen:\\n- Gemeinsam mit dem Produktmanagement gestaltest du die technische und strategische Entwicklung unseres Dokumentationssystems COPRA\\n- Als Ansprechpartner auf Augenhöhe bist du dafür verantwortlich, die Mitglieder deines interdisziplinären Teams, bestehend aus Softwareentwicklung, Qualitätssicherung und technischer Redaktion zu fördern und ein angenehmes und produktives Arbeitsumfeld sicherzustellen\\n- Als Prozessverantwortlicher steuerst du Ablauf und Einhaltung eines ISO 13485 konformen Softwareentwicklungsprozesses\\n##Deine Stärken:\\n- Du hast ein abgeschlossenes Studium im Fachbereich Informatik oder eine vergleichbare Qualifikation\\n- Du kannst Erfahrungen in der fachlichen und disziplinarischen Leitung von Entwicklungsteams vorweisen\\n- Du verfügst über mehrjährige Berufspraxis in der Entwicklung von verteilten Applikationen mit dem .Net Framework\\n- Du bist aufgeschlossen und verstehst es zu überzeugen und zielgruppenorientiert zu kommunizieren\\n- Du bist überzeugt von agilen Methoden und testgetriebener Programmierung\\n- Eine Zertifizierung zum SCRUM-Master rundet dein Profil ab\\n##Deine Perspektiven:\\n- Dich erwartet ein sympathisches und hochmotiviertes Team, welches einen respekt- und vertrauensvollen Umgang pflegt\\n- Wir laden dich dazu ein das Arbeitsumfeld für dich und deine Mitarbeiter deinen Vorstellungen entsprechend mitzugestalten\\n- Wir unterstützen deine eigenständige und kontinuierliche Weiterbildung beispielsweise die Teilnahme an Fachvorträgen, Community Events und Schulungen\\n- Wir bieten eine unbefristete Anstellung, ein attraktives Gehalt und viel Raum für individuelle Entwicklung\\n##Kontakt\\nHaben wir dein Interesse geweckt? Dann sende uns deine aussagekräftige, digitale Bewerbung an <a href=\"mailto:karriere@copra-system.de\">karriere@copra-system.de</a>."
   							}
   						]
   					}
@@ -132,12 +132,12 @@ class FsJobs extends Seeder {
 				'position' => 4,
 				'article_id' => 303,
 			),
-			// array (
-			// 	'stream' => 'jobs',
-			// 	'parent_id' => 0,
-			// 	'position' => 5,
-			// 	'article_id' => 304,
-			// ),
+			array (
+				'stream' => 'jobs',
+				'parent_id' => 0,
+				'position' => 5,
+				'article_id' => 304,
+			),
 		));
   }
 }
