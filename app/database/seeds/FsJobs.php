@@ -9,7 +9,7 @@ class FsJobs extends Seeder {
 	 */
 	public function run()
 	{
-		\DB::table('fs_content')->whereIn('article_id', [300,301,302] )->delete();
+		\DB::table('fs_content')->whereIn('article_id', [300,301,302,303,304] )->delete();
 		\DB::table('fs_content')->insert(
       array(
   			array (
@@ -132,12 +132,12 @@ class FsJobs extends Seeder {
 				'position' => 4,
 				'article_id' => 303,
 			),
-			array (
-				'stream' => 'jobs',
-				'parent_id' => 0,
-				'position' => 5,
-				'article_id' => 304,
-			),
+			// array (
+			// 	'stream' => 'jobs',
+			// 	'parent_id' => 0,
+			// 	'position' => 5,
+			// 	'article_id' => 304,
+			// ),
 		));
   }
 }
