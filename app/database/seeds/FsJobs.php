@@ -9,7 +9,7 @@ class FsJobs extends Seeder {
 	 */
 	public function run()
 	{
-		\DB::table('fs_content')->where('article_id', [300,301,302] )->delete();
+		\DB::table('fs_content')->whereIn('article_id', [300,301,302] )->delete();
 		\DB::table('fs_content')->insert(
       array(
   			array (
