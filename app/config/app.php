@@ -29,7 +29,8 @@ return array(
 	|
 	*/
 
-	'debug' => false, // $_ENV['APP_DEBUG']
+	'debug' => false, // $_ENV['APP_DEBUG'],
+	'log' => 'daily',
 
 	/*
 	|--------------------------------------------------------------------------

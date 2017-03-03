@@ -28,8 +28,7 @@
   "tasks": {
     "default": [
       "svgstore",
-      "jshint:all",
-      "requirejs"
+      "jshint:all"
     ],
     "make-build": [
       "default",
