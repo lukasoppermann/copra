@@ -71,14 +71,21 @@
 /* ----------------------
     Jobs
 */
+.jobs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 .jobs .post-preview{
-  width: 47%;
-  margin: 0;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
-  margin-bottom: 20px;
-  padding-bottom: 3rem;
-  float: left;
+    flex: 0 0 47%;
+    margin: 0;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 20px;
+    padding-bottom: 3rem;
+}
+.jobs .post-preview:nth-child(3n){
+    clear:left;
 }
 /*.jobs .post-preview:nth-child(even){
   margin-left: 0;

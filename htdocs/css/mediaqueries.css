@@ -1,5 +1,5 @@
 html {
-    font-family: 'mobile';
+    font-family: 'small';
 }
 
 * html { /* IE6 */
@@ -7,12 +7,12 @@ html {
 }
 
 *+html { /* IE7 */
-    font-family: 'desktop'
+    font-family: 'large'
 }
 
 @media \0screen {
     html {  /* IE8 */
-        font-family: 'desktop'
+        font-family: 'large'
     }
 }
 
@@ -22,7 +22,7 @@ body:after {
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     html {
         font-family: "small";
     }
@@ -31,7 +31,7 @@ body:after {
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     html {
         font-family: "medium";
     }
