@@ -240,45 +240,44 @@ require(["jquery", "onMediaQuery/js/onmediaquery"], function($, MQ){
 		// ---------------------------
 		// equal height
 		//
-		if(!$('body').hasClass('small')){
-			var row = {
-				top: 0,
-				height: 0,
-				items: []
-			};
-			var currentDiv = 0;
-			var $this;
+		var row = {
+			top: 0,
+			height: 0,
+			items: []
+		};
+		var currentDiv = 0;
+		var $this;
 
-			$('.card').each(function(){
+		$('.card').each(function(){
 
-				$this = $(this);
+			$this = $(this);
 
-				if( $this.position().top != row.top )
-				{
-					// resize last row
-					for (currentDiv = 0 ; currentDiv < row.items.length ; currentDiv++) {
-						row.items[currentDiv].height(row.height);
-					}
-
-					// set height for current row
-					row.items.length = 0;
-					row.top = $this.position().top;
-					row.height = $this.height();
-					row.items.push($this);
-				}
-				else
-				{
-					row.items.push($this);
-					row.height = (row.height < $this.height()) ? ($this.height()) : (row.height);
-				}
-
-				// do very last row
+			if( $this.position().top != row.top )
+			{
+				// resize last row
 				for (currentDiv = 0 ; currentDiv < row.items.length ; currentDiv++) {
 					row.items[currentDiv].height(row.height);
 				}
 
-			});
-		}
+				// set height for current row
+				row.items.length = 0;
+				row.top = $this.position().top;
+				row.height = $this.height();
+				row.items.push($this);
+			}
+			else
+			{
+				row.items.push($this);
+				row.height = (row.height < $this.height()) ? ($this.height()) : (row.height);
+			}
+
+			// do very last row
+			for (currentDiv = 0 ; currentDiv < row.items.length ; currentDiv++) {
+				row.items[currentDiv].height(row.height);
+			}
+
+		});
+
 
 		// ---------------------------
 		// Mediaqueries
